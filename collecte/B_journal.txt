@@ -106,3 +106,9 @@ site:fr.indeed.com/viewjob QA automatisation Cypress OR Playwright OR Selenium |
 site:welcometothejungle.com/fr/companies "AppSec" OR "sécurité applicative" OR "DevSecOps" CDI | offres retenues: 8
 site:hellowork.com/fr-fr/emplois accessibilité RGAA développeur OR intégrateur | offres retenues: 6
 site:welcometothejungle.com/fr/companies "Generative AI" OR "GenAI" engineer CDI France | offres retenues: 5
+site:welcometothejungle.com/fr/companies développeur CDI Toulouse | offres retenues: 6
+site:welcometothejungle.com/fr/companies développeur CDI Montpellier OR Nice OR "Sophia Antipolis" | offres retenues: 3
+site:welcometothejungle.com/fr/companies développeur CDI Rennes OR Brest OR Strasbourg | offres retenues: 6
+site:welcometothejungle.com/fr/companies "Télétravail total" développeur backend OR frontend | offres retenues: 8
+site:fr.indeed.com/viewjob "IA générative" OR "Generative AI" développeur OR engineer | offres retenues: 5
+Hellowork "Emploi DevOps" OR "Emploi Ingénieur DevOps" "Plus de" Offres région | offres retenues: 0
