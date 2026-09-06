@@ -160,3 +160,9 @@ site:candidat.francetravail.fr/offres/recherche/detail "développeur full stack"
 site:fr.linkedin.com/jobs/view "développeur front-end" OR "développeur back-end" Paris CDI | offres retenues: 9
 site:hellowork.com/fr-fr/emplois développeur full stack Paris CDI | offres retenues: 9
 site:welcometothejungle.com/fr/companies "tech lead" OR "lead développeur" OR "lead developer" Paris CDI | offres retenues: 10
+site:fr.indeed.com/viewjob développeur web Brest OR Quimper OR Lorient OR Vannes OR "Saint-Brieuc" | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web "Le Mans" OR Laval OR "La Roche-sur-Yon" OR Cholet OR "Saint-Nazaire" | offres retenues: 1
+site:fr.indeed.com/viewjob développeur web Orléans OR Bourges OR Chartres OR Blois OR Châteauroux | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Pau OR Bayonne OR Tarbes OR Limoges OR Angoulême OR Niort | offres retenues: 3
+site:fr.indeed.com/viewjob développeur web Caen OR Cherbourg OR Évreux OR "Saint-Lô" OR Alençon | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Amiens OR Beauvais OR Compiègne OR Valenciennes OR Arras OR Dunkerque | offres retenues: 1
