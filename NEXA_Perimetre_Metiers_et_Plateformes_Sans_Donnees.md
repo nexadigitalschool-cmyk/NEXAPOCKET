@@ -6,7 +6,7 @@
 
 - L'environnement d'exécution ne permettait aucun accès HTTP direct aux sites externes (proxy réseau : toutes les connexions vers les jobboards, France Travail, Apec, data.gouv.fr, INSEE, Dares, Numeum, etc. ont été refusées avec un code 403 au niveau du proxy ; l'API France Travail nécessite en outre une clé OAuth non disponible).
 - Seule voie disponible : un moteur de recherche web renvoyant, pour chaque requête, les titres, URL et extraits des pages publiques indexées. Toutes les offres et tous les comptes d'offres proviennent donc de ces pages indexées (pages d'offres individuelles et pages de liste datées des jobboards).
-- Le budget de requêtes était plafonné (200 requêtes par session) ; la collecte a été répartie sur plusieurs sessions parallèles. Les journaux de requêtes sont conservés (fichiers *_journal.txt du dossier `collecte/`).
+- Le budget de requêtes était plafonné (200 requêtes WebSearch par session, quota partagé entre tous les agents d'une même session) ; la collecte a donc été menée en cinq vagues (A, B, C : sessions parallèles initiales ; D : sept agents de la session principale, arrêtés par le quota partagé ; E : cinq sessions distantes indépendantes E1-E5, une par famille de plateformes ou d'études, avec leur propre quota), chacune journalisée (fichiers *_journal.txt du dossier `collecte/`).
 - Conséquences : de nombreux champs (expérience, salaire, télétravail) ne figurent pas dans les extraits et sont notés NC ; les comptes d'offres des pages de liste sont des bornes basses arrondies (« plus de N »).
 
 ## PARTIE A — TAXONOMIE DES MÉTIERS
@@ -825,6 +825,32 @@ Toutes les plateformes ont d'abord été testées en accès direct (HTTP) : refu
 | ECOSYSTEMES |  | Non recherché : budget WebSearch épuisé avant ce thème. Seuls indices incidents : Lille (tissu diversifié, numérique cité, Popmood) ; Occitanie (aéronautique, spatial, numérique) ; ARA (dev/chef de projet/infra top 3 Apec). |
 
 ### B.5 — Journaux de requêtes
+
+| VAGUE / AGENT | FICHIER_JOURNAL | REQUETES_JOURNALISEES | LIGNES_OFFRES | LIGNES_VOLUMES | LIGNES_ETUDES |
+|---|---|---|---|---|---|
+| A | `collecte/A_journal.txt` | 200 | 524 | 297 | 0 |
+| B | `collecte/B_journal.txt` | 200 | 809 | 208 | 0 |
+| C | `collecte/C_journal.txt` | 202 | 0 | 290 | 0 |
+| D1 | `collecte/D1_journal.txt` | 51 | 113 | 1 | 0 |
+| D2 | `collecte/D2_journal.txt` | 70 | 162 | 1 | 0 |
+| D3 | `collecte/D3_journal.txt` | 39 | 98 | 52 | 0 |
+| D4 | `collecte/D4_journal.txt` | 56 | 0 | 296 | 0 |
+| D5 | `collecte/D5_journal.txt` | 39 | 109 | 9 | 0 |
+| D6 | `collecte/D6_journal.txt` | 53 | 0 | 0 | 66 |
+| D7 | `collecte/D7_journal.txt` | 53 | 54 | 8 | 0 |
+| E1 | `collecte/E1_journal.txt` | 164 | 277 | 4 | 0 |
+| E2 | `collecte/E2_journal.txt` | 85 | 209 | 185 | 0 |
+| E3 | `collecte/E3_journal.txt` | 163 | 182 | 287 | 0 |
+| E4 | `collecte/E4_journal.txt` | 75 | 230 | 23 | 0 |
+| E5 | `collecte/E5_journal.txt` | 131 | 0 | 0 | 199 |
+| etudes | `collecte/etudes/etudes_journal.txt` | 34 | 0 | 0 | 46 |
+| regions | `collecte/etudes/regions_journal.txt` | 9 | 0 | 0 | 0 |
+| salaires_competences_ia | `collecte/etudes/salaires_competences_ia_journal.txt` | 40 | 0 | 0 | 0 |
+| ia_specialisations | `collecte/offres/ia_specialisations_journal.txt` | 19 | 52 | 14 | 0 |
+| lille_nantes_bordeaux | `collecte/offres/lille_nantes_bordeaux_journal.txt` | 19 | 80 | 0 | 0 |
+| lyon_marseille | `collecte/offres/lyon_marseille_journal.txt` | 19 | 60 | 39 | 0 |
+| paris | `collecte/offres/paris_journal.txt` | 25 | 98 | 25 | 0 |
+| regions | `collecte/offres/regions_journal.txt` | 30 | 64 | 55 | 0 |
 
 1684 requêtes journalisées (fichiers `collecte/*_journal.txt`). Extrait :
 

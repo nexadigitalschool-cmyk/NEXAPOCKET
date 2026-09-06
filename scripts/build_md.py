@@ -147,7 +147,7 @@ def main():
     L.append("## Contexte technique de la collecte\n")
     L.append("- L'environnement d'exécution ne permettait aucun accès HTTP direct aux sites externes (proxy réseau : toutes les connexions vers les jobboards, France Travail, Apec, data.gouv.fr, INSEE, Dares, Numeum, etc. ont été refusées avec un code 403 au niveau du proxy ; l'API France Travail nécessite en outre une clé OAuth non disponible).")
     L.append("- Seule voie disponible : un moteur de recherche web renvoyant, pour chaque requête, les titres, URL et extraits des pages publiques indexées. Toutes les offres et tous les comptes d'offres proviennent donc de ces pages indexées (pages d'offres individuelles et pages de liste datées des jobboards).")
-    L.append("- Le budget de requêtes était plafonné (200 requêtes par session) ; la collecte a été répartie sur plusieurs sessions parallèles. Les journaux de requêtes sont conservés (fichiers *_journal.txt du dossier `collecte/`).")
+    L.append("- Le budget de requêtes était plafonné (200 requêtes WebSearch par session, quota partagé entre tous les agents d'une même session) ; la collecte a donc été menée en cinq vagues (A, B, C : sessions parallèles initiales ; D : sept agents de la session principale, arrêtés par le quota partagé ; E : cinq sessions distantes indépendantes E1-E5, une par famille de plateformes ou d'études, avec leur propre quota), chacune journalisée (fichiers *_journal.txt du dossier `collecte/`).")
     L.append("- Conséquences : de nombreux champs (expérience, salaire, télétravail) ne figurent pas dans les extraits et sont notés NC ; les comptes d'offres des pages de liste sont des bornes basses arrondies (« plus de N »).\n")
     L.append("## PARTIE A — TAXONOMIE DES MÉTIERS\n")
     L.append(f"Taxonomie initiale du brief complétée par les métiers découverts pendant la collecte. Nombre d'offres = offres uniques observées dans l'échantillon ({len(U)} offres uniques dans le périmètre, {len(rows)} lignes brutes).\n")
@@ -224,6 +224,18 @@ def main():
         L.append(f"| {str(src).replace('|', '/')} | {str(rq).replace('|', '/')[:300]} | {str(res).replace('|', '/')[:400]} |")
     L.append("")
     L.append("### B.5 — Journaux de requêtes\n")
+    L.append("| VAGUE / AGENT | FICHIER_JOURNAL | REQUETES_JOURNALISEES | LIGNES_OFFRES | LIGNES_VOLUMES | LIGNES_ETUDES |")
+    L.append("|---|---|---|---|---|---|")
+    def _nlines(p):
+        try:
+            return sum(1 for l in open(p, encoding="utf-8") if l.strip())
+        except OSError:
+            return 0
+    for jf in sorted(glob.glob(os.path.join(OFFRES_DIR, "*journal.txt")) + glob.glob(os.path.join(ETUDES_DIR, "*journal.txt")) + glob.glob(os.path.join(COLLECTE_DIR, "*journal.txt"))):
+        base = os.path.basename(jf).replace("_journal.txt", "").replace("journal.txt", "")
+        d_ = os.path.dirname(jf)
+        L.append(f"| {base or 'session principale'} | `{os.path.relpath(jf, os.path.dirname(COLLECTE_DIR))}` | {_nlines(jf)} | {_nlines(os.path.join(d_, base + '_offres.jsonl'))} | {_nlines(os.path.join(d_, base + '_volumes.jsonl'))} | {_nlines(os.path.join(d_, base + '_etudes.jsonl')) or _nlines(os.path.join(d_, base + '_marche.jsonl'))} |")
+    L.append("")
     L.append(f"{len(queries)} requêtes journalisées (fichiers `collecte/*_journal.txt`). Extrait :\n")
     for q in queries[:40]:
         L.append(f"- `{q}`")
