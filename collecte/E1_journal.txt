@@ -157,3 +157,8 @@ site:candidat.francetravail.fr/offres/recherche/detail "Développeur" "télétra
 site:apec.fr detail-offre "Développeur" F/H Angers - 49 OR Le Mans - 72	=> 0 offres (+0 volumes) [6 Angers + 1 Le Mans]
 site:apec.fr detail-offre "Développeur" F/H Annecy - 74 OR Chambéry - 73	=> 9 offres (+0 volumes) [9 Annecy ; Chambéry aucun]
 site:apec.fr detail-offre "Développeur" F/H Mulhouse - 68 OR Colmar - 68 OR Metz - 57	=> 2 offres (+0 volumes) [2 Mulhouse ; Colmar/Metz aucun]
+site:candidat.francetravail.fr/offres/recherche/detail "Développeur" "Junior" "Salaire" "An(s)"	=> 0 offres (+0 volumes) [194YLPT mise à jour CDI 1920-2100 €/mois ; 210LFFC déjà enregistrée]
+site:candidat.francetravail.fr/offres/recherche/detail "Lead" "Développeur" "An(s)" Salaire CDI	=> 5 offres (+0 volumes) [206RJFN mise à jour CDI 80-90k 8 ans ; tech leads 48-58k et 45-65k]
+site:apec.fr detail-offre "Développeur" F/H Niort - 79 OR La Rochelle - 17	=> 3 offres (+0 volumes) [2 Niort + Outsystems La Courneuve ; La Rochelle aucun]
+site:apec.fr detail-offre "Développeur" F/H Toulon - 83 OR Perpignan - 66 OR Bayonne - 64	=> 2 offres (+0 volumes) [Toulon, Perpignan ; ingénieur produit exclu ; Bayonne aucun]
+site:apec.fr detail-offre "Développeur" F/H Saint-Étienne - 42 OR Nice - 06	=> 1 offres (+0 volumes) [1 sans lieu ; business developer, chargé d'affaires exclus]
