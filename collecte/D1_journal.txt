@@ -1,0 +1,15 @@
+site:candidat.francetravail.fr/offres/recherche/detail "développeur web" "Débutant accepté" Rouen	=> 4 offres (+0 volumes) [aucune à Rouen ; 2 déjà connues]
+site:candidat.francetravail.fr/offres/recherche/detail développeur full stack "Expérience" "An(s)" Caen	=> 1 offres (+0 volumes) [pages de liste Caen sans compte]
+site:candidat.francetravail.fr/offres/recherche/detail développeur "CDI" "Salaire" Dijon	=> 6 offres (+0 volumes) [dont 2 enrichissements]
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Strasbourg "Type de contrat"	=> 6 offres (+0 volumes)
+site:candidat.francetravail.fr/offres/recherche/detail développeur Rennes "Débutant accepté"	=> 3 offres (+0 volumes) [dont 1 enrichissement]
+site:candidat.francetravail.fr/offres/recherche/detail développeur Le Havre "Expérience"	=> 1 offres (+0 volumes) [Le Havre: seulement GTB/industrie]
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Rouen "Type de contrat" "Salaire"	=> 6 offres (+0 volumes) [aucune à Rouen]
+site:candidat.francetravail.fr/offres/recherche/detail développeur Besançon "CDI" "Salaire"	=> 2 offres (+0 volumes)
+site:candidat.francetravail.fr/offres/recherche/detail développeur Tours "Expérience" "An(s)"	=> 0 offres (+0 volumes) [uniquement pages de liste sans compte]
+site:candidat.francetravail.fr/offres/recherche/detail développeur Orléans "Débutant accepté" OR "An(s)"	=> 3 offres (+0 volumes) [aucune dev à Orléans]
+site:candidat.francetravail.fr/offres/recherche/detail "Développeur" "Ajaccio" OR "Bastia" "Type de contrat"	=> 0 offres (+0 volumes) [Corse: aucune offre dev]
+site:candidat.francetravail.fr/offres/recherche/detail développeur Nancy "CDI" "Expérience"	=> 5 offres (+0 volumes)
+site:candidat.francetravail.fr/offres/recherche/detail développeur Metz "Débutant accepté"	=> 2 offres (+0 volumes)
+site:candidat.francetravail.fr/offres/recherche/detail développeur Reims "Salaire" "An(s)"	=> 1 offres (+0 volumes) [Reims: peu de dev]
+site:candidat.francetravail.fr/offres/recherche/detail développeur Brest "CDI" "Salaire"	=> 2 offres (+0 volumes)

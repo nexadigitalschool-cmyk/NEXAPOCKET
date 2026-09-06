@@ -74,12 +74,24 @@ REGION_SERIES["Centre-Val de Loire"] += [r"tours.*", r"orleans.*"]
 REGION_SERIES["Bourgogne-Franche-Comté"] += [r"dijon.*", r"besancon.*"]
 
 
-def evol_pct(series, intit_patterns, zone_patterns):
-    """Retourne (evol_2025, evol_2024, detail) à partir des stocks Indeed datés (buckets 'plus de N')."""
+EVOL_SOURCES = ("Indeed", "HelloWork", "Apec", "France Travail")
+
+
+def evol_pct(series, intit_patterns, zone_patterns, sources=EVOL_SOURCES):
+    """Retourne (evol_2025, evol_2024, detail) à partir des stocks datés (buckets 'plus de N') : Indeed en priorité,
+    puis HelloWork / Apec / France Travail si Indeed n'offre pas deux années comparables pour le même intitulé × zone."""
+    for src_ in sources:
+        e25, e24, det = _evol_pct_src(series, intit_patterns, zone_patterns, src_)
+        if e25 != NC or e24 != NC:
+            return e25, e24, det
+    return NC, NC, ""
+
+
+def _evol_pct_src(series, intit_patterns, zone_patterns, source):
     best = {"2026": None, "2025": None, "2024": None}
     detail = []
     for (src, intit, zone, contrat), pts in series.items():
-        if src != "Indeed" or contrat not in ("nc", "tous", ""):
+        if src != source or contrat not in ("nc", "tous", ""):
             continue
         if not any(re.fullmatch(p, intit) for p in intit_patterns):
             continue
@@ -92,15 +104,15 @@ def evol_pct(series, intit_patterns, zone_patterns):
     e25 = e24 = NC
     if best["2026"] and best["2025"] and best["2025"][2] == best["2026"][2] and best["2025"][3] == best["2026"][3]:
         e25 = round(100.0 * (best["2026"][1] - best["2025"][1]) / best["2025"][1])
-        detail.append(f"Indeed '{best['2026'][2]}' {best['2026'][3]} : {best['2025'][1]} ({best['2025'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
+        detail.append(f"{source} '{best['2026'][2]}' {best['2026'][3]} : {best['2025'][1]} ({best['2025'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
     if best["2026"] and best["2024"] and best["2024"][2] == best["2026"][2] and best["2024"][3] == best["2026"][3]:
         e24 = round(100.0 * (best["2026"][1] - best["2024"][1]) / best["2024"][1])
-        detail.append(f"Indeed '{best['2026'][2]}' {best['2026'][3]} : {best['2024'][1]} ({best['2024'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
+        detail.append(f"{source} '{best['2026'][2]}' {best['2026'][3]} : {best['2024'][1]} ({best['2024'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
     return e25, e24, " ; ".join(detail)
 
 
 def fmt_evol(e):
-    return NC if e == NC else f"ESTIMATION {e:+d} % (stocks Indeed arrondis)"
+    return NC if e == NC else f"ESTIMATION {e:+d} % (stocks jobboard arrondis, voir DETAIL_EVOLUTION)"
 
 
 # ---------------------------------------------------------------------------
@@ -264,6 +276,15 @@ def build_synthese(wb, rows, U, series, vols):
     r2 = end2 + 2
     title(ws, r2, "MÉTHODE TENSION (ESTIMATION) : DONNEES_INSUFFISANTES si < 5 offres ; score = évolution du stock Indeed (≤ -40 % : -2 ; < -10 % : -1 ; > +15 % : +1) + part de seniors/leads ≥ 50 % (+1) + famille cloud/cyber/IA/data (+1, signalée en tension par Apec et BMO). Score ≥ 2 TRES_EN_TENSION, 1 EN_TENSION, 0 EQUILIBRE, -1 RALENTISSEMENT, ≤ -2 SATURE.", NOTE_FONT)
 
+    # ---- études et données de marché (vague D, schéma complet) ----
+    d_et = load_d_etudes()
+    r2b = r2 + 2
+    title(ws, r2b, "ÉTUDES ET DONNÉES DE MARCHÉ UTILISÉES (schéma complet : titre, organisme, auteur, date, périmètre, méthode, résultat, URL, page, fiabilité)", SUB_FONT)
+    et_rows = [[e.get("THEME"), e.get("TITRE"), e.get("ORGANISME_OU_MEDIA"), e.get("AUTEUR") or "non indiqué", e.get("DATE_PUBLICATION"), e.get("DATE_CONSULTATION"), e.get("PERIMETRE"), e.get("METHODE"), e.get("RESULTAT_UTILISE"), e.get("URL"), e.get("PAGE_DU_RAPPORT"), str(e.get("FIABILITE", "")).upper()] for e in d_et]
+    et_rows.sort(key=lambda x: (str(x[0]), str(x[2])))
+    r2c = write_table(ws, r2b + 1, ["THEME", "TITRE", "ORGANISME", "AUTEUR", "DATE_PUBLICATION", "DATE_CONSULTATION", "PERIMETRE", "METHODE", "RESULTAT_UTILISE", "URL", "PAGE_DU_RAPPORT", "NIVEAU_DE_FIABILITE"], et_rows, "T_ETUDES") if et_rows else r2b
+    r2 = r2c + 1
+
     # ---- graphiques ----
     # 1 offres par métier (top 15)
     top = sorted(data, key=lambda d: -d[4])[:15]
@@ -370,9 +391,16 @@ POP_URL = "https://www.insee.fr/fr/statistiques/3303305?sommaire=3353488"
 def build_regions(wb, rows, U, series):
     ws = wb.create_sheet("REGIONS_METIERS")
     title(ws, 1, "RÉGIONS × MÉTIERS — échantillon d'offres uniques (collecte " + DATE_COLLECTE + ") et données externes régionales")
-    note(ws, 2, "Une ligne par combinaison région × métier normalisé. PART_NATIONALE = part de l'échantillon national. OFFRES_POUR_100_000_ACTIFS = NC (population active régionale INSEE non lisible dans les extraits) ; à défaut, ESTIMATION pour 100 000 habitants (population INSEE 2021) pour les cinq régions dont la population a été relevée. Les ratios portent sur l'échantillon, pas sur le marché total. EVOLUTION = ESTIMATION à partir des stocks Indeed datés de la région/ville quand deux années sont disponibles.")
+    note(ws, 2, "Une ligne par combinaison région × métier normalisé. PART_NATIONALE = part de l'échantillon national. OFFRES_POUR_100_000_ACTIFS = ESTIMATION calculée sur l'échantillon rapporté à la population active régionale INSEE quand elle a été relevée (source citée dans la cellule) ; à défaut, ESTIMATION pour 100 000 habitants (population INSEE 2021) ; sinon NC. Les ratios portent sur l'échantillon, pas sur le marché total. EVOLUTION = ESTIMATION à partir des stocks Indeed datés de la région/ville quand deux années sont disponibles.")
     ext = load_regional_external()
     actifs = actifs_by_region(ext)
+    d_et = load_d_etudes()
+    for reg, val in actifs_from_d_etudes(d_et, REGIONS).items():
+        actifs.setdefault(reg, (val[0], val[1]))
+    for e in d_et:
+        if norm(e.get("THEME")) in ("regions", "tension") or any(norm(r) in norm(e.get("PERIMETRE", "")) for r in REGIONS if r != "Corse"):
+            ext.append({"THEME": e.get("THEME"), "REGION_OU_VILLE": e.get("PERIMETRE"), "METIER": "", "INDICATEUR": e.get("TITRE"), "VALEUR": e.get("RESULTAT_UTILISE"),
+                        "DATE_OU_PERIODE": e.get("DATE_PUBLICATION"), "ORGANISME": e.get("ORGANISME_OU_MEDIA"), "SOURCE": e.get("METHODE"), "URL": e.get("URL"), "CITATION": e.get("RESULTAT_UTILISE"), "FIABILITE": e.get("FIABILITE")})
     by = defaultdict(list)
     for r in U:
         by[(r["REGION_NORMALISEE"], r["FAMILLE_METIER"], r["METIER_NORMALISE"])].append(r)
@@ -391,7 +419,7 @@ def build_regions(wb, rows, U, series):
         brut = sum(1 for r in rows if r["REGION_NORMALISEE"] == reg and r["METIER_NORMALISE"] == m)
         per100k = "NC (population active régionale INSEE non extraite)"
         if reg in actifs:
-            per100k = f"ESTIMATION {round(100000.0 * n / actifs[reg][0], 2)} (échantillon, INSEE {actifs[reg][0]})"
+            per100k = f"ESTIMATION {round(100000.0 * n / actifs[reg][0], 2)} offre(s) de l'échantillon pour 100 000 actifs (INSEE : {actifs[reg][0]:,} actifs)".replace(",", " ")
         elif reg in POP_2021:
             per100k = f"NC actifs ; ESTIMATION {round(100000.0 * n / (POP_2021[reg] * 1e6), 2)} offre(s) de l'échantillon pour 100 000 habitants (INSEE 2021 : {POP_2021[reg]} M hab.)"
         data.append([reg, FAMILLE_LABEL[fam], m, brut, n, pct(n, len(U)), per100k, contrats["CDI"], contrats["CDD"], contrats["ALTERNANCE"], contrats["STAGE"], contrats["FREELANCE"],
@@ -704,6 +732,9 @@ def build_competences(wb, rows, U, series):
                         ext.append([p.replace(".jsonl", ""), e.get("COMPETENCE") or e.get("THEME"), e.get("FAMILLE") or "", e.get("INDICATEUR") or e.get("RESULTAT"), e.get("VALEUR") or e.get("CHIFFRE"), e.get("PERIMETRE"), e.get("SOURCE"), e.get("DATE"), e.get("URL"), e.get("CITATION"), str(e.get("FIABILITE", "")).upper()])
                     except json.JSONDecodeError:
                         pass
+    for e in load_d_etudes():
+        if norm(e.get("THEME")) in ("competences", "ia_transformation", "international", "salaires"):
+            ext.append(["D_" + str(e.get("THEME")), e.get("TITRE"), "", e.get("METHODE"), e.get("RESULTAT_UTILISE"), e.get("PERIMETRE"), e.get("ORGANISME_OU_MEDIA"), e.get("DATE_PUBLICATION"), e.get("URL"), e.get("RESULTAT_UTILISE"), str(e.get("FIABILITE", "")).upper()])
     write_table(ws, r2 + 1, ["VOLET", "COMPETENCE_OU_THEME", "FAMILLE", "INDICATEUR / RESULTAT", "VALEUR", "PERIMETRE", "SOURCE", "DATE", "URL", "CITATION", "FIABILITE"], ext, "T_EXTERNES_COMPETENCES")
     return data
 

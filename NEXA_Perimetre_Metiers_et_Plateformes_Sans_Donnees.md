@@ -11,7 +11,7 @@
 
 ## PARTIE A — TAXONOMIE DES MÉTIERS
 
-Taxonomie initiale du brief complétée par les métiers découverts pendant la collecte. Nombre d'offres = offres uniques observées dans l'échantillon (1421 offres uniques dans le périmètre, 1687 lignes brutes).
+Taxonomie initiale du brief complétée par les métiers découverts pendant la collecte. Nombre d'offres = offres uniques observées dans l'échantillon (1450 offres uniques dans le périmètre, 1719 lignes brutes).
 
 ### Développeur web
 
@@ -23,7 +23,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Métier de référence
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulé générique du cœur de marché ; regroupé sous 'Développeur web (intitulé générique)' quand aucune techno ni couche n'est précisée.
-- OFFRES_OBSERVEES : 113 unique(s) / 152 brute(s)
+- OFFRES_OBSERVEES : 115 unique(s) / 155 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com "Développeur web" Toulouse emplois` ; `site:fr.indeed.com "Développeur web" Occitanie "emplois"` ; `site:fr.indeed.com "Développeur web" Montpellier emplois` ; `site:fr.indeed.com "Développeur web" Rennes emplois` ; `site:fr.indeed.com "Développeur web" Strasbourg emplois` ; `site:fr.indeed.com "Développeur web" Bretagne emplois`
 
 ### Développeur front-end
@@ -36,7 +36,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Couche présentation des applications web.
-- OFFRES_OBSERVEES : 89 unique(s) / 110 brute(s)
+- OFFRES_OBSERVEES : 91 unique(s) / 112 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur front-end React Angular Vue Paris` ; `site:welcometothejungle.com/fr/companies développeur front-end Paris` ; `site:candidat.francetravail.fr/offres/recherche/detail développeur front-end Paris` ; `site:apec.fr detail-offre développeur front-end OR back-end Paris` ; `site:welcometothejungle.com/fr/companies développeur front-end React Paris` ; `Indeed "Développeur Full Stack" OR "Développeur Front End" OR "Développeur Back End" France emplois "plus de"`
 
 ### Développeur back-end
@@ -62,7 +62,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulé dominant du marché : couvre front et back.
-- OFFRES_OBSERVEES : 382 unique(s) / 468 brute(s)
+- OFFRES_OBSERVEES : 392 unique(s) / 479 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur full stack Montpellier` ; `site:apec.fr detail-offre développeur full stack Paris` ; `site:welcometothejungle.com/fr/companies développeur full stack Paris CDI` ; `site:fr.indeed.com/viewjob développeur full stack Paris CDI` ; `site:fr.linkedin.com/jobs/view développeur full stack Paris` ; `site:candidat.francetravail.fr/offres/recherche/detail développeur full stack Île-de-France`
 
 ### Intégrateur web
@@ -88,7 +88,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulé des titres RNCP et de nombreuses ESN ; inclut le développement d'applications web.
-- OFFRES_OBSERVEES : 30 unique(s) / 41 brute(s)
+- OFFRES_OBSERVEES : 33 unique(s) / 44 brute(s)
 - REQUETES_UTILISEES : `Q062` ; `Q067` ; `Q073` ; `Q074` ; `Q076` ; `Q081`
 
 ### Développeur JavaScript / TypeScript
@@ -114,8 +114,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Écosystème web historique français (ESN, agences, éditeurs).
-- OFFRES_OBSERVEES : 39 unique(s) / 50 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur PHP Symfony Paris` ; `site:fr.indeed.com/viewjob développeur Symfony Paris` ; `Hellowork "Emploi Développeur front end" OR "Emploi Développeur back end" OR "Emploi Développeur PHP" OR "Emploi Développeur React" "Plus de" Offres` ; `site:welcometothejungle.com/fr/companies "Télétravail total" développeur Symfony OR Laravel OR PHP OR fullstack` ; `site:fr.indeed.com/viewjob développeur Symfony OR Laravel OR PHP "télétravail" "100%" OR "full remote"` ; `Q009`
+- OFFRES_OBSERVEES : 40 unique(s) / 51 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur PHP Symfony Paris` ; `"Développeur Symfony" France emplois Indeed "2025"	=> 0 offres (+7 volumes)` ; `site:fr.indeed.com/viewjob développeur Symfony Paris` ; `Hellowork "Emploi Développeur front end" OR "Emploi Développeur back end" OR "Emploi Développeur PHP" OR "Emploi Développeur React" "Plus de" Offres` ; `site:welcometothejungle.com/fr/companies "Télétravail total" développeur Symfony OR Laravel OR PHP OR fullstack` ; `site:fr.indeed.com/viewjob développeur Symfony OR Laravel OR PHP "télétravail" "100%" OR "full remote"`
 
 ### Développeur Java / Spring (web)
 
@@ -140,7 +140,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Stack web Microsoft, fréquente en ESN et éditeurs.
-- OFFRES_OBSERVEES : 48 unique(s) / 54 brute(s)
+- OFFRES_OBSERVEES : 52 unique(s) / 58 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur .NET C# Paris` ; `site:welcometothejungle.com/fr/companies développeur ".NET" OR Angular Paris CDI` ; `site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI` ; `site:fr.indeed.com/viewjob développeur ".NET" C# Paris CDI` ; `Q010` ; `Q015`
 
 ### Développeur Python / Django
@@ -153,7 +153,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Python web ; attention, beaucoup d'offres 'développeur Python' relèvent de la data (exclues si sans composante web).
-- OFFRES_OBSERVEES : 15 unique(s) / 16 brute(s)
+- OFFRES_OBSERVEES : 16 unique(s) / 17 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur Python Django Paris` ; `site:welcometothejungle.com/fr/companies développeur Python Django OR Ruby Paris CDI` ; `site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI` ; `site:fr.indeed.com/viewjob développeur Python Django OR FastAPI OR Flask Paris` ; `Q012` ; `Q032`
 
 ### Développeur CMS / e-commerce
@@ -205,7 +205,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulés sans précision de couche ni de techno ; rattachés au cœur de marché mais à lire avec prudence.
-- OFFRES_OBSERVEES : 38 unique(s) / 44 brute(s)
+- OFFRES_OBSERVEES : 40 unique(s) / 46 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com "Développeur web" Toulouse emplois` ; `site:fr.indeed.com "Développeur web" Occitanie "emplois"` ; `site:fr.indeed.com "Développeur web" Montpellier emplois` ; `site:fr.indeed.com "Développeur web" Rennes emplois` ; `site:fr.indeed.com "Développeur web" Strasbourg emplois` ; `site:fr.indeed.com "Développeur web" Bretagne emplois`
 
 ### Software Engineer / Ingénieur logiciel
@@ -219,7 +219,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Prolongement du développeur web vers l'ingénierie logicielle ; intitulé en progression.
 - OFFRES_OBSERVEES : 9 unique(s) / 10 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "software engineer" OR "architecte logiciel" Paris CDI` ; `Q017` ; `Q042` ; `site:fr.indeed.com/viewjob "software engineer" OR "tech lead" OR "lead developer" Bordeaux OR Mérignac	=> 6 offre(s) individuelle(s)` ; `"Software Engineer" OR "DevOps" OR "Développeur Back End" Nantes (44) Indeed emplois "plus de"	=> 0 (4 volumes nouveaux) offre(s) individuelle(s)` ; `"Développeur PHP" OR "Développeur Java" OR "Software Engineer" Bordeaux (33) Indeed emplois "plus de"	=> 0 (5 volumes dont 1 national 2024) offre(s) individuelle(s)`
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "software engineer" OR "architecte logiciel" Paris CDI` ; `Q017` ; `Q042` ; `site:apec.fr detail-offre "Software Engineer" F/H Paris	=> 8 offres (+0 volumes)` ; `site:fr.indeed.com/viewjob "software engineer" OR "tech lead" OR "lead developer" Bordeaux OR Mérignac	=> 6 offre(s) individuelle(s)` ; `"Software Engineer" OR "DevOps" OR "Développeur Back End" Nantes (44) Indeed emplois "plus de"	=> 0 (4 volumes nouveaux) offre(s) individuelle(s)`
 
 ### Application Developer
 
@@ -231,7 +231,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Regroupé avec 'Concepteur développeur d'applications' dans la normalisation.
-- OFFRES_OBSERVEES : 30 unique(s) / 41 brute(s)
+- OFFRES_OBSERVEES : 33 unique(s) / 44 brute(s)
 - REQUETES_UTILISEES : requêtes génériques par ville et par technologie (voir journaux)
 
 ### Product Engineer
@@ -271,7 +271,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Débouché adjacent naturel des développeurs JS (React Native) ; comptabilisé dans les évolutions, pas dans le cœur.
 - OFFRES_OBSERVEES : 50 unique(s) / 56 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur mobile "React Native" OR Flutter Paris` ; `site:fr.indeed.com/viewjob "développeur mobile" OR "React Native" OR Flutter Toulouse OR Rennes OR Grenoble OR Strasbourg OR Nice OR Montpellier` ; `Q019` ; `Q033` ; `Q172` ; `site:fr.indeed.com/viewjob "développeur mobile" OR Flutter OR "React Native" Marseille OR Lille	=> 2 (Nantes, Bordeaux ; aucune à Marseille/Lille) offre(s) individuelle(s)`
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur mobile "React Native" OR Flutter Paris` ; `site:fr.indeed.com/viewjob "développeur mobile" OR "React Native" OR Flutter Toulouse OR Rennes OR Grenoble OR Strasbourg OR Nice OR Montpellier` ; `Q019` ; `Q033` ; `Q172` ; `site:apec.fr detail-offre "Développeur mobile" OR "Développeur Flutter" OR "Développeur iOS" OR "Développeur Android" F/H	=> 1 offres (+0 volumes)`
 
 ### Tech Lead / Lead Developer
 
@@ -283,7 +283,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Évolution à 5+ ans ; cible de la communication Mastère.
-- OFFRES_OBSERVEES : 64 unique(s) / 67 brute(s)
+- OFFRES_OBSERVEES : 66 unique(s) / 69 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "Tech Lead" développeur web Paris OR Lyon` ; `site:fr.indeed.com/viewjob "tech lead" OR "lead développeur" Paris CDI` ; `site:welcometothejungle.com/fr/companies "tech lead" OR "lead développeur" OR "lead developer" Paris CDI` ; `Q022` ; `Q042` ; `Q172`
 
 ### Architecte logiciel / solutions
@@ -466,7 +466,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Rarement un intitulé autonome ; plutôt une compétence citée.
 - OFFRES_OBSERVEES : 1 unique(s) / 1 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "développeur IA" LLM RAG` ; `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France` ; `site:free-work.com "AI Engineer" OR "LLM" OR "IA générative" OR "RAG" mission` ; `Q099` ; `Q147`
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "développeur IA" LLM RAG` ; `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France` ; `site:free-work.com "AI Engineer" OR "LLM" OR "IA générative" OR "RAG" mission` ; `site:fr.linkedin.com/jobs/view "développeur full stack" "LLM" OR "RAG" OR "agents IA"	=> 7 offres (+0 volumes)` ; `Q099`
 
 ### Développeur d'agents IA
 
@@ -479,7 +479,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Émergent ; très peu d'offres.
 - OFFRES_OBSERVEES : 3 unique(s) / 3 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:welcometothejungle.com/fr/companies "LLM" OR "agents IA" OR "agentic" développeur OR engineer CDI` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France`
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:welcometothejungle.com/fr/companies "LLM" OR "agents IA" OR "agentic" développeur OR engineer CDI` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France` ; `site:fr.linkedin.com/jobs/view "développeur full stack" "LLM" OR "RAG" OR "agents IA"	=> 7 offres (+0 volumes)`
 
 ### AI Integration / Automation Developer
 
@@ -583,7 +583,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : EXCLU
 - JUSTIFICATION : Pas de développement (sauf 'chef de projet technique / dev', inclus au cas par cas).
 - OFFRES_OBSERVEES : 0 unique(s) / 0 brute(s) (0 = aucune offre remontée par les requêtes, pas une preuve d'absence sur le marché)
-- REQUETES_UTILISEES : requêtes génériques par ville et par technologie (voir journaux)
+- REQUETES_UTILISEES : `site:apec.fr detail-offre "Développeur" F/H Rennes - 35	=> 7 offres (+0 volumes) [exclus: data, C++, Product owner]`
 
 ### Data analyst sans développement web
 
@@ -613,8 +613,9 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 
 ### Autres intitulés normalisés apparus dans la collecte
 
-- Développeur logiciel hors web (embarqué, ERP, BI...) : 17 offre(s) unique(s)
+- Développeur logiciel hors web (embarqué, ERP, BI...) : 18 offre(s) unique(s)
 - Cybersécurité (hors développement, filière Cybersécurité) : 3 offre(s) unique(s)
+- Non classé : 1 offre(s) unique(s)
 
 ### Règles de classement appliquées
 
@@ -665,7 +666,7 @@ Toutes les plateformes ont d'abord été testées en accès direct (HTTP) : refu
 | Indeed | 450 | Données obtenues |
 | LinkedIn | 170 | Données obtenues |
 | Welcome to the Jungle | 280 | Données obtenues |
-| HelloWork | 277 | Données obtenues |
+| HelloWork | 306 | Données obtenues |
 | Meteojob | 1 | Données partielles |
 | Monster | 6 | Données partielles |
 | Talent.com | 15 | Données obtenues |
@@ -785,7 +786,7 @@ Toutes les plateformes ont d'abord été testées en accès direct (HTTP) : refu
 
 ### B.5 — Journaux de requêtes
 
-709 requêtes journalisées (fichiers `collecte/*_journal.txt`). Extrait :
+812 requêtes journalisées (fichiers `collecte/*_journal.txt`). Extrait :
 
 - `site:fr.indeed.com "Développeur web" Toulouse emplois | offres individuelles: 0 | volumes: oui`
 - `site:fr.indeed.com "Développeur web" Occitanie "emplois" | offres individuelles: 0 | volumes: oui`

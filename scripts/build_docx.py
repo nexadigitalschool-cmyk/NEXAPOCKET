@@ -390,6 +390,12 @@ def main():
     p(doc, "Chaque entrée : TITRE ; ORGANISME_OU_MEDIA ; AUTEUR ; DATE_PUBLICATION ; DATE_CONSULTATION ; URL_COMPLETE_CLIQUABLE ; PERIMETRE ; RESULTAT_UTILISE ; PAGE_SI_PDF ; FIABILITE. Les sources nationales et régionales de fiabilité FORTE ou MOYENNE utilisées dans le texte sont listées d'abord, puis les sources salaires, compétences et IA.", italic=True)
     seen = set()
     entries = []
+    for s_ in load_d_etudes():
+        url = s_.get("URL")
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        entries.append((s_.get("TITRE"), s_.get("ORGANISME_OU_MEDIA"), s_.get("AUTEUR") or "non indiqué", s_.get("DATE_PUBLICATION"), s_.get("DATE_CONSULTATION") or DATE, url, s_.get("PERIMETRE"), s_.get("RESULTAT_UTILISE"), s_.get("PAGE_DU_RAPPORT") or "-", s_.get("FIABILITE")))
     for s_ in studies:
         url = s_.get("URL_COMPLETE") or s_.get("URL")
         if not url or url in seen:

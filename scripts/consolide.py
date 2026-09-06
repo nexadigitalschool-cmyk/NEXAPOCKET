@@ -143,11 +143,73 @@ def main():
         r["OUTIL_CODAGE_IA_CITE"] = " ; ".join(skills.get("OUTILS_DE_CODAGE_IA", [])) or "Non"
         r["STATUT_DONNEE"] = "OBSERVE"
 
-    # ---- dédoublonnage ----
-    by_url = {}
+    # ---- enrichissements (vague D : mêmes URL, champs complémentaires) ----
     for r in rows:
         r["_curl"] = canonical_url(r.get("URL"))
-    order = sorted(rows, key=lambda r: (r["_fichier"], r.get("ID_OFFRE", "")))
+    primaries = {}
+    for r in rows:
+        if norm(r.get("ENRICHISSEMENT")).startswith("oui"):
+            continue
+        primaries.setdefault(r["_curl"], r)
+    n_enr = n_enr_fields = 0
+    for r in rows:
+        if not norm(r.get("ENRICHISSEMENT")).startswith("oui"):
+            continue
+        prim = primaries.get(r["_curl"])
+        if prim is None or prim is r:
+            r["ENRICHISSEMENT"] = "Non (URL nouvelle)"
+            primaries.setdefault(r["_curl"], r)
+            continue
+        merged = []
+        for k, v in r.items():
+            if k.startswith("_") or k in ("ID_OFFRE", "SOURCE", "SOURCE_BRUTE", "URL", "ENRICHISSEMENT", "REQUETE", "PREUVE", "DATE_COLLECTE"):
+                continue
+            if is_nc(prim.get(k)) and not is_nc(v):
+                prim[k] = v
+                merged.append(k)
+        if merged:
+            prim["PREUVE"] = str(prim.get("PREUVE", "")) + " | Enrichissement " + r.get("ID_OFFRE", "") + " : " + str(r.get("PREUVE", ""))[:400]
+            prim["ENRICHI_PAR"] = (prim.get("ENRICHI_PAR", "") + " ; " if prim.get("ENRICHI_PAR") else "") + r.get("ID_OFFRE", "") + " (" + ", ".join(merged) + ")"
+            n_enr_fields += len(merged)
+        r["STATUT_DOUBLON"] = "ENRICHISSEMENT"
+        r["DOUBLON_DE"] = prim.get("ID_OFFRE", "")
+        n_enr += 1
+    print("Enrichissements fusionnés :", n_enr, "lignes,", n_enr_fields, "champs complétés")
+    # re-normaliser les lignes enrichies (contrat, séniorité, salaire, télétravail, compétences)
+    for r in rows:
+        if not r.get("ENRICHI_PAR"):
+            continue
+        title = r.get("INTITULE_BRUT", "")
+        tv = norm(r.get("TELETRAVAIL"))
+        if not is_nc(r.get("TELETRAVAIL")) and r.get("TELETRAVAIL_NORMALISE") == NC:
+            if tv.startswith("oui") or "full" in tv or "100" in tv or "total" in tv:
+                r["TELETRAVAIL_NORMALISE"] = "Oui"
+            elif tv.startswith("non"):
+                r["TELETRAVAIL_NORMALISE"] = "Non"
+            else:
+                r["TELETRAVAIL_NORMALISE"] = "Partiel"
+        r["TYPE_CONTRAT_NORMALISE"] = normalize_contract(r.get("TYPE_CONTRAT"), title)
+        sen, origine = normalize_seniority(r.get("EXPERIENCE"), title, r["TYPE_CONTRAT_NORMALISE"])
+        r["SENIORITE"] = sen
+        r["SENIORITE_ORIGINE"] = origine
+        smin, smax, unit, raw = parse_salary(r.get("SALAIRE_MINIMUM"), r.get("SALAIRE_MAXIMUM"), r["TYPE_CONTRAT_NORMALISE"])
+        r["SALAIRE_MIN_NUM"] = smin
+        r["SALAIRE_MAX_NUM"] = smax
+        r["SALAIRE_UNITE"] = unit
+        r["SALAIRE_MEDIAN_OFFRE"] = (smin + smax) / 2 if smin and smax else (smin or smax)
+        skills = extract_skills(r)
+        r["_skills"] = skills
+        for fam_s in list(k[5:] for k in r if k.startswith("COMP_")):
+            r.pop("COMP_" + fam_s, None)
+        for fam_s, items in skills.items():
+            r["COMP_" + fam_s] = " ; ".join(items)
+        ia_expl = not is_nc(r.get("COMPETENCES_IA"))
+        r["MENTION_IA_EXPLICITE"] = "Oui" if (ia_expl or "IA_GENERATIVE" in skills or "OUTILS_DE_CODAGE_IA" in skills) else "Non"
+        r["OUTIL_CODAGE_IA_CITE"] = " ; ".join(skills.get("OUTILS_DE_CODAGE_IA", [])) or "Non"
+
+    # ---- dédoublonnage ----
+    by_url = {}
+    order = sorted([r for r in rows if r.get("STATUT_DOUBLON") != "ENRICHISSEMENT"], key=lambda r: (r["_fichier"], r.get("ID_OFFRE", "")))
     clusters = {}
     cluster_of = {}
     for r in order:
@@ -194,6 +256,8 @@ def main():
     for f in VOLUME_FILES:
         for v in load_jsonl(f):
             v["_fichier"] = os.path.basename(f)
+            v["SOURCE_BRUTE"] = v.get("SOURCE", NC)
+            v["SOURCE"] = canon_source(v.get("SOURCE"))
             vols.append(v)
     # dédoublonner volumes identiques (URL + date + nombre)
     seenv = set()
