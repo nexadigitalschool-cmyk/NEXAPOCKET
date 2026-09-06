@@ -184,3 +184,9 @@ site:welcometothejungle.com/fr/companies développeur CDI Grenoble OR Annecy OR 
 site:welcometothejungle.com/fr/companies développeur CDI Rouen OR Caen OR Reims OR Amiens OR Dijon OR Tours OR Orléans | offres retenues: 5
 site:fr.indeed.com/viewjob développeur Shopify OR WordPress OR PrestaShop Toulouse OR Rennes OR Montpellier OR Strasbourg OR Nantes | offres retenues: 2
 site:fr.indeed.com/viewjob "développeur mobile" OR "React Native" OR Flutter Toulouse OR Rennes OR Grenoble OR Strasbourg OR Nice OR Montpellier | offres retenues: 1
+site:fr.indeed.com/viewjob développeur Angular Paris CDI | offres retenues: 7
+site:fr.indeed.com/viewjob développeur Node.js OR TypeScript Paris CDI | offres retenues: 3
+site:fr.indeed.com/viewjob développeur Python Django OR FastAPI OR Flask Paris | offres retenues: 4
+site:fr.indeed.com/viewjob développeur ".NET" C# Paris CDI | offres retenues: 6
+Indeed "Développeur Web" emplois "plus de" "Hauts-de-Seine" OR "Seine-Saint-Denis" OR "Val-de-Marne" OR Yvelines OR Essonne OR "Val-d'Oise" | offres retenues: 0
+Hellowork "Emploi Développeur" "Plus de" Offres "Hauts-de-Seine" OR "Seine-Saint-Denis" OR "Val-de-Marne" OR Yvelines OR Essonne OR "Val-d'Oise" | offres retenues: 0
