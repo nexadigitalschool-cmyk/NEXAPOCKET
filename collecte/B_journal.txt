@@ -166,3 +166,9 @@ site:fr.indeed.com/viewjob développeur web Orléans OR Bourges OR Chartres OR B
 site:fr.indeed.com/viewjob développeur web Pau OR Bayonne OR Tarbes OR Limoges OR Angoulême OR Niort | offres retenues: 3
 site:fr.indeed.com/viewjob développeur web Caen OR Cherbourg OR Évreux OR "Saint-Lô" OR Alençon | offres retenues: 0
 site:fr.indeed.com/viewjob développeur web Amiens OR Beauvais OR Compiègne OR Valenciennes OR Arras OR Dunkerque | offres retenues: 1
+Hellowork "Emploi Testeur QA" OR "Emploi DevOps" "Plus de" Offres Toulouse OR Rennes OR Nantes OR Bordeaux OR Lille OR Lyon | offres retenues: 0
+Indeed "Développeur Web" emplois "plus de" Lyon OR Marseille OR Bordeaux OR Lille OR Nantes | offres retenues: 0
+Indeed "Ingénieur IA" OR "AI Engineer" OR "Intelligence Artificielle" emplois "plus de" Toulouse OR Nantes OR Bordeaux OR Lille OR Montpellier OR Rennes | offres retenues: 1
+site:hellowork.com/fr-fr/emplois "Cloud Engineer" OR "Ingénieur Cloud" AWS OR Azure Toulouse OR Nantes OR Lyon OR Rennes OR Bordeaux | offres retenues: 4
+site:hellowork.com/fr-fr/emplois "Testeur QA" OR "QA Engineer" Toulouse OR Rennes OR Strasbourg OR Lyon OR Bordeaux OR Grenoble | offres retenues: 6
+site:fr.indeed.com/viewjob "Green IT" OR "éco-conception" OR "numérique responsable" développeur OR ingénieur | offres retenues: 3
