@@ -260,7 +260,7 @@ def tension_level(n_offres, ia_flag=False, evol=None, senior_share=None, famille
 def load_d_etudes():
     out = []
     import glob as _glob
-    for fp in sorted(_glob.glob(os.path.join(COLLECTE_DIR, "D*_etudes.jsonl"))):
+    for fp in sorted(_glob.glob(os.path.join(COLLECTE_DIR, "[DE]*_etudes.jsonl"))):
         for i, line in enumerate(open(fp, encoding="utf-8")):
             line = line.strip()
             if not line:

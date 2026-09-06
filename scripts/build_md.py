@@ -109,7 +109,7 @@ def load_platform_logs():
 
 def load_study_gaps():
     rows = []
-    for f in sorted(glob.glob(os.path.join(ETUDES_DIR, "*sans_donnees.jsonl")) + glob.glob(os.path.join(COLLECTE_DIR, "C_sans_donnees.jsonl")) + glob.glob(os.path.join(COLLECTE_DIR, "D*_sans_donnees.jsonl"))):
+    for f in sorted(glob.glob(os.path.join(ETUDES_DIR, "*sans_donnees.jsonl")) + glob.glob(os.path.join(COLLECTE_DIR, "C_sans_donnees.jsonl")) + glob.glob(os.path.join(COLLECTE_DIR, "[DE]*_sans_donnees.jsonl"))):
         for line in open(f, encoding="utf-8"):
             line = line.strip()
             if line:

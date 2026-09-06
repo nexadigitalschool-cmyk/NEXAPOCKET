@@ -39,7 +39,7 @@ RULES = [
     (r"^(?!.*\b(developpeur|developpeuse|developer|full ?stack|fullstack|ingenieur|engineer)\b).*\b(webmarketing|web marketing|content manager|community manager|traffic manager|referenceur|seo manager|consultant seo|redacteur|\bseo\b)\b", "Exclu : marketing / contenu / SEO", EXCLU),
     (r"^(?!.*\b(developpeur|developpeuse|developer|full ?stack|fullstack|integrateur)\b).*\b(webdesigner|web designer|ux designer|ui designer|graphiste|product designer|designer)\b", "Exclu : design sans développement", EXCLU),
     (r"\b(data analyst|analyste data|business analyst|data scientist)\b", "Exclu : data sans développement web", EXCLU),
-    (r"\b(commercial|business developer|sales|account manager|recruteur|charge de recrutement|talent acquisition)\b", "Exclu : commercial / RH", EXCLU),
+    (r"\b(commercial|business developer|sales|account manager|recruteur|charge de recrutement|talent acquisition|evangelist)\b", "Exclu : commercial / RH", EXCLU),
     (r"\b(formateur|formatrice|intervenant|enseignant|professeur|formation)\b", "Exclu : formation / enseignement", EXCLU),
     (r"\b(chef de projet|cheffe de projet|project manager|product owner|product manager|scrum master)\b(?!.*(dev|technique))", "Exclu : gestion de projet sans programmation", EXCLU),
     (r"\b(technicien support|support informatique|helpdesk|administrateur systeme|administrateur reseau|sysadmin|support engineer)\b", "Exclu : support / administration systèmes", EXCLU),
@@ -48,7 +48,7 @@ RULES = [
     # Métiers émergents liés à l'IA (composante développement)
     (r"\b(prompt engineer)\b", "Prompt Engineer (avec composante développement)", IA),
     (r"\b(stage|stagiaire|alternance|alternant|alternante)\b.*\b(ia|ai|llm|intelligence artificielle|genai|generative)\b", "AI Engineer / Développeur IA", IA),
-    (r"\b(llm|large language|genai|gen ai|generative ai|ia generative|generative|generatif|generative)\b.*\b(engineer|ingenieur|developpeur|developer|dev)\b|\b(engineer|ingenieur|developpeur|developer)\b.*\b(llm|genai|gen ai|generative|ia generative|generatif)\b", "LLM / Generative AI Engineer", IA),
+    (r"\b(llmops|ai engineering)\b|\b(llm|large language|genai|gen ai|generative ai|ia generative|generative|generatif|generative)\b.*\b(engineer|ingenieur|developpeur|developer|dev)\b|\b(engineer|ingenieur|developpeur|developer)\b.*\b(llm|genai|gen ai|generative|ia generative|generatif)\b", "LLM / Generative AI Engineer", IA),
     (r"\brag\b", "Développeur RAG / applications LLM", IA),
     (r"\b(agent(s)? ia|agents? ai|agentic|ai agent|multi-agent|agent builder)\b", "Développeur d'agents IA", IA),
     (r"\b(ai integration|integration ia|ai automation|automation developer|developpeur automatisation|automatisation)\b", "AI Integration / Automation Developer", IA),
@@ -76,7 +76,7 @@ RULES = [
     (r"\b(api)\b(?!.*full)", "Développeur API / intégration", EVOL),
 
     # Métiers adjacents (hors web)
-    (r"\b(embarque|embedded|c\+\+|firmware|automaticien|plc|sap|abap|cobol|mainframe|as400|powerbuilder|windev|salesforce|servicenow|erp|dynamics|business central|sharepoint|talend|bi\b|power bi|finops|robotique|perception|simulation|calcul scientifique)\b", "Développeur logiciel hors web (embarqué, ERP, BI...)", ADJ),
+    (r"\b(embarque|embedded|c\+\+|firmware|automaticien|plc|sap|abap|cobol|mainframe|as400|powerbuilder|windev|salesforce|servicenow|erp|dynamics|business central|sharepoint|talend|bi\b|power bi|decisionnel|finops|robotique|perception|simulation|calcul scientifique)\b", "Développeur logiciel hors web (embarqué, ERP, BI...)", ADJ),
 
     # Cœur de marché
     (r"\b(full ?stack|fullstack|full-stack)\b", "Développeur full stack", COEUR),
@@ -91,8 +91,8 @@ RULES = [
     (r"\b(react|reactjs|angular|angularjs|vue|vuejs|vue\.js|node|nodejs|node\.js|javascript|typescript|\bjs\b|nextjs|next\.js|nuxt|svelte|nest|nestjs)\b", "Développeur JavaScript / TypeScript", COEUR),
     (r"\b(ruby|rails)\b", "Développeur Ruby on Rails", COEUR),
     (r"\b(go|golang|rust|scala|elixir|kotlin)\b", "Développeur logiciel (autre langage web/back)", COEUR),
-    (r"\b(concepteur developpeur|concepteur|developpeur d'applications|developpeur applications|developpeur applicatif|application developer|developpeur logiciel|software developer|developpeur informatique|developpement informatique|developpement logiciel|developpement d'applications)\b", "Concepteur développeur d'applications / logiciel", COEUR),
-    (r"\b(software engineer|software development engineer|ingenieur logiciel|ingenieur developpement|ingenieur d'etudes|ingenieur etudes|ingenieur en developpement|ingenieur r&d|ingenieur developpeur|ingenieur software|ingenieur informatique|ingenieur e en developpement|ingenieur e developpement|ingenieur en informatique)\b", "Software Engineer / Ingénieur logiciel", EVOL),
+    (r"\b(concepteur developpeur|concepteur|developpeur d'applications|developpeur applications|developpeur applicatif|application developer|developpeur logiciel|software developer|developpeur informatique|developpement informatique|developpement logiciel|developpement d'applications|informaticien d'application|informaticien d'applications|informaticienne d'application|informaticien.{0,25}d'application|expert applications metiers|programmateur)\b", "Concepteur développeur d'applications / logiciel", COEUR),
+    (r"\b(software engineer|software development engineer|ingenieur de developpement|ingenieur logiciel|ingenieur developpement|ingenieur d'etudes|ingenieur etudes|ingenieur en developpement|ingenieur r&d|ingenieur developpeur|ingenieur software|ingenieur informatique|ingenieur e en developpement|ingenieur e developpement|ingenieur en informatique)\b", "Software Engineer / Ingénieur logiciel", EVOL),
     (r"\b(web|developpement web)\b", "Développeur web (intitulé générique)", COEUR),
     (r"\b(developpeur|developpeuse|developer|dev|programmeur|codeur)\b", "Développeur (intitulé générique)", COEUR),
     (r"\b(bts sio|services informatiques aux organisations|slam)\b", "Développeur (intitulé générique)", COEUR),
@@ -115,6 +115,7 @@ def classify_title(title):
     t = norm(title)
     t = t.replace("h/f", " ").replace("f/h", " ").replace("(h/f)", " ").replace("h/f/x", " ").replace("f/h/x", " ")
     t = re.sub(r"\b(ingenieur|developpeur|concepteur|architecte|consultant)[- ]e\b", r"\1", t)
+    t = re.sub(r"\((e|se|euse|rice|ne)\)", "", t)  # ingénieur(e), développeur(se)
     t = re.sub(r"[\(\)\[\]\-–—/,:;|]+", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     # Cas particulier : "chef de projet technique / dev" => évolution
