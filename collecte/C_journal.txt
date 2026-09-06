@@ -167,3 +167,15 @@ Q165 | V4 | Nouvelle-Aquitaine OR Occitanie OR "Pays de la Loire" filière numé
 Q166 | V4 | BMO 2026 Pays de la Loire projets de recrutement total 2026 France Travail communiqué part difficile Loire-Atlantique Nantes
 Q167 | V1 | site:hellowork.com "Emploi" développeur OR informatique "Offres" "2025" -2026 "Hellowork" plus de
 Q168 | V1 | site:fr.indeed.com "Développeur" OR "Developpeur" "offres d'emploi" "2024" Lyon OR Lille OR Bordeaux OR Nantes OR Marseille OR Toulouse "plus de"
+Q169 | V3 | hellowork.com "barometre-hellowork-offres-ia" offres mentionnant l'IA part des offres informatique 2025 2026 chiffres baromètre HelloWork IA
+Q170 | V3 | Apec offres d'emploi cadres mentionnant "intelligence artificielle" 2025 hausse 89 % étude Apec IA offres développeur part (89 % non retrouvé sur source Apec)
+Q171 | V3 | Free-Work blog 2026 IA développeur junior "premier emploi" marché juniors IA générative France article
+Q172 | V1 | site:fr.indeed.com "DevOps" OR "Data Engineer" OR "Tech Lead" OR "Développeur Mobile" OR "QA" "offres d'emploi" OR "emplois" "2025" "plus de"
+Q173 | V2 | site:fr.indeed.com "Docker" OR "Kubernetes" OR "Terraform" OR "AWS" OR "Next Js" OR "GraphQL" emplois 2026 "plus de"
+Q174 | V1 | site:hellowork.com "Emploi" "Développeur" react OR python ... Lyon OR Lille OR Bordeaux OR Nantes OR Marseille (offres unitaires, pas de compte)
+Q175 | V1 | site:fr.indeed.com "Développeur" OR "Developpeur" "emplois" "janvier 2025" ... "juin 2025" "plus de"
+Q176 | V4 | INSEE "Activité, emploi et chômage en 2025" population active régions 2025 actifs par région tableau (pas de tableau ; chômage régional)
+Q177 | V4 | Dares "tensions sur le marché du travail en 2024" ingénieurs de l'informatique indicateur de tension valeur
+Q178 | V4 | Apec "métiers cadres porteurs" 2026 région ... développeur rang offres région (pas de classement régional)
+Q179 | V1/V3 | HelloWork baromètre alternance 2026 offres alternance informatique développeur ralentissement 2025 chiffres
+Q180 | V3 | Apec jeunes diplômés 2026 informatique taux d'emploi insertion baromètre "jeunes diplômés" ingénieurs informatique IA baisse embauches chiffres
