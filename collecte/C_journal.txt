@@ -71,3 +71,27 @@ Q069 | V2 | Malt baromètre freelance tech 2026 compétences les plus recherché
 Q070 | V2 | SQL PostgreSQL MongoDB bases de données compétence offres d'emploi développeur France 2026 Indeed emplois
 Q071 | V2 | Azure GCP cloud compétences offres d'emploi France 2026 Indeed "emplois" Azure OR GCP développeur
 Q072 | V2 | CI/CD GitLab Jenkins Agile Scrum compétences offres d'emploi développeur France 2026 Indeed emplois
+Q073 | V2 | Le Monde Informatique "demande en développeurs" 2025 Apec érode offres langages compétences les plus citées
+Q074 | V2 | Apec "compétences" les plus recherchées offres cadres informatique 2025 langages Java JavaScript Python part des offres développeur
+Q075 | V2 | site:fr.indeed.com "Node Js" OR "Nodejs" OR "Python" OR "C#" emplois 2026 "plus de"
+Q076 | V2/V4 | France Travail fiche ROME M1805 développeur informatique compétences savoir-faire tendances recrutement 2025 2026
+Q077 | V2 | Welcome to the Jungle OR Talent.com OR Glassdoor étude 2026 compétences tech les plus demandées France développeurs classement offres
+Q078 | V1/V3 | "Développeur IA" OR "Développeur Intelligence Artificielle" emplois Indeed 2026 site:fr.indeed.com "plus de"
+Q079 | V2 | free-work.com "Salaires IT par technologie" 2026 France Java Python React Angular .NET salaires par techno
+Q080 | V2 | survey.stackoverflow.co 2025 TypeScript percentage "TypeScript" used professional developers Python Java C# percentage
+Q081 | V2/V4 | Apec "métiers cadres porteurs" 2025 OR 2026 informatique développeur données IA cloud offres part
+Q082 | V2 | WeLoveDevs statistiques 2025 OR 2026 offres développeurs France technologies les plus demandées salaires
+Q083 | V2 | Global Knowledge "baromètre emploi informatique" 2025 OR 2026 compétences les plus demandées offres France
+Q084 | V2 | Hays OR "Robert Half" OR Michael Page guide salaires 2026 France développeurs compétences les plus recherchées tech
+Q085 | V3 | hiringlab.org/fr intelligence artificielle offres d'emploi France part des offres mentionnant l'IA 2025 OR 2026 développement logiciel
+Q086 | V3 | Indeed Hiring Lab "AI" job postings July 2026 software development postings share mentioning AI GenAI
+Q087 | V3 | Stack Overflow Developer Survey 2025 AI tools usage percentage developers use AI trust accuracy
+Q088 | V3 | JetBrains State of Developer Ecosystem 2025 AI coding assistants adoption percentage developers regularly use AI
+Q089 | V3 | GitHub Octoverse 2025 France developers growth Copilot TypeScript most used language AI (pas de donnée France)
+Q090 | V3 | Stanford "Canaries in the Coal Mine" 2025 Brynjolfsson young software developers employment decline 22-25 AI exposed
+Q091 | V3 | Anthropic Economic Index 2025 OR 2026 software development share of Claude usage coding automation augmentation percentage France
+Q092 | V3 | Dares OR "France Stratégie" OR "Conseil d'analyse économique" IA générative emploi développeurs informatique exposition métiers étude 2025 2026
+Q093 | V3 | OPIIEC "IA générative" métiers du numérique étude impact développeur compétences 2025 OR 2026
+Q094 | V3 | Numeum OR Syntec IA générative impact emploi développeurs juniors ESN recrutement 2026 déclaration
+Q095 | V3 | Capgemini OR "Sopra Steria" OR Atos OR CGI OR "Accenture France" juniors IA générative recrutement développeurs 2026 baisse embauches jeunes diplômés
+Q096 | V3 | "développeur augmenté" IA fiche métier Onisep OR "France Travail" OR Apec OR école 2026 compétences IA développeur (pas de fiche 'développeur augmenté' trouvée)
