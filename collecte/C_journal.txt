@@ -41,3 +41,33 @@ Q039 | V1 | Indeed "Développeur" "Nantes (44)" OR "Toulouse (31)" OR "Aix-en-Pr
 Q040 | V1 | Indeed "offres d'emploi" "2024" "Développeur Web" OR "Développeur Full Stack" OR "Développeur Java" OR "Développeur PHP" site:fr.indeed.com
 Q041 | V1 | Hellowork "Emploi Développeur" Lyon OR Lille OR Bordeaux OR Nantes OR Marseille "Offres" 2026 (aucune page ville)
 Q042 | V1 | Indeed "offres d'emploi" "2024" "DevOps" OR "Software Engineer" OR "Ingénieur Logiciel" OR "Data Scientist" OR "Tech Lead" site:fr.indeed.com
+Q043 | V1 | site:fr.indeed.com "Développeur Web" OR "Developpeur Web" emplois "janvier 2025" OR "février 2025" OR "mars 2025" OR "avril 2025" OR "mai 2025"
+Q044 | V1 | site:fr.indeed.com "Développeur Full Stack" OR "Developpeur Full Stack" OR "Développeur Fullstack" "offres d'emploi" OR "emplois" 2024 OR 2025
+Q045 | V1 | site:hellowork.com "Emploi Développeur" "Lyon (69000)" OR "Lille (59000)" OR "Bordeaux (33000)" OR "Nantes (44000)" OR "Marseille (13000)" Offres
+Q046 | V1 | site:fr.indeed.com "Développeur Freelance" OR "Developpeur Freelance" OR "Développeur Télétravail" OR "Developpeur Teletravail" emplois
+Q047 | V1 | site:fr.indeed.com "Développeur Vue" OR "Developpeur Vue Js" OR "Développeur Vuejs" OR "Développeur Nuxt" OR "Développeur Next" emplois
+Q048 | V1 | site:fr.indeed.com "Développeur Java" OR "Développeur Front End" OR "Développeur Back End" OR "Développeur PHP" "offres d'emploi" 2024
+Q049 | V2 | compétences les plus demandées développeur 2026 France offres d'emploi langages frameworks classement
+Q050 | V2 | technologies les plus recherchées offres d'emploi développeurs France 2026 étude part des offres
+Q051 | V2 | React vs Angular vs Vue offres d'emploi France 2026 nombre d'offres comparatif
+Q052 | V2 | Free-Work baromètre 2026 compétences technologies les plus demandées missions freelance IT France
+Q053 | V2 | HelloWork étude 2025 OR 2026 métiers tech compétences les plus recherchées offres développeur
+Q054 | V2 | Indeed Hiring Lab France 2025 OR 2026 offres tech logiciel compétences tendances
+Q055 | V2 | Java Spring part des offres d'emploi développeurs France 2025 2026 étude langage le plus demandé
+Q056 | V2 | PHP Symfony marché de l'emploi 2026 France offres développeur Symfony demande étude
+Q057 | V2 | TypeScript demande offres d'emploi France 2025 2026 part des offres front-end
+Q058 | V2 | Docker Kubernetes AWS compétences offres d'emploi développeurs France 2026 part des offres cloud DevOps
+Q059 | V2 | tests automatisés offres d'emploi développeur France 2026 TDD Cypress Playwright Jest compétence demandée
+Q060 | V2 | sécurité applicative DevSecOps OWASP compétence offres d'emploi développeurs France 2026
+Q061 | V2 | soft skills développeurs les plus demandées offres d'emploi France 2025 2026 étude
+Q062 | V2 | anglais exigé offres d'emploi développeurs informatique France part des offres étude 2025 2026 (pas de part précise ; trouvé Apec 2025 -20 %)
+Q063 | V2 | Stack Overflow Developer Survey 2025 most popular technologies languages JavaScript Python TypeScript percentage
+Q064 | V2 | JetBrains State of Developer Ecosystem 2025 results languages TypeScript Python Rust Go percentage
+Q065 | V2 | State of JS 2025 results React Vue Angular Svelte usage percentage frameworks (retourne SO 2025 frameworks)
+Q066 | V2 | CoderPad CodinGame tech hiring survey 2025 OR 2026 langages les plus demandés recruteurs JavaScript Python Java
+Q067 | V2 | Apec étude 2026 développeurs offres cadres informatique 2025 baisse 20 % compétences recherchées ESN débutants
+Q068 | V2 | Numeum OR OPIIEC étude 2025 OR 2026 compétences numérique développeurs besoins recrutement métiers en tension
+Q069 | V2 | Malt baromètre freelance tech 2026 compétences les plus recherchées développeurs IA TJM France
+Q070 | V2 | SQL PostgreSQL MongoDB bases de données compétence offres d'emploi développeur France 2026 Indeed emplois
+Q071 | V2 | Azure GCP cloud compétences offres d'emploi France 2026 Indeed "emplois" Azure OR GCP développeur
+Q072 | V2 | CI/CD GitLab Jenkins Agile Scrum compétences offres d'emploi développeur France 2026 Indeed emplois
