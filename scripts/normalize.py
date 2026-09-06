@@ -55,7 +55,7 @@ RULES = [
     (r"\b(low[- ]?code|no[- ]?code|power platform|power apps|outsystems|mendix|bubble)\b", "Low-code / No-code Developer", IA),
     (r"\b(machine learning|ml engineer|mlops|data engineer|deep learning|computer vision|nlp)\b", "Machine Learning / Data Engineer", ADJ),
     (r"\b(ai|ia)\b.*\b(software|application|app|full ?stack|fullstack|web|backend|back-end|frontend|front-end)\b.*\b(engineer|ingenieur|developpeur|developer)\b|\b(developpeur|developer|ingenieur|engineer)\b.*\b(full ?stack|fullstack|web|software|application)\b.*\b(ai|ia)\b", "AI Software / Application Engineer", IA),
-    (r"\b(ai engineer|ia engineer|ingenieur ia|ingenieur ai|ingenieur intelligence artificielle|ai developer|developpeur ia|developpeur ai|developpeur intelligence artificielle|developpeur en ia|applied ai|forward deployed|ai skills engineer|ai deployment engineer|alternance ia|alternant ia|stage ia|ia specialist|ai specialist|generative artificial intelligence specialist)\b|\b(intelligence artificielle)\b.*\b(developpeur|ingenieur|engineer|developer)\b|\b(developpeur|ingenieur|engineer|developer)\b.*\b(intelligence artificielle|\bia\b|\bai\b)", "AI Engineer / Développeur IA", IA),
+    (r"\b(ai consultant|consultant ia|consultant intelligence artificielle|ai engineer|ia engineer|ingenieur ia|ingenieur ai|ingenieur intelligence artificielle|ai developer|developpeur ia|developpeur ai|developpeur intelligence artificielle|developpeur en ia|applied ai|forward deployed|ai skills engineer|ai deployment engineer|alternance ia|alternant ia|stage ia|ia specialist|ai specialist|generative artificial intelligence specialist)\b|\b(intelligence artificielle)\b.*\b(developpeur|ingenieur|engineer|developer)\b|\b(developpeur|ingenieur|engineer|developer)\b.*\b(intelligence artificielle|\bia\b|\bai\b)", "AI Engineer / Développeur IA", IA),
 
     # Spécialisations
     (r"\b(site reliability|sre)\b", "Site Reliability Engineer (SRE)", SPEC),
@@ -63,7 +63,7 @@ RULES = [
     (r"\b(devsecops|appsec|securite applicative|application security|pentester|pentest|securite)\b", "Ingénieur sécurité applicative / DevSecOps", SPEC),
     (r"\b(devops|dev ops|netdevops)\b", "DevOps Engineer", SPEC),
     (r"\b(cloud engineer|ingenieur cloud|cloud architect|architecte cloud|cloud native|aws engineer|azure engineer|gcp engineer|developpeur cloud|expert cloud|cloud expert|consultant cloud)\b", "Cloud Engineer", SPEC),
-    (r"\b(qa|sdet|test automation|automatisation des tests|testeur|test engineer|quality assurance|ingenieur test|automaticien|engineer in test)\b", "QA / Test Automation Engineer", SPEC),
+    (r"\b(qa|sdet|test automation|automatisation des tests|testeur|test engineer|quality assurance|ingenieur test|automaticien|engineer in test|test et recette|recette)\b", "QA / Test Automation Engineer", SPEC),
     (r"\b(accessibilite|rgaa|wcag)\b", "Développeur spécialisé accessibilité", SPEC),
     (r"\b(green it|eco-?conception|ecoconception|numerique responsable)\b", "Développeur Green IT / éco-conception", SPEC),
 
@@ -92,9 +92,10 @@ RULES = [
     (r"\b(ruby|rails)\b", "Développeur Ruby on Rails", COEUR),
     (r"\b(go|golang|rust|scala|elixir|kotlin)\b", "Développeur logiciel (autre langage web/back)", COEUR),
     (r"\b(concepteur developpeur|concepteur|developpeur d'applications|developpeur applications|developpeur applicatif|application developer|developpeur logiciel|software developer|developpeur informatique|developpement informatique|developpement logiciel|developpement d'applications)\b", "Concepteur développeur d'applications / logiciel", COEUR),
-    (r"\b(software engineer|ingenieur logiciel|ingenieur developpement|ingenieur d'etudes|ingenieur etudes|ingenieur en developpement|ingenieur r&d|ingenieur developpeur|ingenieur software|ingenieur informatique|ingenieur e en developpement|ingenieur e developpement|ingenieur en informatique)\b", "Software Engineer / Ingénieur logiciel", EVOL),
+    (r"\b(software engineer|software development engineer|ingenieur logiciel|ingenieur developpement|ingenieur d'etudes|ingenieur etudes|ingenieur en developpement|ingenieur r&d|ingenieur developpeur|ingenieur software|ingenieur informatique|ingenieur e en developpement|ingenieur e developpement|ingenieur en informatique)\b", "Software Engineer / Ingénieur logiciel", EVOL),
     (r"\b(web|developpement web)\b", "Développeur web (intitulé générique)", COEUR),
     (r"\b(developpeur|developpeuse|developer|dev|programmeur|codeur)\b", "Développeur (intitulé générique)", COEUR),
+    (r"\b(bts sio|services informatiques aux organisations|slam)\b", "Développeur (intitulé générique)", COEUR),
 ]
 
 # Sous-métiers "technologie" pour INTITULES_ASSOCIES même quand le métier est full stack / front / back

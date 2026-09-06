@@ -11,7 +11,7 @@
 
 ## PARTIE A — TAXONOMIE DES MÉTIERS
 
-Taxonomie initiale du brief complétée par les métiers découverts pendant la collecte. Nombre d'offres = offres uniques observées dans l'échantillon (1450 offres uniques dans le périmètre, 1719 lignes brutes).
+Taxonomie initiale du brief complétée par les métiers découverts pendant la collecte. Nombre d'offres = offres uniques observées dans l'échantillon (1895 offres uniques dans le périmètre, 2223 lignes brutes).
 
 ### Développeur web
 
@@ -23,7 +23,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Métier de référence
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulé générique du cœur de marché ; regroupé sous 'Développeur web (intitulé générique)' quand aucune techno ni couche n'est précisée.
-- OFFRES_OBSERVEES : 115 unique(s) / 155 brute(s)
+- OFFRES_OBSERVEES : 134 unique(s) / 178 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com "Développeur web" Toulouse emplois` ; `site:fr.indeed.com "Développeur web" Occitanie "emplois"` ; `site:fr.indeed.com "Développeur web" Montpellier emplois` ; `site:fr.indeed.com "Développeur web" Rennes emplois` ; `site:fr.indeed.com "Développeur web" Strasbourg emplois` ; `site:fr.indeed.com "Développeur web" Bretagne emplois`
 
 ### Développeur front-end
@@ -36,7 +36,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Couche présentation des applications web.
-- OFFRES_OBSERVEES : 91 unique(s) / 112 brute(s)
+- OFFRES_OBSERVEES : 122 unique(s) / 148 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur front-end React Angular Vue Paris` ; `site:welcometothejungle.com/fr/companies développeur front-end Paris` ; `site:candidat.francetravail.fr/offres/recherche/detail développeur front-end Paris` ; `site:apec.fr detail-offre développeur front-end OR back-end Paris` ; `site:welcometothejungle.com/fr/companies développeur front-end React Paris` ; `Indeed "Développeur Full Stack" OR "Développeur Front End" OR "Développeur Back End" France emplois "plus de"`
 
 ### Développeur back-end
@@ -49,7 +49,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Couche serveur, API et données des applications web.
-- OFFRES_OBSERVEES : 50 unique(s) / 57 brute(s)
+- OFFRES_OBSERVEES : 67 unique(s) / 75 brute(s)
 - REQUETES_UTILISEES : `site:apec.fr detail-offre développeur front-end OR back-end Paris` ; `Indeed "Développeur Full Stack" OR "Développeur Front End" OR "Développeur Back End" France emplois "plus de"` ; `site:chooseyourboss.com développeur full stack OR front-end OR back-end` ; `site:welcometothejungle.com/fr/companies "Télétravail total" développeur backend OR frontend` ; `Hellowork "Emploi Développeur front end" OR "Emploi Développeur back end" OR "Emploi Développeur PHP" OR "Emploi Développeur React" "Plus de" Offres` ; `site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI`
 
 ### Développeur full stack
@@ -62,7 +62,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulé dominant du marché : couvre front et back.
-- OFFRES_OBSERVEES : 392 unique(s) / 479 brute(s)
+- OFFRES_OBSERVEES : 488 unique(s) / 589 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur full stack Montpellier` ; `site:apec.fr detail-offre développeur full stack Paris` ; `site:welcometothejungle.com/fr/companies développeur full stack Paris CDI` ; `site:fr.indeed.com/viewjob développeur full stack Paris CDI` ; `site:fr.linkedin.com/jobs/view développeur full stack Paris` ; `site:candidat.francetravail.fr/offres/recherche/detail développeur full stack Île-de-France`
 
 ### Intégrateur web
@@ -75,8 +75,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Métier d'entrée historique du web ; très peu d'offres observées en 2026.
-- OFFRES_OBSERVEES : 12 unique(s) / 13 brute(s)
-- REQUETES_UTILISEES : `site:hellowork.com/fr-fr/emplois accessibilité RGAA développeur OR intégrateur` ; `site:welcometothejungle.com/fr/companies "intégrateur web" OR "développeur front-end" Paris CDI` ; `site:fr.indeed.com/viewjob "intégrateur web" OR "intégrateur front" Paris` ; `site:fr.linkedin.com/jobs/view "accessibilité" RGAA développeur OR intégrateur` ; `Q036` ; `site:fr.indeed.com/viewjob "intégrateur web" OR "développeur e-commerce" OR "développeur front" Lyon OR Nantes OR Marseille	=> 1 (+1 enrichie ; Webflow/webdesign et formations exclus) offre(s) individuelle(s)`
+- OFFRES_OBSERVEES : 17 unique(s) / 18 brute(s)
+- REQUETES_UTILISEES : `site:hellowork.com/fr-fr/emplois accessibilité RGAA développeur OR intégrateur` ; `site:welcometothejungle.com/fr/companies "intégrateur web" OR "développeur front-end" Paris CDI` ; `site:fr.indeed.com/viewjob "intégrateur web" OR "intégrateur front" Paris` ; `site:fr.linkedin.com/jobs/view "accessibilité" RGAA développeur OR intégrateur` ; `site:hellowork.com/fr-fr/emplois "Emploi Intégrateur web" "Offres"	=> 4 offres (+0 volumes)` ; `Q036`
 
 ### Concepteur développeur d'applications
 
@@ -88,8 +88,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulé des titres RNCP et de nombreuses ESN ; inclut le développement d'applications web.
-- OFFRES_OBSERVEES : 33 unique(s) / 44 brute(s)
-- REQUETES_UTILISEES : `Q062` ; `Q067` ; `Q073` ; `Q074` ; `Q076` ; `Q081`
+- OFFRES_OBSERVEES : 50 unique(s) / 65 brute(s)
+- REQUETES_UTILISEES : `site:hellowork.com/fr-fr/emplois "Emploi Développeur informatique" "Plus de" "Offres" 2024	=> 1 offres (+8 volumes)` ; `Q062` ; `Q067` ; `Q073` ; `Q074` ; `Q076`
 
 ### Développeur JavaScript / TypeScript
 
@@ -101,8 +101,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Regroupe les intitulés par technologie JavaScript (front et back).
-- OFFRES_OBSERVEES : 35 unique(s) / 37 brute(s)
-- REQUETES_UTILISEES : `site:free-work.com développeur React Paris` ; `site:fr.indeed.com/viewjob développeur front-end React Angular Vue Paris` ; `site:welcometothejungle.com/fr/companies développeur front-end React Paris` ; `site:fr.indeed.com/viewjob développeur mobile "React Native" OR Flutter Paris` ; `site:welcometothejungle.com/fr/companies développeur ".NET" OR Angular Paris CDI` ; `site:welcometothejungle.com/fr/companies développeur Node.js OR Vue.js Paris CDI`
+- OFFRES_OBSERVEES : 54 unique(s) / 58 brute(s)
+- REQUETES_UTILISEES : `site:free-work.com développeur React Paris` ; `site:fr.indeed.com/viewjob développeur front-end React Angular Vue Paris` ; `"Développeur React" OR "Developpeur React" emplois Indeed 2025 "plus de"	=> 0 offres (+7 volumes)` ; `"Développeur Angular" OR "Développeur Vue" emplois Indeed 2024 "offres d'emploi"	=> 0 offres (+2 volumes ; résultats CH/CA/BE ignorés)` ; `"Développeur Node" OR "Developpeur Node Js" emplois Indeed 2025 "plus de"	=> 0 offres (+7 volumes)` ; `site:welcometothejungle.com/fr/companies développeur front-end React Paris`
 
 ### Développeur PHP / Symfony / Laravel
 
@@ -114,8 +114,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Très forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Écosystème web historique français (ESN, agences, éditeurs).
-- OFFRES_OBSERVEES : 40 unique(s) / 51 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur PHP Symfony Paris` ; `"Développeur Symfony" France emplois Indeed "2025"	=> 0 offres (+7 volumes)` ; `site:fr.indeed.com/viewjob développeur Symfony Paris` ; `Hellowork "Emploi Développeur front end" OR "Emploi Développeur back end" OR "Emploi Développeur PHP" OR "Emploi Développeur React" "Plus de" Offres` ; `site:welcometothejungle.com/fr/companies "Télétravail total" développeur Symfony OR Laravel OR PHP OR fullstack` ; `site:fr.indeed.com/viewjob développeur Symfony OR Laravel OR PHP "télétravail" "100%" OR "full remote"`
+- OFFRES_OBSERVEES : 59 unique(s) / 75 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur PHP Symfony Paris` ; `"Développeur Symfony" France emplois Indeed "2025"	=> 0 offres (+7 volumes)` ; `"Développeur PHP" "offres d'emploi" Indeed.com 2024 France "plus de"	=> 0 offres (+5 volumes)` ; `site:fr.indeed.com/viewjob développeur Symfony Paris` ; `Hellowork "Emploi Développeur front end" OR "Emploi Développeur back end" OR "Emploi Développeur PHP" OR "Emploi Développeur React" "Plus de" Offres` ; `site:welcometothejungle.com/fr/companies "Télétravail total" développeur Symfony OR Laravel OR PHP OR fullstack`
 
 ### Développeur Java / Spring (web)
 
@@ -127,8 +127,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Java web (Spring) est un des premiers volumes d'offres ; les offres Java embarqué/mainframe sont exclues.
-- OFFRES_OBSERVEES : 48 unique(s) / 55 brute(s)
-- REQUETES_UTILISEES : `site:apec.fr detail-offre développeur Java Spring Paris` ; `site:fr.indeed.com/viewjob développeur Java Spring Boot Paris` ; `site:fr.indeed.com/viewjob développeur Java Spring Paris CDI` ; `Q006` ; `Q010` ; `Q032`
+- OFFRES_OBSERVEES : 85 unique(s) / 92 brute(s)
+- REQUETES_UTILISEES : `site:apec.fr detail-offre développeur Java Spring Paris` ; `site:fr.indeed.com/viewjob développeur Java Spring Boot Paris` ; `"Développeur Java" France emplois Indeed 2025 "plus de"	=> 0 offres (+8 volumes)` ; `site:fr.indeed.com/viewjob développeur Java Spring Paris CDI` ; `site:hellowork.com/fr-fr/emplois "Emploi Développeur Java" "Plus de" "Offres"	=> 2 offres (+5 volumes)` ; `site:hellowork.com/fr-fr/emplois "Emploi Développeur javascript" OR "Emploi Développeur React" "Offres"	=> 3 offres (+0 volumes)`
 
 ### Développeur .NET / C#
 
@@ -140,8 +140,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Stack web Microsoft, fréquente en ESN et éditeurs.
-- OFFRES_OBSERVEES : 52 unique(s) / 58 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur .NET C# Paris` ; `site:welcometothejungle.com/fr/companies développeur ".NET" OR Angular Paris CDI` ; `site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI` ; `site:fr.indeed.com/viewjob développeur ".NET" C# Paris CDI` ; `Q010` ; `Q015`
+- OFFRES_OBSERVEES : 80 unique(s) / 86 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur .NET C# Paris` ; `"Développeur .NET" OR "Developpeur Net" emplois Indeed 2025 "plus de"	=> 0 offres (+3 volumes ; BE/CA ignorés)` ; `site:welcometothejungle.com/fr/companies développeur ".NET" OR Angular Paris CDI` ; `site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI` ; `site:fr.indeed.com/viewjob développeur ".NET" C# Paris CDI` ; `site:hellowork.com/fr-fr/emplois "Emploi Développeur .Net" OR "Emploi Développeur dotNet" "Plus de" "Offres"	=> 2 offres (+6 volumes)`
 
 ### Développeur Python / Django
 
@@ -153,8 +153,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Python web ; attention, beaucoup d'offres 'développeur Python' relèvent de la data (exclues si sans composante web).
-- OFFRES_OBSERVEES : 16 unique(s) / 17 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur Python Django Paris` ; `site:welcometothejungle.com/fr/companies développeur Python Django OR Ruby Paris CDI` ; `site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI` ; `site:fr.indeed.com/viewjob développeur Python Django OR FastAPI OR Flask Paris` ; `Q012` ; `Q032`
+- OFFRES_OBSERVEES : 28 unique(s) / 29 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur Python Django Paris` ; `"Développeur Python" "offres d'emploi" Indeed.com 2024 "plus de"	=> 0 offres (+6 volumes)` ; `site:welcometothejungle.com/fr/companies développeur Python Django OR Ruby Paris CDI` ; `site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI` ; `site:fr.indeed.com/viewjob développeur Python Django OR FastAPI OR Flask Paris` ; `site:hellowork.com/fr-fr/emplois "Emploi Développeur Python" "Plus de" "Offres"	=> 2 offres (+5 volumes)`
 
 ### Développeur CMS / e-commerce
 
@@ -166,8 +166,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Développement sur CMS et plateformes e-commerce ; volumes faibles dans l'échantillon.
-- OFFRES_OBSERVEES : 12 unique(s) / 14 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur WordPress OR Shopify OR PrestaShop OR Magento Paris` ; `site:fr.indeed.com/viewjob développeur WordPress OR Shopify OR PrestaShop Paris` ; `site:fr.indeed.com/viewjob développeur Shopify OR WordPress OR PrestaShop Toulouse OR Rennes OR Montpellier OR Strasbourg OR Nantes` ; `Q012` ; `Q016` ; `site:fr.indeed.com/viewjob développeur WordPress OR Shopify OR PrestaShop OR Magento Lille OR Lyon	=> 3 (offres en télétravail sans ville exclues) offre(s) individuelle(s)`
+- OFFRES_OBSERVEES : 20 unique(s) / 23 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur WordPress OR Shopify OR PrestaShop OR Magento Paris` ; `"Développeur WordPress" OR "Développeur Shopify" OR "Développeur Prestashop" emplois Indeed 2024 2025	=> 0 offres (+6 volumes)` ; `site:fr.indeed.com/viewjob développeur WordPress OR Shopify OR PrestaShop Paris` ; `site:fr.indeed.com/viewjob développeur Shopify OR WordPress OR PrestaShop Toulouse OR Rennes OR Montpellier OR Strasbourg OR Nantes` ; `Q012` ; `Q016`
 
 ### Développeur Ruby on Rails
 
@@ -192,8 +192,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Moyenne
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Langages back modernes utilisés pour des services web ; ajouté à la marge.
-- OFFRES_OBSERVEES : 0 unique(s) / 0 brute(s) (0 = aucune offre remontée par les requêtes, pas une preuve d'absence sur le marché)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur Python Django Paris` ; `Hellowork "Emploi Développeur web" Offres "Auvergne-Rhône-Alpes" OR "Provence-Alpes-Côte d'Azur" OR "Bourgogne-Franche-Comté" OR "Île-de-France"` ; `Indeed "Développeur Web" emplois "plus de" "Nouvelle-Aquitaine" OR "Pays de la Loire" OR "Centre-Val de Loire" OR "Bourgogne-Franche-Comté" OR Normandie` ; `site:welcometothejungle.com/fr/companies développeur Python Django OR Ruby Paris CDI` ; `Indeed "Développeur Web" emplois 2025 "plus de" "Pays de la Loire" OR "Nouvelle-Aquitaine" OR "Grand Est" OR Normandie OR "Bourgogne-Franche-Comté"` ; `site:fr.indeed.com/viewjob développeur web Pau OR Bayonne OR Tarbes OR Limoges OR Angoulême OR Niort`
+- OFFRES_OBSERVEES : 2 unique(s) / 2 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur Python Django Paris` ; `Développeur Web "Provence-Alpes-Côte d'Azur" OR "Bourgogne-Franche-Comté" OR "Centre-Val de Loire" emplois [allowed: fr.indeed.com]	=> 0 offres (+9 volumes)` ; `Hellowork "Emploi Développeur web" Offres "Auvergne-Rhône-Alpes" OR "Provence-Alpes-Côte d'Azur" OR "Bourgogne-Franche-Comté" OR "Île-de-France"` ; `Indeed "Développeur Web" emplois "plus de" "Nouvelle-Aquitaine" OR "Pays de la Loire" OR "Centre-Val de Loire" OR "Bourgogne-Franche-Comté" OR Normandie` ; `site:welcometothejungle.com/fr/companies développeur Python Django OR Ruby Paris CDI` ; `Indeed "Développeur Web" emplois 2025 "plus de" "Pays de la Loire" OR "Nouvelle-Aquitaine" OR "Grand Est" OR Normandie OR "Bourgogne-Franche-Comté"`
 
 ### Développeur (intitulé générique)
 
@@ -205,7 +205,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Intitulés sans précision de couche ni de techno ; rattachés au cœur de marché mais à lire avec prudence.
-- OFFRES_OBSERVEES : 40 unique(s) / 46 brute(s)
+- OFFRES_OBSERVEES : 77 unique(s) / 92 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com "Développeur web" Toulouse emplois` ; `site:fr.indeed.com "Développeur web" Occitanie "emplois"` ; `site:fr.indeed.com "Développeur web" Montpellier emplois` ; `site:fr.indeed.com "Développeur web" Rennes emplois` ; `site:fr.indeed.com "Développeur web" Strasbourg emplois` ; `site:fr.indeed.com "Développeur web" Bretagne emplois`
 
 ### Software Engineer / Ingénieur logiciel
@@ -218,8 +218,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Prolongement du développeur web vers l'ingénierie logicielle ; intitulé en progression.
-- OFFRES_OBSERVEES : 9 unique(s) / 10 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "software engineer" OR "architecte logiciel" Paris CDI` ; `Q017` ; `Q042` ; `site:apec.fr detail-offre "Software Engineer" F/H Paris	=> 8 offres (+0 volumes)` ; `site:fr.indeed.com/viewjob "software engineer" OR "tech lead" OR "lead developer" Bordeaux OR Mérignac	=> 6 offre(s) individuelle(s)` ; `"Software Engineer" OR "DevOps" OR "Développeur Back End" Nantes (44) Indeed emplois "plus de"	=> 0 (4 volumes nouveaux) offre(s) individuelle(s)`
+- OFFRES_OBSERVEES : 18 unique(s) / 19 brute(s)
+- REQUETES_UTILISEES : `"Développeur Logiciel" OR "Ingénieur Logiciel" OR "Software Engineer" "offres d'emploi" Indeed.com 2024 "plus de"	=> 0 offres (+8 volumes)` ; `site:fr.indeed.com/viewjob "software engineer" OR "architecte logiciel" Paris CDI` ; `Q017` ; `Q042` ; `site:apec.fr detail-offre "Software Engineer" F/H Paris	=> 8 offres (+0 volumes)` ; `site:fr.indeed.com/viewjob "software engineer" OR "tech lead" OR "lead developer" Bordeaux OR Mérignac	=> 6 offre(s) individuelle(s)`
 
 ### Application Developer
 
@@ -231,8 +231,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Regroupé avec 'Concepteur développeur d'applications' dans la normalisation.
-- OFFRES_OBSERVEES : 33 unique(s) / 44 brute(s)
-- REQUETES_UTILISEES : requêtes génériques par ville et par technologie (voir journaux)
+- OFFRES_OBSERVEES : 50 unique(s) / 65 brute(s)
+- REQUETES_UTILISEES : `PRÉVUES ET NON LANCÉES (quota) : salaires 2026 Silkhom / Hays / Robert Half / Michael Page / Urban Linker / Externatic / WeLoveDevs / Glassdoor / Talent.com par métier × séniorité × ville ; IA & développement (Apec cadres et IA 2026 détails, Syntec, France Stratégie, Institut Montaigne, DGE, Bpifrance, Malt ; Stack Overflow Developer Survey 2026, GitHub Octoverse 2025, Stanford/ADP jeunes développeurs) ; référentiels ROME M1805, Onisep développeur web, RNCP développeur web / concepteur développeur d'applications ; Apec baromètre T2 2026 chiffres ; Apec fiches PDF régionales ARA/Bretagne/NA/PDL/HDF/GE/Normandie/BFC (URL corporate.apec.fr/files/.../Nos regions/pdf/) ; Dares tensions 2025 (publication 2026) ; INSEE valeurs population active par région.`
 
 ### Product Engineer
 
@@ -257,8 +257,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Spécialisation back sur les API.
-- OFFRES_OBSERVEES : 4 unique(s) / 6 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur Python Django OR FastAPI OR Flask Paris` ; `site:fr.indeed.com/viewjob "software engineer" OR "ingénieur logiciel" OR "ingénieur développement" Lyon OR Villeurbanne	=> 4 (+1 enrichie ; systèmes/réseaux et intégration exclus) offre(s) individuelle(s)`
+- OFFRES_OBSERVEES : 6 unique(s) / 8 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur Python Django OR FastAPI OR Flask Paris` ; `site:welcometothejungle.com/fr/companies "AI Engineer" OR "LLM Engineer" OR "AI Integration Engineer" CDI Paris OR Lyon	=> 1 offres (+0 volumes)` ; `site:fr.indeed.com/viewjob "software engineer" OR "ingénieur logiciel" OR "ingénieur développement" Lyon OR Villeurbanne	=> 4 (+1 enrichie ; systèmes/réseaux et intégration exclus) offre(s) individuelle(s)`
 
 ### Développeur mobile
 
@@ -270,8 +270,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Moyenne
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Débouché adjacent naturel des développeurs JS (React Native) ; comptabilisé dans les évolutions, pas dans le cœur.
-- OFFRES_OBSERVEES : 50 unique(s) / 56 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur mobile "React Native" OR Flutter Paris` ; `site:fr.indeed.com/viewjob "développeur mobile" OR "React Native" OR Flutter Toulouse OR Rennes OR Grenoble OR Strasbourg OR Nice OR Montpellier` ; `Q019` ; `Q033` ; `Q172` ; `site:apec.fr detail-offre "Développeur mobile" OR "Développeur Flutter" OR "Développeur iOS" OR "Développeur Android" F/H	=> 1 offres (+0 volumes)`
+- OFFRES_OBSERVEES : 65 unique(s) / 74 brute(s)
+- REQUETES_UTILISEES : `"Développeur Mobile" OR "Developpeur Mobile" emplois Indeed 2024 2025 "plus de"	=> 0 offres (+6 volumes)` ; `site:fr.indeed.com/viewjob développeur mobile "React Native" OR Flutter Paris` ; `site:fr.indeed.com/viewjob "développeur mobile" OR "React Native" OR Flutter Toulouse OR Rennes OR Grenoble OR Strasbourg OR Nice OR Montpellier` ; `Q019` ; `Q033` ; `Q172`
 
 ### Tech Lead / Lead Developer
 
@@ -283,8 +283,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Évolution à 5+ ans ; cible de la communication Mastère.
-- OFFRES_OBSERVEES : 66 unique(s) / 69 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "Tech Lead" développeur web Paris OR Lyon` ; `site:fr.indeed.com/viewjob "tech lead" OR "lead développeur" Paris CDI` ; `site:welcometothejungle.com/fr/companies "tech lead" OR "lead développeur" OR "lead developer" Paris CDI` ; `Q022` ; `Q042` ; `Q172`
+- OFFRES_OBSERVEES : 84 unique(s) / 87 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "Tech Lead" développeur web Paris OR Lyon` ; `"Tech Lead" OR "Architecte Logiciel" emplois Indeed 2025 "plus de" France	=> 0 offres (+8 volumes)` ; `site:fr.indeed.com/viewjob "tech lead" OR "lead développeur" Paris CDI` ; `site:welcometothejungle.com/fr/companies "tech lead" OR "lead développeur" OR "lead developer" Paris CDI` ; `Q022` ; `Q042`
 
 ### Architecte logiciel / solutions
 
@@ -297,7 +297,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS
 - JUSTIFICATION : Évolution senior ; cible Mastère.
 - OFFRES_OBSERVEES : 7 unique(s) / 7 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "software engineer" OR "architecte logiciel" Paris CDI` ; `Q022` ; `site:fr.indeed.com/viewjob "architecte logiciel" OR "tech lead" OR "lead developer" Lyon OR Nantes	=> 5 (+1 enrichie ; Orly, Châtillon exclus) offre(s) individuelle(s)`
+- REQUETES_UTILISEES : `"Tech Lead" OR "Architecte Logiciel" emplois Indeed 2025 "plus de" France	=> 0 offres (+8 volumes)` ; `site:fr.indeed.com/viewjob "software engineer" OR "architecte logiciel" Paris CDI` ; `Q022` ; `site:fr.indeed.com/viewjob "architecte logiciel" OR "tech lead" OR "lead developer" Lyon OR Nantes	=> 5 (+1 enrichie ; Orly, Châtillon exclus) offre(s) individuelle(s)`
 
 ### Solutions Engineer
 
@@ -322,8 +322,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS (spécialisation)
 - JUSTIFICATION : Industrialisation du déploiement ; famille en tension selon Apec/BMO.
-- OFFRES_OBSERVEES : 65 unique(s) / 70 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "DevOps Engineer" Lyon` ; `site:hellowork.com/fr-fr/emplois DevOps engineer CDI France` ; `Indeed "DevOps" OR "Cloud Engineer" OR "Site Reliability" France emplois "plus de"` ; `site:welcometothejungle.com/fr/companies "DevOps" CDI Toulouse OR Nantes OR Lille OR Rennes OR Bordeaux` ; `Hellowork "Emploi DevOps" OR "Emploi Ingénieur DevOps" "Plus de" Offres région` ; `Hellowork "Emploi DevOps" "Plus de" Offres Occitanie OR Bretagne OR "Nouvelle-Aquitaine" OR "Pays de la Loire" OR "Provence-Alpes-Côte d'Azur"`
+- OFFRES_OBSERVEES : 84 unique(s) / 89 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "DevOps Engineer" Lyon` ; `"Devops" OR "Ingénieur Devops" France "offres d'emploi" Indeed.com 2024 "plus de"	=> 0 offres (+7 volumes)` ; `site:hellowork.com/fr-fr/emplois DevOps engineer CDI France` ; `Indeed "DevOps" OR "Cloud Engineer" OR "Site Reliability" France emplois "plus de"` ; `site:welcometothejungle.com/fr/companies "DevOps" CDI Toulouse OR Nantes OR Lille OR Rennes OR Bordeaux` ; `Hellowork "Emploi DevOps" OR "Emploi Ingénieur DevOps" "Plus de" Offres région`
 
 ### Cloud Engineer
 
@@ -336,7 +336,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS (spécialisation)
 - JUSTIFICATION : Compétence cloud demandée aux développeurs ; métier propre pour les seniors.
 - OFFRES_OBSERVEES : 10 unique(s) / 10 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "Cloud Engineer" Nantes OR Bordeaux OR Toulouse OR Lille` ; `site:hellowork.com/fr-fr/emplois "Cloud Engineer" OR "Platform Engineer" CDI` ; `Indeed "DevOps" OR "Cloud Engineer" OR "Site Reliability" France emplois "plus de"` ; `site:fr.indeed.com/viewjob ingénieur cloud AWS OR Azure OR GCP CDI` ; `Hellowork "Emploi Cybersécurité" OR "Emploi DevSecOps" OR "Emploi Ingénieur cloud" OR "Emploi Cloud" "Plus de" Offres` ; `site:fr.linkedin.com/jobs/view "Ingénieur DevOps" OR "Cloud Engineer" OR "Site Reliability Engineer" France`
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "Cloud Engineer" Nantes OR Bordeaux OR Toulouse OR Lille` ; `"Cloud Engineer" OR "Site Reliability Engineer" OR "SRE" emplois Indeed 2025 "plus de"	=> 0 offres (+0 volumes ; résultats indeed.com US uniquement, ignorés)` ; `Site Reliability Engineer OR Cloud Engineer emplois "plus de" 2025 [allowed: fr.indeed.com]	=> 0 offres (+7 volumes)` ; `site:hellowork.com/fr-fr/emplois "Cloud Engineer" OR "Platform Engineer" CDI` ; `Indeed "DevOps" OR "Cloud Engineer" OR "Site Reliability" France emplois "plus de"` ; `site:fr.indeed.com/viewjob ingénieur cloud AWS OR Azure OR GCP CDI`
 
 ### Platform Engineer
 
@@ -361,8 +361,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Moyenne
 - INCLUS_OU_EXCLU : INCLUS (spécialisation)
 - JUSTIFICATION : Métier d'exploitation logicielle ; profils seniors.
-- OFFRES_OBSERVEES : 23 unique(s) / 32 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "SRE" OR "Site Reliability Engineer" Nantes OR Bordeaux OR Toulouse` ; `site:welcometothejungle.com/fr/companies "Site Reliability Engineer" OR "SRE" CDI` ; `site:fr.linkedin.com/jobs/view "Ingénieur DevOps" OR "Cloud Engineer" OR "Site Reliability Engineer" France` ; `site:fr.indeed.com/viewjob "Platform Engineer" OR "Site Reliability Engineer" OR "SRE" CDI`
+- OFFRES_OBSERVEES : 25 unique(s) / 34 brute(s)
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "SRE" OR "Site Reliability Engineer" Nantes OR Bordeaux OR Toulouse` ; `"Cloud Engineer" OR "Site Reliability Engineer" OR "SRE" emplois Indeed 2025 "plus de"	=> 0 offres (+0 volumes ; résultats indeed.com US uniquement, ignorés)` ; `Site Reliability Engineer OR Cloud Engineer emplois "plus de" 2025 [allowed: fr.indeed.com]	=> 0 offres (+7 volumes)` ; `site:welcometothejungle.com/fr/companies "Site Reliability Engineer" OR "SRE" CDI` ; `site:fr.linkedin.com/jobs/view "Ingénieur DevOps" OR "Cloud Engineer" OR "Site Reliability Engineer" France` ; `site:fr.indeed.com/viewjob "Platform Engineer" OR "Site Reliability Engineer" OR "SRE" CDI`
 
 ### QA / Test Automation Engineer
 
@@ -374,7 +374,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS (spécialisation)
 - JUSTIFICATION : Contrôle qualité, renforcé par l'IA (validation des sorties).
-- OFFRES_OBSERVEES : 44 unique(s) / 46 brute(s)
+- OFFRES_OBSERVEES : 47 unique(s) / 49 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "QA Automation" OR "Test Automation Engineer" France` ; `site:hellowork.com/fr-fr/emplois "QA automation" OR "testeur automaticien" CDI` ; `site:fr.linkedin.com/jobs/view "QA" OR "testeur automaticien" OR "test automation" engineer France` ; `site:fr.indeed.com/viewjob "QA" OR "testeur" OR "test automation" OR "ingénieur test" Marseille OR Lille OR Bordeaux	=> 5 (+1 enrichie ; Paris, Arcueil, télétravail exclus) offre(s) individuelle(s)`
 
 ### Ingénieur sécurité applicative / DevSecOps
@@ -387,7 +387,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS (spécialisation)
 - JUSTIFICATION : Passerelle vers la filière Cybersécurité NEXA.
-- OFFRES_OBSERVEES : 37 unique(s) / 37 brute(s)
+- OFFRES_OBSERVEES : 38 unique(s) / 39 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "DevSecOps" OR "AppSec" OR "sécurité applicative" ingénieur` ; `site:hellowork.com/fr-fr/emplois "DevSecOps" OR "AppSec" ingénieur CDI` ; `Indeed "Testeur" OR "QA" OR "DevSecOps" OR "Cybersécurité" emplois "plus de" France` ; `site:welcometothejungle.com/fr/companies "AppSec" OR "sécurité applicative" OR "DevSecOps" CDI` ; `Hellowork "Emploi Cybersécurité" OR "Emploi DevSecOps" OR "Emploi Ingénieur cloud" OR "Emploi Cloud" "Plus de" Offres` ; `Indeed "DevOps" OR "Cloud Engineer" OR "DevSecOps" OR "Testeur QA" emplois "plus de" 2025 OR 2024`
 
 ### Développeur spécialisé accessibilité
@@ -426,7 +426,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Moyenne à forte
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Développement d'applications intégrant des modèles ; intitulé le plus fréquent de la famille IA dans l'échantillon.
-- OFFRES_OBSERVEES : 81 unique(s) / 93 brute(s)
+- OFFRES_OBSERVEES : 95 unique(s) / 112 brute(s)
 - REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur web Nice OR Sophia-Antipolis` ; `site:fr.indeed.com/viewjob "AI Engineer" Paris` ; `site:fr.indeed.com/viewjob "développeur IA" LLM RAG` ; `site:welcometothejungle.com/fr/companies "AI Engineer" LLM Paris` ; `site:hellowork.com/fr-fr/emplois "ingénieur IA générative"` ; `site:apec.fr detail-offre "développeur full stack" "IA générative"`
 
 ### AI Software / Application Engineer
@@ -439,7 +439,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Forte
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Le plus proche du 'développeur augmenté' : développeur web intégrant l'IA.
-- OFFRES_OBSERVEES : 15 unique(s) / 20 brute(s)
+- OFFRES_OBSERVEES : 19 unique(s) / 25 brute(s)
 - REQUETES_UTILISEES : requêtes génériques par ville et par technologie (voir journaux)
 
 ### LLM / Generative AI Engineer
@@ -452,8 +452,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Moyenne
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Spécialisation IA générative ; ESN et grands comptes.
-- OFFRES_OBSERVEES : 38 unique(s) / 41 brute(s)
-- REQUETES_UTILISEES : `site:hellowork.com/fr-fr/emplois "ingénieur IA générative"` ; `site:welcometothejungle.com/fr/companies "LLM Engineer" OR "Generative AI Engineer" France` ; `site:fr.linkedin.com/jobs/view "AI Engineer" OR "LLM Engineer" France` ; `Q021` ; `Q100`
+- OFFRES_OBSERVEES : 40 unique(s) / 44 brute(s)
+- REQUETES_UTILISEES : `site:hellowork.com/fr-fr/emplois "ingénieur IA générative"` ; `site:welcometothejungle.com/fr/companies "LLM Engineer" OR "Generative AI Engineer" France` ; `site:fr.linkedin.com/jobs/view "AI Engineer" OR "LLM Engineer" France` ; `site:welcometothejungle.com/fr/companies "AI Engineer" OR "LLM Engineer" OR "AI Integration Engineer" CDI Paris OR Lyon	=> 1 offres (+0 volumes)` ; `Q021` ; `Q100`
 
 ### Développeur RAG / applications LLM
 
@@ -466,7 +466,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Rarement un intitulé autonome ; plutôt une compétence citée.
 - OFFRES_OBSERVEES : 1 unique(s) / 1 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "développeur IA" LLM RAG` ; `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France` ; `site:free-work.com "AI Engineer" OR "LLM" OR "IA générative" OR "RAG" mission` ; `site:fr.linkedin.com/jobs/view "développeur full stack" "LLM" OR "RAG" OR "agents IA"	=> 7 offres (+0 volumes)` ; `Q099`
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob "développeur IA" LLM RAG` ; `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France` ; `site:free-work.com "AI Engineer" OR "LLM" OR "IA générative" OR "RAG" mission` ; `site:fr.linkedin.com/jobs/view "développeur full stack" "LLM" OR "RAG" OR "agents IA"	=> 7 offres (+0 volumes)` ; `site:welcometothejungle.com/fr/companies "développeur full stack" "IA générative" OR "LLM" OR "RAG" CDI	=> 5 offres (+0 volumes)`
 
 ### Développeur d'agents IA
 
@@ -479,7 +479,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Émergent ; très peu d'offres.
 - OFFRES_OBSERVEES : 3 unique(s) / 3 brute(s)
-- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:welcometothejungle.com/fr/companies "LLM" OR "agents IA" OR "agentic" développeur OR engineer CDI` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France` ; `site:fr.linkedin.com/jobs/view "développeur full stack" "LLM" OR "RAG" OR "agents IA"	=> 7 offres (+0 volumes)`
+- REQUETES_UTILISEES : `site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA"` ; `site:welcometothejungle.com/fr/companies "LLM" OR "agents IA" OR "agentic" développeur OR engineer CDI` ; `site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France` ; `site:fr.linkedin.com/jobs/view "développeur full stack" "LLM" OR "RAG" OR "agents IA"	=> 7 offres (+0 volumes)` ; `site:free-work.com développeur "LLM" OR "IA générative" OR "agents IA" mission OR CDI	=> 0 offres (+0 volumes)`
 
 ### AI Integration / Automation Developer
 
@@ -491,8 +491,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Moyenne
 - INCLUS_OU_EXCLU : INCLUS (émergent)
 - JUSTIFICATION : Automatisation de processus avec briques IA.
-- OFFRES_OBSERVEES : 15 unique(s) / 17 brute(s)
-- REQUETES_UTILISEES : `site:welcometothejungle.com/fr/companies "prompt engineer" OR "automation developer" OR "développeur no-code" OR "développeur low-code"` ; `site:fr.indeed.com/viewjob QA automatisation Cypress OR Playwright OR Selenium` ; `site:hellowork.com/fr-fr/emplois "n8n" OR "no-code" OR "low-code" développeur automatisation`
+- OFFRES_OBSERVEES : 15 unique(s) / 18 brute(s)
+- REQUETES_UTILISEES : `site:welcometothejungle.com/fr/companies "prompt engineer" OR "automation developer" OR "développeur no-code" OR "développeur low-code"` ; `site:fr.indeed.com/viewjob QA automatisation Cypress OR Playwright OR Selenium` ; `site:hellowork.com/fr-fr/emplois "n8n" OR "no-code" OR "low-code" développeur automatisation` ; `site:welcometothejungle.com/fr/companies "AI Engineer" OR "LLM Engineer" OR "AI Integration Engineer" CDI Paris OR Lyon	=> 1 offres (+0 volumes)`
 
 ### Low-code / No-code Developer
 
@@ -504,8 +504,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Faible à moyenne
 - INCLUS_OU_EXCLU : INCLUS (émergent, à la marge)
 - JUSTIFICATION : Aucune offre observée dans l'échantillon ; conservé pour veille.
-- OFFRES_OBSERVEES : 4 unique(s) / 4 brute(s)
-- REQUETES_UTILISEES : `site:welcometothejungle.com/fr/companies "prompt engineer" OR "automation developer" OR "développeur no-code" OR "développeur low-code"` ; `site:hellowork.com/fr-fr/emplois "n8n" OR "no-code" OR "low-code" développeur automatisation`
+- OFFRES_OBSERVEES : 6 unique(s) / 6 brute(s)
+- REQUETES_UTILISEES : `site:welcometothejungle.com/fr/companies "prompt engineer" OR "automation developer" OR "développeur no-code" OR "développeur low-code"` ; `site:hellowork.com/fr-fr/emplois "n8n" OR "no-code" OR "low-code" développeur automatisation` ; `site:apec.fr detail-offre "Développeur" F/H Bordeaux - 33	=> 0 offres nouvelles (+0 volumes) [178961270W, 177121507W déjà collectées ; exclus C++, AS400, Power Platform]`
 
 ### Prompt Engineer (avec composante développement)
 
@@ -518,7 +518,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : INCLUS (émergent, à la marge)
 - JUSTIFICATION : Aucune offre observée ; non confirmé comme métier autonome.
 - OFFRES_OBSERVEES : 0 unique(s) / 0 brute(s) (0 = aucune offre remontée par les requêtes, pas une preuve d'absence sur le marché)
-- REQUETES_UTILISEES : `site:welcometothejungle.com/fr/companies "prompt engineer" OR "automation developer" OR "développeur no-code" OR "développeur low-code"` ; `site:fr.indeed.com/viewjob "prompt engineer" OR "prompt engineering" développeur`
+- REQUETES_UTILISEES : `LLM OR "Prompt Engineer" OR "IA Générative" emplois "plus de" 2025 [allowed: fr.indeed.com]	=> 0 offres (+9 volumes)` ; `site:welcometothejungle.com/fr/companies "prompt engineer" OR "automation developer" OR "développeur no-code" OR "développeur low-code"` ; `site:fr.indeed.com/viewjob "prompt engineer" OR "prompt engineering" développeur`
 
 ### Machine Learning / Data Engineer
 
@@ -530,7 +530,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - PROXIMITE_AVEC_LE_DEV_WEB : Faible à moyenne
 - INCLUS_OU_EXCLU : EXCLU DES VOLUMES (adjacent)
 - JUSTIFICATION : Relève de la filière IA & Data ; compté à part.
-- OFFRES_OBSERVEES : 6 unique(s) / 6 brute(s)
+- OFFRES_OBSERVEES : 7 unique(s) / 7 brute(s)
 - REQUETES_UTILISEES : `Hellowork "Emploi Ingénieur IA" OR "Emploi Intelligence artificielle" OR "Emploi Machine learning" "Plus de" Offres` ; `Indeed "AI Engineer" OR "Ingénieur IA" OR "Machine Learning Engineer" emplois "plus de" 2025 OR 2024` ; `Hellowork "Emploi Développeur IA" OR "Emploi Data scientist" OR "Emploi Ingénieur machine learning" "Plus de" Offres` ; `site:welcometothejungle.com/fr/companies "Télétravail total" "AI Engineer" OR "développeur IA" OR "Machine Learning Engineer"` ; `Q021` ; `Q172`
 
 ### Développeur logiciel hors web (embarqué, ERP, BI, mainframe)
@@ -544,7 +544,7 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 - INCLUS_OU_EXCLU : EXCLU DES VOLUMES (adjacent)
 - JUSTIFICATION : Découvert pendant la collecte ; hors périmètre web.
 - OFFRES_OBSERVEES : 0 unique(s) / 0 brute(s) (0 = aucune offre remontée par les requêtes, pas une preuve d'absence sur le marché)
-- REQUETES_UTILISEES : `012` ; `site:welcometothejungle.com/fr/companies développeur Bordeaux OR Mérignac OR Pessac	=> 9 (embarqué C exclu) offre(s) individuelle(s)` ; `site:free-work.com développeur Nantes OR Saint-Herblain	=> 2 (embarqué et Paris exclus ; extraits lead/TypeScript sans URL) offre(s) individuelle(s)` ; `site:fr.indeed.com/viewjob alternance OR stage développeur Marseille OR Aix-en-Provence web	=> 1 (+3 enrichies ; UX/UI intégrateur et embarqué exclus) offre(s) individuelle(s)` ; `site:fr.indeed.com/viewjob développeur "69001 Lyon" OR "69002 Lyon" OR "69003 Lyon" OR "69007 Lyon" OR "69008 Lyon"	=> 3 (+3 enrichies ; Cobol et business developer exclus) offre(s) individuelle(s)`
+- REQUETES_UTILISEES : `012` ; `site:apec.fr detail-offre "Développeur" F/H Toulouse - 31	=> 7 offres nouvelles (+0 volumes) [exclus embarqué C, Sage X3]` ; `site:welcometothejungle.com/fr/companies développeur Bordeaux OR Mérignac OR Pessac	=> 9 (embarqué C exclu) offre(s) individuelle(s)` ; `site:free-work.com développeur Nantes OR Saint-Herblain	=> 2 (embarqué et Paris exclus ; extraits lead/TypeScript sans URL) offre(s) individuelle(s)` ; `site:fr.indeed.com/viewjob alternance OR stage développeur Marseille OR Aix-en-Provence web	=> 1 (+3 enrichies ; UX/UI intégrateur et embarqué exclus) offre(s) individuelle(s)` ; `site:fr.indeed.com/viewjob développeur "69001 Lyon" OR "69002 Lyon" OR "69003 Lyon" OR "69007 Lyon" OR "69008 Lyon"	=> 3 (+3 enrichies ; Cobol et business developer exclus) offre(s) individuelle(s)`
 
 ### Webmarketing / SEO / content
 
@@ -613,9 +613,8 @@ Taxonomie initiale du brief complétée par les métiers découverts pendant la 
 
 ### Autres intitulés normalisés apparus dans la collecte
 
-- Développeur logiciel hors web (embarqué, ERP, BI...) : 18 offre(s) unique(s)
+- Développeur logiciel hors web (embarqué, ERP, BI...) : 25 offre(s) unique(s)
 - Cybersécurité (hors développement, filière Cybersécurité) : 3 offre(s) unique(s)
-- Non classé : 1 offre(s) unique(s)
 
 ### Règles de classement appliquées
 
@@ -661,23 +660,23 @@ Toutes les plateformes ont d'abord été testées en accès direct (HTTP) : refu
 
 | PLATEFORME | OFFRES_UNIQUES_OBTENUES | STATUT |
 |---|---|---|
-| France Travail | 148 | Données obtenues |
-| Apec | 36 | Données obtenues |
-| Indeed | 450 | Données obtenues |
-| LinkedIn | 170 | Données obtenues |
-| Welcome to the Jungle | 280 | Données obtenues |
-| HelloWork | 306 | Données obtenues |
+| France Travail | 231 | Données obtenues |
+| Apec | 197 | Données obtenues |
+| Indeed | 494 | Données obtenues |
+| LinkedIn | 203 | Données obtenues |
+| Welcome to the Jungle | 329 | Données obtenues |
+| HelloWork | 364 | Données obtenues |
 | Meteojob | 1 | Données partielles |
 | Monster | 6 | Données partielles |
 | Talent.com | 15 | Données obtenues |
-| JobTeaser | 6 | Données partielles |
+| JobTeaser | 8 | Données partielles |
 | Jooble | 0 | AUCUNE DONNÉE EXPLOITABLE |
 | LesJeudis | 3 | Données partielles |
 | ChooseYourBoss | 0 | AUCUNE DONNÉE EXPLOITABLE |
-| Free-Work | 24 | Données obtenues |
+| Free-Work | 35 | Données obtenues |
 | Glassdoor | 1 | Données partielles |
-| Site carrière | 2 | Données partielles |
-| Autre | 1 | Données partielles |
+| Site carrière | 5 | Données partielles |
+| Autre | 2 | Données partielles |
 
 ### B.3 — Journal détaillé des plateformes sans données (par agent de collecte)
 
@@ -711,6 +710,17 @@ Toutes les plateformes ont d'abord été testées en accès direct (HTTP) : refu
 | Indeed (villes moyennes via requêtes multi-villes) (agent B) | https://fr.indeed.com/viewjob | 2026-09-06 | Développeur web | Brest, Quimper, Lorient, Vannes, Saint-Brieuc ; Le Mans, Laval, La Roche-sur-Yon, Cholet, Saint-Nazaire ; Orléans, Bourges, Chartres, Blois, Châteauroux ; Pau, Bayonne, Tarbes, Limoges, Angoulême, Niort ; Caen, Cherbourg, Évreux, Saint-Lô, Alençon ; Amiens, Beauvais, Compiègne, Valenciennes, Arras, Dunkerque | Offres individuelles développeur web dans les villes moyennes | Faible rendement : les requêtes site: avec 5-6 villes en OR renvoient surtout des pages Wikipédia et des offres hors informatique ; 5 offres retenues (La Roche-sur-Yon, Croix, Lanester, Toulouse, Rouvignies) ; aucune pour Bretagne ouest, Centre-Val de Loire (hors Tours), Normandie (hors Rouen/Caen déjà couverts) | Offres Indeed pour Brest, Quimper, Lorient, Vannes, Orléans, Bourges, Chartres, Pau, Bayonne, Limoges, Cherbourg, Évreux, Beauvais, Arras, Dunkerque | Requêtes Hellowork et France Travail par ville (meilleur rendement pour Brest, Pau, Limoges, Caen, Amiens, Reims, Tours) | Hellowork (pages ville), France Travail | Les villes moyennes hors métropoles restent couvertes surtout par Hellowork ; les comptes Indeed par ville ne sont disponibles que pour les grandes villes |
 | Free-Work (pages thématiques IA) (agent B) | https://www.free-work.com/fr/tech-it/jobs/ia-generative | 2026-09-06 | AI Engineer ; LLM ; IA générative ; RAG ; Agent IA ; Copilot ; Mistral ; LangChain ; Prompt Engineering | France | Missions freelance IA individuelles et nombre de missions par thème | Pages thématiques indexées (LangChain, Prompt Engineering, RAG, Copilot, Mistral, IA Générative, Agent IA) sans compteur dans les titres ; extraits décrivant des missions (pipelines LLM/RAG, Copilot Studio, Qdrant/Weaviate, banque/assurance, 3-6 ans d'expérience) mais non rattachables à une URL individuelle ; 1 mission individuelle retenue (AGH Consulting Toulouse) | Nombre de missions freelance IA par thème ; URLs individuelles des missions décrites | site:free-work.com développeur full stack full remote (3 offres obtenues) | Indeed, LinkedIn, WTTJ pour les offres IA | Le marché freelance IA est sous-représenté dans l'échantillon B |
 | Welcome to the Jungle / Indeed (Corse et DOM) (agent B) | https://fr.jooble.org/emploi-developpeur-web/La-R%C3%A9union | 2026-09-06 | Développeur ; Développeur web | La Réunion ; Martinique ; Guadeloupe ; Corse ; Ajaccio ; Saint-Denis (974) | Offres individuelles et volumes développeur en Corse et dans les DOM | WTTJ : aucune offre développeur (seule une offre gestion/recouvrement en Guadeloupe) ; Indeed : un seul compte daté (Développeur, Ingénieur, Guadeloupe : plus de 25 offres au 08/07/2024) ; Jooble : page « Developpeur web à La Réunion 2026 » sans compteur ; mention du groupe noviseas (ESN présente en Guadeloupe, Martinique, Guyane, Réunion) sans URL d'offre | Offres individuelles Corse/Martinique/Guyane ; volumes Réunion, Martinique, Corse | France Travail (2 offres Réunion), Hellowork (2 offres Réunion/Guadeloupe), Indeed viewjob (aucune) | Aucune source exhaustive identifiée | Corse et DOM restent marginaux dans l'échantillon B (4 offres, 1 volume 2024) |
+| Data Emploi (dataemploi.francetravail.fr, ROME M1805) (agent D1) | https://dataemploi.francetravail.fr/ | 2026-09-06 | ROME M1805 Études et développement informatique | Normandie, Bretagne, Grand Est (requêtes préparées) | Nombre d'offres, projets de recrutement BMO, part difficile par région | Requêtes non exécutées : quota WebSearch de la session épuisé (200/200) après 45 requêtes D1 ; aucune page dataemploi n'est remontée dans les requêtes France Travail précédentes | Tous les indicateurs régionaux M1805 | Aucun (WebFetch/curl bloqués par le proxy selon D_CONSIGNES) | Fichiers C_regions.jsonl / etudes/regions_donnees.jsonl des agents précédents | Pas de volume régional France Travail daté dans D1 ; à relancer dans une session avec quota disponible |
+| France Travail - pages de liste (candidat.francetravail.fr/offres/emploi/... et /offres/recherche?motsCles=) (agent D1) | https://candidat.francetravail.fr/offres/emploi/developpeur-web/caen/s28m7v40 ; https://candidat.francetravail.fr/offres/emploi/developpeur-web/tours/s29m2v26 ; https://candidat.francetravail.fr/offres/emploi/developpeur-web/le-havre/s28m7v14 ; https://candidat.francetravail.fr/offres/emploi/developpeur-web/reunion/s28m7d974 | 2026-09-06 | Développeur web, développeur javascript, développeur front end, développeur symfony, développeur php, développeur informatique | Caen, Calvados, Tours, Indre-et-Loire, Le Havre, Seine-Maritime, La Réunion, Cannes, Hauts-de-Seine, France entière | Nombre d'offres affiché dans le titre ou l'extrait des pages de liste | Les pages de liste France Travail remontent dans les résultats mais leur titre ('Offres d'emploi Développeur web - Informatique et télécoms - Caen / France Travail') ne contient aucun compte ; les extraits résumés n'en donnent pas non plus. Seule exception : 'N offres d'emploi pour <mot-clé>' apparaît pour des mots-clés génériques (ex. '5962 offres d'emploi pour tours', non pertinent) | Stocks d'offres datés par métier × zone sur France Travail | Requêtes site:candidat.francetravail.fr/offres/recherche avec 'offres' et motsCles (non exécutée, quota épuisé) | Comptes datés HelloWork/Indeed (1 volume HelloWork 'Développeur symfony' relevé) | Les volumes France Travail par région restent absents de D1 |
+| France Travail - offres individuelles Corse, Antilles-Guyane, Mayotte, Orléans, Amiens, Poitiers/Limoges, Nice/Sophia, Clermont-Ferrand, Vannes/Lorient/Quimper, Le Havre (agent D1) | https://candidat.francetravail.fr/offres/recherche/detail/ | 2026-09-06 | développeur, développeur web, full stack, logiciel, informatique | Ajaccio, Bastia, Martinique, Guadeloupe, Guyane, Mayotte, Orléans, Amiens, Poitiers, Limoges, Nice, Sophia-Antipolis, Clermont-Ferrand, Vannes, Lorient, Quimper, Le Havre | Offres individuelles avec expérience, contrat, salaire | Très peu ou aucune offre de développement indexée : Corse 3 offres (2 datées 2025), Martinique 1, Réunion 4, Mayotte/Guadeloupe/Guyane 0, Orléans 0, Amiens 0, Poitiers/Limoges 0 (seulement testeur QA), Nice 0, Clermont 0, Vannes/Lorient/Quimper 1 (Angular/.NET Quimper), Le Havre 0 (hors GTB/industrie) | Offres dev web dans ces zones | Deux formulations par zone (ville + champs 'Débutant accepté'/'An(s)'/'Salaire', puis motif de titre 'NN - VILLE') | Indeed/HelloWork pour ces zones (agents A/B/C) | Sous-représentation persistante de ces zones dans le corpus France Travail ; le faible nombre est lui-même une observation (marché FT mince hors métropoles) |
+| Apec (apec.fr, pages détail-offre) (agent D2) | https://www.apec.fr/candidat/recherche-emploi.html/emploi/detail-offre/ | 2026-09-06 | développeur web / full stack / front / back / PHP-Symfony / Java-Spring / .NET / React-Angular-Vue-Node / Python / mobile / DevOps / QA / software engineer / ingénieur IA-LLM / tech lead | Paris, Lyon, Toulouse, Nantes, Rennes, Lille, Bordeaux, Marseille, Montpellier, Strasbourg, Rouen, Dijon, Grenoble, Nice, Tours, Clermont-Ferrand, Reims, Nancy, Caen, Angers, Brest, Amiens, Metz, Besançon, Limoges, Poitiers, Aix-en-Provence, La Rochelle, Le Mans | Fourchette de salaire (k€ brut annuel), expérience minimale, type de contrat, télétravail, entreprise | Les pages détail-offre remontent bien via WebSearch (titre exact avec ville/département et souvent date de publication), mais le résumé renvoyé par l'outil ne restitue jamais le bloc salaire / expérience / contrat / télétravail / entreprise des offres ; 12 requêtes ciblées sur les termes 'k€ brut annuel', 'brut annuel', 'Minimum 3 ans', 'Débutant accepté', 'A négocier', 'Télétravail partiel' n'ont renvoyé aucun extrait exploitable. | SALAIRE_MINIMUM, SALAIRE_MAXIMUM, EXPERIENCE (hors mention dans le titre : junior/confirmé/senior/expert), TYPE_CONTRAT (hors mention dans le titre), TELETRAVAIL, ENTREPRISE, description de poste | site:cadres.apec.fr (ancien format d'URL), jd.apec.fr, allowed_domains apec.fr, requêtes avec fourchettes précises ('35 - 45 k€'), WebFetch/curl interdits par consigne | Fiche métier Apec 'Développeur' (apec.fr/tous-nos-metiers/informatique/developpeur.html) : 80 % des offres entre 34 et 53 k€ brut annuel, moyenne 43 k€ ; étude Apec 'Les rémunérations des cadres dans 111 familles de métiers' (édition 2025) ; article Le Monde Informatique 'Les salaires des cadres IT analysés par l'Apec en 2025' | Les 162 offres Apec collectées documentent l'intitulé, la technologie, la ville/région et la date, mais pas le salaire individuel : l'analyse salariale Apec devra s'appuyer sur les agrégats de la fiche métier et des études Apec plutôt que sur des offres unitaires. |
+| Apec (pages de liste recherche-emploi.html/emploi?motsCles=...) (agent D2) | https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=D%C3%A9veloppeur+web | 2026-09-06 | Développeur web, Développeur full stack, Développeur PHP, Développeur Java, Développeur JavaScript, Développeur informatique | France, Lyon, Nantes, Rennes, Paris, Bourgogne-Franche-Comté, Gironde, Ile-de-France | Nombre d'offres actives ('N offres d'emploi') daté (2024, 2025, septembre 2026) | Les pages de liste Apec sont indexées (titres 'Offres d'emploi Développeur web', 'Offres d'emploi - septembre 2026') mais leur contenu est chargé dynamiquement : aucun compte d'offres n'apparaît dans les titres ni dans les extraits, contrairement à Indeed/HelloWork. | NOMBRE d'offres par intitulé × zone × date | Requêtes 'septembre 2026', 'nombre d'offres 2025', filtres lieux=/fonctions=/salaires=, cadres.apec.fr/liste-offres-emploi-cadres | Études corporate.apec.fr : 31 258 offres de développeurs publiées sur apec.fr (2022, 'Les métiers cadres porteurs en 2023') ; PDF régionaux 'Les offres publiées sur apec.fr' (Île-de-France, Auvergne-Rhône-Alpes, Paca oct. 2023, Bourgogne-Franche-Comté) ; 'Cartographie et analyse territoriale des offres d'emploi cadre par secteur' ; 'Prévisions 2025/2026 de recrutements de cadres en Île-de-France' (volume d'offres IDF déc. 2024-fév. 2025 en baisse de 24 % vs fév. 2023, développement informatique 2e famille de métiers) | Pas de série de stocks Apec datés par ville/intitulé ; les volumes Apec ne peuvent être utilisés qu'au niveau national/régional via les études Apec (à exploiter par l'agent études). |
+| Jooble / Talent.com / Jobijoba / Meteojob / Monster / LinkedIn / JobTeaser / Glassdoor / Optioncarriere / Free-Work (agent D4) | fr.jooble.org ; fr.talent.com ; jobijoba.com ; meteojob.com ; monster.fr ; fr.linkedin.com/jobs ; jobteaser.com ; glassdoor.fr ; optioncarriere.com ; free-work.com | 2026-09-06 | aucun (non testées) | aucune | comptes d'offres datés pluriannuels (2024/2025/2026) par intitulé × zone | NON TESTÉES : le budget WebSearch de la session (plafond 200 requêtes, partagé) a été épuisé après 48 requêtes D4, toutes consacrées à Indeed France (source prioritaire) ; 8 requêtes villes moyennes Indeed ont aussi été refusées | séries datées hors Indeed ; villes Nancy, Metz, Reims, Brest, Caen, Le Havre, Dijon, Besançon, Tours, Orléans, Clermont-Ferrand, Annecy, Saint-Étienne, Poitiers, Limoges, Pau, La Rochelle, Amiens, Angers, Le Mans, Ajaccio, Bastia, Saint-Denis Réunion, Fort-de-France, Pointe-à-Pitre (Indeed) ; intitulés Vue/Angular 2024, .NET France 2024, JavaScript, intégrateur web 2025, développeur alternance France 2024, développeur web junior 2024 | aucun (WebFetch/curl bloqués par le proxy, non réessayés conformément aux consignes) | Indeed France (296 comptes datés dans D4_volumes.jsonl) ; fichiers A/B/C_volumes.jsonl pour HelloWork, LinkedIn, Glassdoor, Free-Work, JobTeaser | les séries pluriannuelles restent mono-source (Indeed) ; pas de triangulation inter-plateformes par D4 ; couverture villes moyennes à compléter dans une session ultérieure |
+| Free-Work (TJM / rémunération freelance) (agent D5) | https://www.free-work.com/fr/tech-it/jobs/developpeur-fullstack | 2026-09-06 | développeur fullstack, développeur (TJM / €/jour) | Nantes, Paris | TJM ou salaire sur les pages d'offres individuelles | Les requêtes 'TJM' OR '€/jour' ne remontent que des pages de liste et des pages baromètre (ex. 'TJM : Développeur fullstack', moyenne 550 €/jour) ; aucune page d'offre individuelle avec TJM affiché dans l'extrait | TJM par offre, localisation Nantes | site:free-work.com mission freelance 'développeur fullstack' Paris (idem : pages de liste, extraits mentionnant des missions sans URL individuelle) | Offres CDI Free-Work avec fourchette de salaire dans l'extrait (Lyon : 40-60 k€) ; baromètre TJM Free-Work (550 €/jour fullstack, 400 €/jour PHP Paris, jusqu'à 600 €/jour Java) | Le TJM freelance ne peut être documenté qu'au niveau agrégé (baromètre), pas par offre |
+| Free-Work (offres IA / LLM) (agent D5) | https://www.free-work.com/fr/tech-it/jobs/large-language-model-llm | 2026-09-06 | développeur LLM / IA générative / agents IA | France | offres individuelles de développeurs mentionnant LLM, RAG, agents IA | Seules des pages de liste par mot-clé (LLM, IA, Agent IA, Copilot, Prompt Engineering, IA Générative) sont indexées ; les extraits décrivent des missions (Senior AI Developer Montpellier, AI Agents Developer Paris banque privée, consultant GenAI assurance) sans URL individuelle | URL, contrat, expérience, TJM par offre | Aucun (budget WebSearch épuisé) | Welcome to the Jungle (offres IA individuelles bien indexées : Padoa, SII, MP Data, Figaro Classifieds, Beamy, Keyrus...) | Le marché freelance IA est sous-représenté dans le fichier d'offres ; à documenter via WTTJ et LinkedIn |
+| JobTeaser (agent D5) | https://www.jobteaser.com/fr/job-search/alternance-web-paris | 2026-09-06 | développeur web (stage, alternance) | Paris, Lyon, Nantes, Lille | offres individuelles stage/alternance développeur web | L'indexation privilégie les pages de recherche datées (comptes d'offres exploitables en volumes : 22 alternances web Paris août 2025, 54 dev info Paris février 2026, 3 Lyon / 1 Nantes / 1 Lille juin 2026, 16 web Lille mars 2026) ; seulement 2 offres individuelles remontées (Ayvens, Sopra Steria .NET Lyon) | détail des offres individuelles (durée, rémunération, école) | requête combinée Lyon/Nantes/Lille | Welcome to the Jungle (stages/alternances : Sociabble, Sopra Steria, Docaposte, Innovorder) | JobTeaser sert surtout aux volumes datés (stocks faibles hors Paris), pas au détail des offres |
+| Monster, Meteojob, Talent.com, Jooble, LesJeudis, ChooseYourBoss, Glassdoor, cabinets (Hays, Robert Half, Michael Page, Silkhom, Urban Linker, Mobiskill, Nextep, Blue Search) (agent D5) | NC | 2026-09-06 | développeur web / fullstack / front / back | France, villes NEXA et autres métropoles (Toulouse, Montpellier, Rennes, Strasbourg, Grenoble) | offres individuelles avec expérience, contrat, salaire, télétravail, IA | NON TESTÉ : le budget WebSearch de la session (200/200 requêtes, partagé) a été épuisé après la 28e requête de l'agent D5 ; 10 requêtes préparées (Toulouse/Montpellier, Rennes/Strasbourg/Grenoble, LinkedIn junior Paris, LinkedIn senior Lille/Marseille, LesJeudis, ChooseYourBoss, Monster, Meteojob, Talent.com, Jooble) ont été refusées | tout | Aucun (WebFetch/curl bloqués par le proxy) | Urban Linker, Hays, Externatic, AK Recrutement, Grafton, Easy Partner, Objectware, HR-Team, FED apparaissent indirectement via LinkedIn et Free-Work | Couverture D5 limitée à WTTJ, LinkedIn, Free-Work, JobTeaser et Greenhouse ; autres métropoles hors NEXA peu couvertes (Poitiers, Rouffach, Caen, Angoulême, Chamalières, Toulouse, Colomiers, Landivisiau seulement) |
+| Indeed (filtre 'Débutant accepté' / 'sans expérience') (agent D7) | https://fr.indeed.com/viewjob | 2026-09-06 | développeur ; développeur web ; développeur full stack | Paris/IDF ; Lyon/Villeurbanne ; Lille/Roubaix/Tourcoing/Lesquin ; Bordeaux/Mérignac/Pessac ; Nantes/Carquefou/Rezé ; Marseille/Aubagne/Vitrolles | offres individuelles (viewjob) mentionnant explicitement 'Débutant accepté' avec contrat/salaire | 8 requêtes 'Débutant accepté' : aucune page viewjob développeur indexée avec cette mention dans les six zones ; seules des pages de liste (comptes datés) ou des offres hors informatique (soins) remontent. Une seule offre 'débutant(e) accepté(e)' trouvée, hors zone (La Roche-sur-Yon). | mention 'Débutant accepté' dans les extraits d'offres développeur ; salaires sur les offres juniors | requêtes 'jeune diplômé', 'sans expérience', 'première expérience', 'junior' + ville ; requêtes suburbs (Bron, Vénissieux, Limonest, Écully, Carquefou, Rezé, Aubagne...) | pages de liste Indeed 'Debutant Accepte, Nantes (44) : plus de 400 emplois' (tous métiers) ; offres 'junior' / alternance / stage individuelles | L'ouverture aux débutants sur Indeed se lit surtout via les intitulés 'junior', 'alternance', 'stage', 'apprenti' plutôt que via le champ 'Débutant accepté' ; le budget WebSearch de la session (200/200) a été atteint après 52 requêtes D7, limitant la collecte à 54 lignes. |
 | Apec (agent ia) | https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=D%C3%A9veloppeur+full+stack+et+IA | 2026-09-06 | développeur full stack IA générative | France | offres individuelles (detail-offre) et comptes d'offres | WebSearch ne renvoie que des pages de liste Apec, dont le contenu indexé est un message d'erreur (« Une erreur inattendue est survenue ») ; aucune page detail-offre, aucun compte | offres individuelles Apec, volumes Apec | site:apec.fr detail-offre | Indeed, Welcome to the Jungle, HelloWork | Pas de données Apec (cadres) pour les familles A et B |
 | Free-Work, LinkedIn, France Travail, JobTeaser, LesJeudis, ChooseYourBoss, Meteojob, Talent.com, Jooble, Monster (agent ia) | NC | 2026-09-06 | AI Engineer, LLM, DevOps, Cloud, Platform, DevSecOps, Tech Lead (requêtes préparées non exécutées) | France | offres individuelles et volumes | NON TESTEES : quota WebSearch de la session épuisé (200/200) après 12 requêtes de cet agent ; une seule page de liste Free-Work (Claude Code) et une offre LinkedIn sont remontées incidemment | tout le périmètre de ces plateformes | WebFetch/curl bloqués par le proxy (règle) | Aucune dans cette session | Couverture partielle : objectif 80+80 offres non atteint (33 A / 19 B) ; villes Marseille-Aix, Lille (famille B), Nantes/Bordeaux (famille B) peu ou pas couvertes |
 | Apec (Nantes) (agent lille) | https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=D%C3%A9veloppeur+FullStack+%C3%A0+Nantes | 2026-09-06 | développeur full stack | Nantes | offres individuelles (detail-offre) et comptes d'offres | WebSearch ne renvoie que des pages de liste (motsCles=...) sans compte d'offres dans le titre ni l'extrait, et une seule page detail-offre située à Nanterre (hors zone) | URLs d'offres individuelles Apec à Nantes ; nombre d'offres | site:apec.fr detail-offre développeur full stack Nantes | Indeed, France Travail, Welcome to the Jungle (offres Nantes collectées) | Aucune offre Apec pour Nantes dans l'échantillon ; sous-représentation des offres cadres Apec sur cette zone |
@@ -754,6 +764,17 @@ Toutes les plateformes ont d'abord été testées en accès direct (HTTP) : refu
 | BMO 2026 — chiffres par bassin pour Lyon, Bordeaux, Nantes, Marseille, Aix, Toulouse (ingénieurs informatique) | Q125 ; Q146 ; Q181 ; Q187 ; Q188 ; Q189 ; Q190 ; Q191 ; Q197 ; Q198 ; Q199 | Les portails régionaux (observatoire-emploi-ara.fr, -nouvelle-aquitaine.fr, -paysdelaloire.fr, statistiques.francetravail.org/bmo) publient les fiches par bassin mais aucune valeur métier par bassin NEXA n'est remontée dans les extraits WebSearch. Seul le bassin de Lille (BMO 2023 : 5,0 % des intentions) et l'IDF (4 060 projets en 2026) sont chiffrés. |
 | Dares — indicateur de tension par région pour 'ingénieurs de l'informatique' | Q130 ; Q149 ; Q177 ; Q200 | Valeurs nationales trouvées (indicateur 1,1 en 2023 ; 42 635 projets ; 67 % difficiles) ; aucune valeur régionale extraite (fiche 'M - Informatique' PDF et arrêté du 21 mai 2025 identifiés mais non lus). |
 | INSEE — population active / emploi total pour les 13 régions 2024-2025 (tableau complet) | Q131 ; Q144 ; Q154 ; Q160 ; Q176 | Uniquement : France 30,5 M en emploi fin 2024 ; ARA 3,72 M emplois 2023 ; IDF taux d'emploi 68,4 % et chômage 7,0 % (2024) ; HDF chômage 9,6 % fin 2025 ; population 2021 par région. Le tableau régional complet (séries longues 2025, insee.fr/fr/statistiques/8977307) n'est pas lisible via WebSearch. |
+| Data Emploi (dataemploi.francetravail.fr, ROME M1805) |  | Requêtes non exécutées : quota WebSearch de la session épuisé (200/200) après 45 requêtes D1 ; aucune page dataemploi n'est remontée dans les requêtes France Travail précédentes |
+| France Travail - pages de liste (candidat.francetravail.fr/offres/emploi/... et /offres/recherche?motsCles=) |  | Les pages de liste France Travail remontent dans les résultats mais leur titre ('Offres d'emploi Développeur web - Informatique et télécoms - Caen / France Travail') ne contient aucun compte ; les extraits résumés n'en donnent pas non plus. Seule exception : 'N offres d'emploi pour <mot-clé>' apparaît pour des mots-clés génériques (ex. '5962 offres d'emploi pour tours', non pertinent) |
+| France Travail - offres individuelles Corse, Antilles-Guyane, Mayotte, Orléans, Amiens, Poitiers/Limoges, Nice/Sophia, Clermont-Ferrand, Vannes/Lorient/Quimper, Le Havre |  | Très peu ou aucune offre de développement indexée : Corse 3 offres (2 datées 2025), Martinique 1, Réunion 4, Mayotte/Guadeloupe/Guyane 0, Orléans 0, Amiens 0, Poitiers/Limoges 0 (seulement testeur QA), Nice 0, Clermont 0, Vannes/Lorient/Quimper 1 (Angular/.NET Quimper), Le Havre 0 (hors GTB/industrie) |
+| Apec (apec.fr, pages détail-offre) |  | Les pages détail-offre remontent bien via WebSearch (titre exact avec ville/département et souvent date de publication), mais le résumé renvoyé par l'outil ne restitue jamais le bloc salaire / expérience / contrat / télétravail / entreprise des offres ; 12 requêtes ciblées sur les termes 'k€ brut annuel', 'brut annuel', 'Minimum 3 ans', 'Débutant accepté', 'A négocier', 'Télétravail partiel' n'ont |
+| Apec (pages de liste recherche-emploi.html/emploi?motsCles=...) |  | Les pages de liste Apec sont indexées (titres 'Offres d'emploi Développeur web', 'Offres d'emploi - septembre 2026') mais leur contenu est chargé dynamiquement : aucun compte d'offres n'apparaît dans les titres ni dans les extraits, contrairement à Indeed/HelloWork. |
+| Jooble / Talent.com / Jobijoba / Meteojob / Monster / LinkedIn / JobTeaser / Glassdoor / Optioncarriere / Free-Work |  | NON TESTÉES : le budget WebSearch de la session (plafond 200 requêtes, partagé) a été épuisé après 48 requêtes D4, toutes consacrées à Indeed France (source prioritaire) ; 8 requêtes villes moyennes Indeed ont aussi été refusées |
+| Free-Work (TJM / rémunération freelance) |  | Les requêtes 'TJM' OR '€/jour' ne remontent que des pages de liste et des pages baromètre (ex. 'TJM : Développeur fullstack', moyenne 550 €/jour) ; aucune page d'offre individuelle avec TJM affiché dans l'extrait |
+| Free-Work (offres IA / LLM) |  | Seules des pages de liste par mot-clé (LLM, IA, Agent IA, Copilot, Prompt Engineering, IA Générative) sont indexées ; les extraits décrivent des missions (Senior AI Developer Montpellier, AI Agents Developer Paris banque privée, consultant GenAI assurance) sans URL individuelle |
+| JobTeaser |  | L'indexation privilégie les pages de recherche datées (comptes d'offres exploitables en volumes : 22 alternances web Paris août 2025, 54 dev info Paris février 2026, 3 Lyon / 1 Nantes / 1 Lille juin 2026, 16 web Lille mars 2026) ; seulement 2 offres individuelles remontées (Ayvens, Sopra Steria .NET Lyon) |
+| Monster, Meteojob, Talent.com, Jooble, LesJeudis, ChooseYourBoss, Glassdoor, cabinets (Hays, Robert Half, Michael Page, Silkhom, Urban Linker, Mobiskill, Nextep, Blue Search) |  | NON TESTÉ : le budget WebSearch de la session (200/200 requêtes, partagé) a été épuisé après la 28e requête de l'agent D5 ; 10 requêtes préparées (Toulouse/Montpellier, Rennes/Strasbourg/Grenoble, LinkedIn junior Paris, LinkedIn senior Lille/Marseille, LesJeudis, ChooseYourBoss, Monster, Meteojob, Talent.com, Jooble) ont été refusées |
+| Indeed (filtre 'Débutant accepté' / 'sans expérience') |  | 8 requêtes 'Débutant accepté' : aucune page viewjob développeur indexée avec cette mention dans les six zones ; seules des pages de liste (comptes datés) ou des offres hors informatique (soins) remontent. Une seule offre 'débutant(e) accepté(e)' trouvée, hors zone (La Roche-sur-Yon). |
 | Indeed Hiring Lab – 'AI and job postings: from destruction to creation' (08/07/2026), part des offres mentionnant l'IA en France, GenAI skills in French job postings | Indeed Hiring Lab France software development job postings 2026 (exécutée : URL article et série FRED trouvées, chiffres France absents des extraits) ; Indeed Hiring Lab "from destruction to creation" AI job postings July 2026 software developers France share (non exécutée, quota) ; Indeed Hiring La | URL article et série FRED IHLIDXFRTPSOFTDEVE identifiées mais aucune valeur d'indice ni part IA France dans les extraits ; quota WebSearch épuisé avant approfondissement |
 | HelloWork / Hellowork Group – baromètre emploi tech 2026, salaires développeurs | HelloWork baromètre emploi tech 2026 offres développeurs salaires étude (non exécutée, quota) | Non couvert (quota). Seuls deux articles HelloWorkPlace relayant BMO/Apec ont été captés incidemment |
 | Welcome to the Jungle études 2026 | aucune exécutée (quota épuisé avant) | Non couvert |
@@ -786,7 +807,7 @@ Toutes les plateformes ont d'abord été testées en accès direct (HTTP) : refu
 
 ### B.5 — Journaux de requêtes
 
-812 requêtes journalisées (fichiers `collecte/*_journal.txt`). Extrait :
+1066 requêtes journalisées (fichiers `collecte/*_journal.txt`). Extrait :
 
 - `site:fr.indeed.com "Développeur web" Toulouse emplois | offres individuelles: 0 | volumes: oui`
 - `site:fr.indeed.com "Développeur web" Occitanie "emplois" | offres individuelles: 0 | volumes: oui`

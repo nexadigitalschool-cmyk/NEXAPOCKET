@@ -88,8 +88,9 @@ def evol_pct(series, intit_patterns, zone_patterns, sources=EVOL_SOURCES):
 
 
 def _evol_pct_src(series, intit_patterns, zone_patterns, source):
-    best = {"2026": None, "2025": None, "2024": None}
-    detail = []
+    """Pour une source, apparie les comptes d'une MÊME page (même intitulé × même zone) : dernier compte de chaque année.
+    Quand plusieurs pages sont comparables, retient celle dont le compte 2026 est le plus élevé (page la plus représentative)."""
+    cands = {}
     for (src, intit, zone, contrat), pts in series.items():
         if src != source or contrat not in ("nc", "tous", ""):
             continue
@@ -97,17 +98,27 @@ def _evol_pct_src(series, intit_patterns, zone_patterns, source):
             continue
         if not any(re.fullmatch(z, zone) for z in zone_patterns):
             continue
+        best = {}
         for date, n, url, preuve, nb in pts:
             y = date[:4]
-            if y in best and (best[y] is None or date > best[y][0]):
-                best[y] = (date, n, intit, zone)
+            if y in ("2024", "2025", "2026") and (y not in best or date > best[y][0]):
+                best[y] = (date, n)
+        if "2026" in best and ("2025" in best or "2024" in best):
+            cands[(intit, zone)] = best
     e25 = e24 = NC
-    if best["2026"] and best["2025"] and best["2025"][2] == best["2026"][2] and best["2025"][3] == best["2026"][3]:
-        e25 = round(100.0 * (best["2026"][1] - best["2025"][1]) / best["2025"][1])
-        detail.append(f"{source} '{best['2026'][2]}' {best['2026'][3]} : {best['2025'][1]} ({best['2025'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
-    if best["2026"] and best["2024"] and best["2024"][2] == best["2026"][2] and best["2024"][3] == best["2026"][3]:
-        e24 = round(100.0 * (best["2026"][1] - best["2024"][1]) / best["2024"][1])
-        detail.append(f"{source} '{best['2026'][2]}' {best['2026'][3]} : {best['2024'][1]} ({best['2024'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
+    detail = []
+    c25 = [(k, v) for k, v in cands.items() if "2025" in v]
+    if c25:
+        k, v = max(c25, key=lambda kv: (kv[1]["2026"][1], kv[1]["2026"][0]))
+        if v["2025"][1]:
+            e25 = round(100.0 * (v["2026"][1] - v["2025"][1]) / v["2025"][1])
+            detail.append(f"{source} '{k[0]}' {k[1]} : {v['2025'][1]} ({v['2025'][0]}) -> {v['2026'][1]} ({v['2026'][0]})")
+    c24 = [(k, v) for k, v in cands.items() if "2024" in v]
+    if c24:
+        k, v = max(c24, key=lambda kv: (kv[1]["2026"][1], kv[1]["2026"][0]))
+        if v["2024"][1]:
+            e24 = round(100.0 * (v["2026"][1] - v["2024"][1]) / v["2024"][1])
+            detail.append(f"{source} '{k[0]}' {k[1]} : {v['2024'][1]} ({v['2024'][0]}) -> {v['2026'][1]} ({v['2026'][0]})")
     return e25, e24, " ; ".join(detail)
 
 

@@ -50,3 +50,4 @@ site:fr.indeed.com/viewjob "Développeur" "Débutant accepté" OR "débutants ac
 site:fr.indeed.com/viewjob "Développeur" "sans expérience" OR "première expérience" CDI Paris OR Lyon OR Nantes	=> 2 offre(s) individuelle(s) (+0 volumes)
 site:fr.indeed.com/viewjob "Développeur Front" OR "Développeur Front-End" junior OR "2 ans" Paris "par an"	=> 0 offre(s) individuelle(s) (+0 volumes)
 site:fr.indeed.com/viewjob "Développeur Back" OR "Développeur Back-End" "3 ans" OR "5 ans" Paris "par an"	=> 0 offre(s) individuelle(s) (+0 volumes)
+# Budget WebSearch de session épuisé (200/200) après 52 requêtes D7 : 8 requêtes VOLUMES prévues (Développeur Junior/Alternance/Stage/Senior/Débutant/Freelance/CDI × zones, 2024-2026) non exécutées.
