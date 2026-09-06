@@ -136,3 +136,9 @@ site:fr.indeed.com/viewjob "Platform Engineer" OR "Site Reliability Engineer" OR
 site:welcometothejungle.com/fr/companies "QA Engineer" OR "Test Automation" OR "QA Automation" CDI | offres retenues: 7
 site:welcometothejungle.com/fr/companies "Green IT" OR "éco-conception" OR "accessibilité numérique" développeur CDI | offres retenues: 3
 site:candidat.francetravail.fr/offres/recherche/detail "DevOps" OR "cloud" OR "cybersécurité" ingénieur | offres retenues: 8
+site:candidat.francetravail.fr/offres/recherche/detail développeur Limoges OR Poitiers OR "La Rochelle" OR Pau OR Bayonne | offres retenues: 1
+site:candidat.francetravail.fr/offres/recherche/detail développeur Amiens OR Valenciennes OR Arras OR Dunkerque OR Beauvais | offres retenues: 0
+site:candidat.francetravail.fr/offres/recherche/detail développeur Caen OR "Le Havre" OR Cherbourg OR Évreux OR Alençon | offres retenues: 0
+site:candidat.francetravail.fr/offres/recherche/detail développeur Ajaccio OR Bastia OR Corse OR Martinique OR Guadeloupe OR Guyane | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Perpignan OR Nîmes OR Avignon OR Chambéry OR Valence | offres retenues: 5
+site:fr.indeed.com/viewjob développeur web Mulhouse OR Colmar OR Troyes OR Belfort OR Auxerre | offres retenues: 2
