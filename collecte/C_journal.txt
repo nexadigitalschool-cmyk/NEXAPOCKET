@@ -185,3 +185,18 @@ Q183 | V4 | Apec "Panorama régional des offres d'emploi publiées sur apec.fr" 
 Q184 | V4 | Aix-Marseille-Provence métropole numérique chiffres 2025 OR 2026 emplois entreprises numériques
 Q185 | V4 | Malt baromètre 2026 TJM développeur par ville Lyon Lille Bordeaux Nantes Marseille Paris
 Q186 | V1/V4 | France Travail "offres d'emploi diffusées" 1er trimestre 2026 informatique développeur évolution offres par métier
+Q187 | V4 | "BMO_2026_bassin" Marseille OR Aix OR "Aix-en-Provence" OR Aubagne site:francetravail.org peorg-paca Bassins (liste des bassins 13, pas de PDF Marseille/Aix)
+Q188 | V4 | "bmo/2026/BASSINS" LILLE site:francetravail.org peorg-hdf (PDF Lille 2026 non indexé ; 2023 seulement)
+Q189 | V4 | France Travail Auvergne-Rhône-Alpes BMO 2026 bassin Lyon PDF ... métiers les plus recherchés Lyon
+Q190 | V4 | France Travail Nouvelle-Aquitaine BMO 2026 bassin Bordeaux PDF ... Bordeaux informatique
+Q191 | V4 | France Travail Pays de la Loire BMO 2026 bassin Nantes PDF ... Nantes informatique
+Q192 | V1 | site:fr.indeed.com "Développeur Java" OR "Développeur PHP" OR "Développeur Symfony" OR "Développeur Angular" OR "Développeur Python" "emplois" "2025" "plus de" -2026
+Q193 | V1/V3 | Indeed Hiring Lab France offres "développement logiciel" évolution 2025 2026 par rapport à 2020 tendance secteur tech logiciel France
+Q194 | V4/V1 | Apec "Baromètre Apec" 1er trimestre 2026 offres d'emploi cadres informatique évolution intentions de recrutement
+Q195 | V1 | free-work.com tech-it jobs "developpeur-fullstack" OR "front-end" ... nombre Free-Work 2026 (pas de compte)
+Q196 | V1 | welcometothejungle.com développeur "offres" nombre ... site:welcometothejungle.com (pas de compte)
+Q197 | V4 | observatoire-emploi-ara.fr BMO 2026 bassin Lyon "ingénieurs et cadres d'étude" informatique projets (pas de chiffre bassin)
+Q198 | V4 | Observatoire emploi Nouvelle-Aquitaine BMO 2026 fiche bassin Bordeaux ingénieurs informatique (pas de chiffre bassin)
+Q199 | V4 | Observatoire régional emploi Pays de la Loire synthèse BMO 2026 21 avril 2026 métiers ingénieurs informatique Nantes (pas de chiffre bassin)
+Q200 | V4 | Dares fiche tensions "M - Informatique" 2024 régions ingénieurs de l'informatique indicateur par région (pas de valeur régionale)
+# FIN — 200 requêtes WebSearch utilisées (budget épuisé le 2026-09-06)
