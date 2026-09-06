@@ -130,3 +130,9 @@ site:fr.linkedin.com/jobs/view développeur web Toulouse OR Montpellier OR Renne
 site:fr.linkedin.com/jobs/view développeur web Strasbourg OR Grenoble OR Nice OR Nancy | offres retenues: 7
 site:hellowork.com/fr-fr/emplois "télétravail" "100%" OR "full remote" développeur full stack | offres retenues: 8
 site:candidat.francetravail.fr/offres/recherche/detail "intelligence artificielle" développeur OR ingénieur | offres retenues: 8
+site:fr.linkedin.com/jobs/view "Ingénieur DevOps" OR "Cloud Engineer" OR "Site Reliability Engineer" France | offres retenues: 7
+site:fr.linkedin.com/jobs/view "QA" OR "testeur automaticien" OR "test automation" engineer France | offres retenues: 8
+site:fr.indeed.com/viewjob "Platform Engineer" OR "Site Reliability Engineer" OR "SRE" CDI | offres retenues: 8
+site:welcometothejungle.com/fr/companies "QA Engineer" OR "Test Automation" OR "QA Automation" CDI | offres retenues: 7
+site:welcometothejungle.com/fr/companies "Green IT" OR "éco-conception" OR "accessibilité numérique" développeur CDI | offres retenues: 3
+site:candidat.francetravail.fr/offres/recherche/detail "DevOps" OR "cloud" OR "cybersécurité" ingénieur | offres retenues: 8
