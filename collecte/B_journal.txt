@@ -178,3 +178,9 @@ site:glassdoor.fr "développeur web" OR "AI Engineer" OR "DevOps" emplois France
 site:monster.fr développeur web OR "full stack" offre emploi | offres retenues: 7
 site:free-work.com "AI Engineer" OR "LLM" OR "IA générative" OR "RAG" mission | offres retenues: 1
 site:jobteaser.com "intelligence artificielle" OR "IA" OR "LLM" développeur stage OR alternance | offres retenues: 5
+site:fr.indeed.com/viewjob développeur Symfony OR Laravel OR PHP "télétravail" "100%" OR "full remote" | offres retenues: 2
+site:welcometothejungle.com/fr/companies "Télétravail total" "AI Engineer" OR "développeur IA" OR "Machine Learning Engineer" | offres retenues: 5
+site:welcometothejungle.com/fr/companies développeur CDI Grenoble OR Annecy OR "Clermont-Ferrand" OR "Saint-Étienne" OR Chambéry | offres retenues: 0
+site:welcometothejungle.com/fr/companies développeur CDI Rouen OR Caen OR Reims OR Amiens OR Dijon OR Tours OR Orléans | offres retenues: 5
+site:fr.indeed.com/viewjob développeur Shopify OR WordPress OR PrestaShop Toulouse OR Rennes OR Montpellier OR Strasbourg OR Nantes | offres retenues: 2
+site:fr.indeed.com/viewjob "développeur mobile" OR "React Native" OR Flutter Toulouse OR Rennes OR Grenoble OR Strasbourg OR Nice OR Montpellier | offres retenues: 1
