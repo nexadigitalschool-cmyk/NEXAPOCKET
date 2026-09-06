@@ -154,3 +154,9 @@ site:fr.linkedin.com/jobs/view "télétravail" OR "remote" développeur front-en
 site:welcometothejungle.com/fr/companies "LLM" OR "agents IA" OR "agentic" développeur OR engineer CDI | offres retenues: 6
 site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France | offres retenues: 0
 site:fr.indeed.com/viewjob "LLM" OR "Mistral" OR "OpenAI" "développeur full stack" OR "full stack" | offres retenues: 2
+site:welcometothejungle.com/fr/companies "intégrateur web" OR "développeur front-end" Paris CDI | offres retenues: 7
+site:fr.indeed.com/viewjob "intégrateur web" OR "intégrateur front" Paris | offres retenues: 2
+site:candidat.francetravail.fr/offres/recherche/detail "développeur full stack" OR "full-stack" Paris | offres retenues: 8
+site:fr.linkedin.com/jobs/view "développeur front-end" OR "développeur back-end" Paris CDI | offres retenues: 9
+site:hellowork.com/fr-fr/emplois développeur full stack Paris CDI | offres retenues: 9
+site:welcometothejungle.com/fr/companies "tech lead" OR "lead développeur" OR "lead developer" Paris CDI | offres retenues: 10
