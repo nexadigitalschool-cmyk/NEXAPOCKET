@@ -190,3 +190,11 @@ site:fr.indeed.com/viewjob développeur Python Django OR FastAPI OR Flask Paris 
 site:fr.indeed.com/viewjob développeur ".NET" C# Paris CDI | offres retenues: 6
 Indeed "Développeur Web" emplois "plus de" "Hauts-de-Seine" OR "Seine-Saint-Denis" OR "Val-de-Marne" OR Yvelines OR Essonne OR "Val-d'Oise" | offres retenues: 0
 Hellowork "Emploi Développeur" "Plus de" Offres "Hauts-de-Seine" OR "Seine-Saint-Denis" OR "Val-de-Marne" OR Yvelines OR Essonne OR "Val-d'Oise" | offres retenues: 0
+site:fr.linkedin.com/jobs/view "DevSecOps" OR "AppSec" OR "sécurité applicative" ingénieur France | offres retenues: 8
+site:fr.linkedin.com/jobs/view "accessibilité" RGAA développeur OR intégrateur | offres retenues: 6
+site:fr.linkedin.com/jobs/view "Platform Engineer" OR "Cloud Engineer" AWS OR GCP OR Azure France | offres retenues: 5
+site:hellowork.com/fr-fr/emplois "AI Engineer" OR "Ingénieur IA" OR "Développeur IA" Toulouse OR Nantes OR Lyon OR Bordeaux OR Lille OR Rennes | offres retenues: 4
+site:fr.indeed.com/viewjob "AI Engineer" OR "Ingénieur IA" Toulouse OR Nantes OR Lyon OR Bordeaux OR Lille OR Montpellier | offres retenues: 4
+site:candidat.francetravail.fr/offres/recherche/detail "testeur" OR "QA" OR "DevSecOps" OR "accessibilité numérique" | offres retenues: 7
+site:welcometothejungle.com/fr/companies développeur CDI "La Réunion" OR Martinique OR Guadeloupe OR Corse OR Ajaccio OR "Saint-Denis" | offres retenues: 0
+Indeed "Développeur" emplois "plus de" Réunion OR Martinique OR Guadeloupe OR Corse OR "Saint-Denis (974)" | offres retenues: 0
