@@ -179,3 +179,9 @@ Q177 | V4 | Dares "tensions sur le marché du travail en 2024" ingénieurs de l'
 Q178 | V4 | Apec "métiers cadres porteurs" 2026 région ... développeur rang offres région (pas de classement régional)
 Q179 | V1/V3 | HelloWork baromètre alternance 2026 offres alternance informatique développeur ralentissement 2025 chiffres
 Q180 | V3 | Apec jeunes diplômés 2026 informatique taux d'emploi insertion baromètre "jeunes diplômés" ingénieurs informatique IA baisse embauches chiffres
+Q181 | V4 | site:francetravail.org bmo 2026 bassin PDF Lyon OR Lille OR Bordeaux OR Nantes OR Marseille OR "Aix-en-Provence" OR Toulouse "Bassin d'emploi" 2026 BASSINS
+Q182 | V4/V2 | INSEE "Recrutements dans les métiers du numérique" Insee Références 2025 chiffres part des embauches CDI développeurs
+Q183 | V4 | Apec "Panorama régional des offres d'emploi publiées sur apec.fr" 2025 OR 2026 part des offres par région informatique
+Q184 | V4 | Aix-Marseille-Provence métropole numérique chiffres 2025 OR 2026 emplois entreprises numériques
+Q185 | V4 | Malt baromètre 2026 TJM développeur par ville Lyon Lille Bordeaux Nantes Marseille Paris
+Q186 | V1/V4 | France Travail "offres d'emploi diffusées" 1er trimestre 2026 informatique développeur évolution offres par métier
