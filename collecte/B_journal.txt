@@ -124,3 +124,9 @@ Indeed "Développeur Web" emplois 2025 "plus de" "Pays de la Loire" OR "Nouvelle
 site:fr.linkedin.com/jobs/view "GenAI" OR "IA générative" développeur France | offres retenues: 9
 site:fr.indeed.com/viewjob "prompt engineer" OR "prompt engineering" développeur | offres retenues: 3
 site:hellowork.com/fr-fr/emplois "n8n" OR "no-code" OR "low-code" développeur automatisation | offres retenues: 7
+site:fr.indeed.com/viewjob développeur front-end React OR Angular OR Vue Paris CDI | offres retenues: 6
+site:fr.indeed.com/viewjob développeur back-end Node.js OR Python OR ".NET" Paris CDI | offres retenues: 4
+site:fr.linkedin.com/jobs/view développeur web Toulouse OR Montpellier OR Rennes | offres retenues: 4
+site:fr.linkedin.com/jobs/view développeur web Strasbourg OR Grenoble OR Nice OR Nancy | offres retenues: 7
+site:hellowork.com/fr-fr/emplois "télétravail" "100%" OR "full remote" développeur full stack | offres retenues: 8
+site:candidat.francetravail.fr/offres/recherche/detail "intelligence artificielle" développeur OR ingénieur | offres retenues: 8
