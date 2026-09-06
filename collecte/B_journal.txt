@@ -142,3 +142,9 @@ site:candidat.francetravail.fr/offres/recherche/detail développeur Caen OR "Le 
 site:candidat.francetravail.fr/offres/recherche/detail développeur Ajaccio OR Bastia OR Corse OR Martinique OR Guadeloupe OR Guyane | offres retenues: 0
 site:fr.indeed.com/viewjob développeur web Perpignan OR Nîmes OR Avignon OR Chambéry OR Valence | offres retenues: 5
 site:fr.indeed.com/viewjob développeur web Mulhouse OR Colmar OR Troyes OR Belfort OR Auxerre | offres retenues: 2
+Indeed "Développeur Web" emplois "plus de" 2025 Toulouse OR Rennes OR Montpellier OR Strasbourg OR Grenoble OR Nice | offres retenues: 0
+Indeed "Développeur Full Stack" OR "Développeur Front End" emplois "plus de" 2025 OR 2024 Île-de-France OR France | offres retenues: 0
+Hellowork "Emploi Développeur web" "Offres" 2025 Occitanie OR "Île-de-France" OR "Auvergne-Rhône-Alpes" OR "Hauts-de-France" | offres retenues: 0
+Indeed "AI Engineer" OR "Ingénieur IA" OR "Machine Learning Engineer" emplois "plus de" 2025 OR 2024 | offres retenues: 0
+Indeed "DevOps" OR "Cloud Engineer" OR "DevSecOps" OR "Testeur QA" emplois "plus de" 2025 OR 2024 | offres retenues: 0
+site:fr.linkedin.com/jobs "offres d'emploi" "Développeur Web" OR "Développeur Full Stack" Île-de-France OR Occitanie OR Bretagne OR "Auvergne-Rhône-Alpes" | offres retenues: 0
