@@ -172,3 +172,9 @@ Indeed "Ingénieur IA" OR "AI Engineer" OR "Intelligence Artificielle" emplois "
 site:hellowork.com/fr-fr/emplois "Cloud Engineer" OR "Ingénieur Cloud" AWS OR Azure Toulouse OR Nantes OR Lyon OR Rennes OR Bordeaux | offres retenues: 4
 site:hellowork.com/fr-fr/emplois "Testeur QA" OR "QA Engineer" Toulouse OR Rennes OR Strasbourg OR Lyon OR Bordeaux OR Grenoble | offres retenues: 6
 site:fr.indeed.com/viewjob "Green IT" OR "éco-conception" OR "numérique responsable" développeur OR ingénieur | offres retenues: 3
+Hellowork "Emploi Développeur IA" OR "Emploi Data scientist" OR "Emploi Ingénieur machine learning" "Plus de" Offres | offres retenues: 0
+Indeed "Développeur IA" OR "Développeur Intelligence Artificielle" OR "LLM" emplois "plus de" | offres retenues: 0
+site:glassdoor.fr "développeur web" OR "AI Engineer" OR "DevOps" emplois France nombre | offres retenues: 0
+site:monster.fr développeur web OR "full stack" offre emploi | offres retenues: 7
+site:free-work.com "AI Engineer" OR "LLM" OR "IA générative" OR "RAG" mission | offres retenues: 1
+site:jobteaser.com "intelligence artificielle" OR "IA" OR "LLM" développeur stage OR alternance | offres retenues: 5
