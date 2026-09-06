@@ -131,3 +131,15 @@ Q129 | V4 | Apec prévisions 2026 recrutements cadres "Pays de la Loire" OR "Pro
 Q130 | V4 | Dares tensions 2024 OR 2025 "ingénieurs de l'informatique" métiers en tension par région indicateur de tension
 Q131 | V4 | INSEE population active par région 2024 OR 2025 emploi total par région tableau (pages INSEE identifiées, pas de chiffre régional dans extraits)
 Q132 | V4 | Numeum OR INSEE effectifs numérique par région emploi secteur numérique NAF 62 région 2024 2025
+Q133 | V4 | INSEE "Insee Analyses" numérique emploi région ... emplois du numérique part 2024 2025
+Q134 | V4 | télétravail part des offres d'emploi tech développeurs France 2025 2026 étude HelloWork OR Apec OR Indeed OR Free-Work pourcentage offres télétravail
+Q135 | V4 | Lyon écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Lyon Saint-Étienne chiffres startups ESN
+Q136 | V4 | Lille écosystème tech 2026 emploi numérique effectifs recruteurs EuraTechnologies French Tech Lille chiffres startups ESN
+Q137 | V4 | Bordeaux écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Bordeaux chiffres startups ESN
+Q138 | V4 | Nantes écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Nantes ADN Ouest chiffres startups ESN
+Q139 | V4 | Marseille Aix-en-Provence écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Aix-Marseille thecamp chiffres startups ESN (pas de chiffre emploi)
+Q140 | V4 | Paris Île-de-France écosystème tech 2026 emploi numérique effectifs recruteurs ESN startups Station F chiffres emplois numériques Île-de-France
+Q141 | V4 | Toulouse écosystème tech 2026 emploi numérique effectifs French Tech Toulouse chiffres startups ESN développeurs
+Q142 | V4 | HelloWork baromètre 2026 offres d'emploi par région Île-de-France Auvergne-Rhône-Alpes part des offres informatique région
+Q143 | V4 | Apec offres d'emploi cadres informatique par région 2025 part ...
+Q144 | V4 | INSEE emploi total par région 2024 chiffres ... estimations d'emploi régional
