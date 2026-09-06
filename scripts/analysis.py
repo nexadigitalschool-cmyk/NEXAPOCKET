@@ -81,6 +81,8 @@ def top_skills(rs, k=6, exclude=("SOFT_SKILLS", "PRODUIT_ET_BUSINESS", "FULL_STA
             if fam in exclude:
                 continue
             for it in items:
+                if it == "IA (mention générale)":
+                    continue
                 c[it] += 1
     return c.most_common(k)
 
@@ -91,9 +93,10 @@ def ia_share(rs):
 
 
 def teletravail_share(rs):
-    known = [r for r in rs if r.get("TELETRAVAIL_NORMALISE") not in (NC, None)]
-    yes = [r for r in known if r["TELETRAVAIL_NORMALISE"] in ("Oui", "Partiel", "Oui (annonce en télétravail)")]
-    return len(yes), len(known), share_or_nc(len(yes), len(known))
+    """Les extraits ne mentionnent le télétravail que lorsqu'il est proposé : on mesure donc la part des offres
+    dont le titre/extrait mentionne un télétravail total ou partiel, rapportée à TOUTES les offres du groupe."""
+    yes = [r for r in rs if r.get("TELETRAVAIL_NORMALISE") in ("Oui", "Partiel", "Oui (annonce en télétravail)")]
+    return len(yes), len(rs), share_or_nc(len(yes), len(rs))
 
 
 def contract_counts(rs):

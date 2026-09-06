@@ -76,6 +76,17 @@ def title_key(v):
     return re.sub(r"\s+", " ", s).strip()
 
 
+SOURCE_CANON = [("indeed", "Indeed"), ("hellowork", "HelloWork"), ("welcome", "Welcome to the Jungle"), ("wttj", "Welcome to the Jungle"), ("france travail", "France Travail"), ("francetravail", "France Travail"), ("apec", "Apec"), ("linkedin", "LinkedIn"), ("free-work", "Free-Work"), ("freework", "Free-Work"), ("free work", "Free-Work"), ("jooble", "Jooble"), ("talent", "Talent.com"), ("meteojob", "Meteojob"), ("monster", "Monster"), ("jobteaser", "JobTeaser"), ("lesjeudis", "LesJeudis"), ("les jeudis", "LesJeudis"), ("chooseyourboss", "ChooseYourBoss"), ("glassdoor", "Glassdoor"), ("greenhouse", "Site carrière"), ("carri", "Site carrière"), ("lever", "Site carrière"), ("workday", "Site carrière")]
+
+
+def canon_source(v):
+    s = norm(v)
+    for k, c in SOURCE_CANON:
+        if k in s:
+            return c
+    return "Autre" if s in ("", "nc", "autre") else str(v).strip()
+
+
 def main():
     rows = []
     for f in OFFER_FILES:
@@ -88,6 +99,8 @@ def main():
 
     # ---- normalisation ----
     for r in rows:
+        r["SOURCE_BRUTE"] = r.get("SOURCE", NC)
+        r["SOURCE"] = canon_source(r.get("SOURCE"))
         title = r.get("INTITULE_BRUT", "")
         metier, fam = classify_title(title)
         r["METIER_NORMALISE"] = metier

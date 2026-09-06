@@ -36,32 +36,34 @@ EXCLU = "EXCLU_DU_PERIMETRE"
 # (regex sur le titre normalisé, métier normalisé, famille) — ordre = priorité
 RULES = [
     # Exclusions explicites (faux positifs)
-    (r"\b(webmarketing|web marketing|content manager|community manager|traffic manager|referenceur|seo manager|consultant seo|redacteur)\b", "Exclu : marketing / contenu / SEO", EXCLU),
-    (r"\b(webdesigner|web designer|ux designer|ui designer|graphiste|product designer|designer)\b", "Exclu : design sans développement", EXCLU),
+    (r"^(?!.*\b(developpeur|developpeuse|developer|full ?stack|fullstack|ingenieur|engineer)\b).*\b(webmarketing|web marketing|content manager|community manager|traffic manager|referenceur|seo manager|consultant seo|redacteur|\bseo\b)\b", "Exclu : marketing / contenu / SEO", EXCLU),
+    (r"^(?!.*\b(developpeur|developpeuse|developer|full ?stack|fullstack|integrateur)\b).*\b(webdesigner|web designer|ux designer|ui designer|graphiste|product designer|designer)\b", "Exclu : design sans développement", EXCLU),
     (r"\b(data analyst|analyste data|business analyst|data scientist)\b", "Exclu : data sans développement web", EXCLU),
     (r"\b(commercial|business developer|sales|account manager|recruteur|charge de recrutement|talent acquisition)\b", "Exclu : commercial / RH", EXCLU),
     (r"\b(formateur|formatrice|intervenant|enseignant|professeur|formation)\b", "Exclu : formation / enseignement", EXCLU),
     (r"\b(chef de projet|cheffe de projet|project manager|product owner|product manager|scrum master)\b(?!.*(dev|technique))", "Exclu : gestion de projet sans programmation", EXCLU),
-    (r"\b(technicien support|support informatique|helpdesk|administrateur systeme|administrateur reseau|sysadmin)\b", "Exclu : support / administration systèmes", EXCLU),
+    (r"\b(technicien support|support informatique|helpdesk|administrateur systeme|administrateur reseau|sysadmin|support engineer)\b", "Exclu : support / administration systèmes", EXCLU),
+    (r"^(?!.*\b(applicative|application|appsec|devsecops|developpeur|developer)\b).*\b(cybersecurite|cyber securite|security engineer|ingenieur securite|analyste soc|soc analyst|pentester|rssi)\b", "Cybersécurité (hors développement, filière Cybersécurité)", ADJ),
 
     # Métiers émergents liés à l'IA (composante développement)
     (r"\b(prompt engineer)\b", "Prompt Engineer (avec composante développement)", IA),
+    (r"\b(stage|stagiaire|alternance|alternant|alternante)\b.*\b(ia|ai|llm|intelligence artificielle|genai|generative)\b", "AI Engineer / Développeur IA", IA),
     (r"\b(llm|large language|genai|gen ai|generative ai|ia generative|generative|generatif|generative)\b.*\b(engineer|ingenieur|developpeur|developer|dev)\b|\b(engineer|ingenieur|developpeur|developer)\b.*\b(llm|genai|gen ai|generative|ia generative|generatif)\b", "LLM / Generative AI Engineer", IA),
     (r"\brag\b", "Développeur RAG / applications LLM", IA),
-    (r"\b(agent(s)? ia|agents? ai|agentic|ai agent|multi-agent)\b", "Développeur d'agents IA", IA),
+    (r"\b(agent(s)? ia|agents? ai|agentic|ai agent|multi-agent|agent builder)\b", "Développeur d'agents IA", IA),
     (r"\b(ai integration|integration ia|ai automation|automation developer|developpeur automatisation|automatisation)\b", "AI Integration / Automation Developer", IA),
     (r"\b(low[- ]?code|no[- ]?code|power platform|power apps|outsystems|mendix|bubble)\b", "Low-code / No-code Developer", IA),
     (r"\b(machine learning|ml engineer|mlops|data engineer|deep learning|computer vision|nlp)\b", "Machine Learning / Data Engineer", ADJ),
     (r"\b(ai|ia)\b.*\b(software|application|app|full ?stack|fullstack|web|backend|back-end|frontend|front-end)\b.*\b(engineer|ingenieur|developpeur|developer)\b|\b(developpeur|developer|ingenieur|engineer)\b.*\b(full ?stack|fullstack|web|software|application)\b.*\b(ai|ia)\b", "AI Software / Application Engineer", IA),
-    (r"\b(ai engineer|ia engineer|ingenieur ia|ingenieur ai|ingenieur intelligence artificielle|ai developer|developpeur ia|developpeur ai|developpeur intelligence artificielle|developpeur en ia|applied ai|forward deployed)\b|\b(intelligence artificielle)\b.*\b(developpeur|ingenieur|engineer|developer)\b|\b(developpeur|ingenieur|engineer|developer)\b.*\b(intelligence artificielle|\bia\b|\bai\b)", "AI Engineer / Développeur IA", IA),
+    (r"\b(ai engineer|ia engineer|ingenieur ia|ingenieur ai|ingenieur intelligence artificielle|ai developer|developpeur ia|developpeur ai|developpeur intelligence artificielle|developpeur en ia|applied ai|forward deployed|ai skills engineer|ai deployment engineer|alternance ia|alternant ia|stage ia|ia specialist|ai specialist|generative artificial intelligence specialist)\b|\b(intelligence artificielle)\b.*\b(developpeur|ingenieur|engineer|developer)\b|\b(developpeur|ingenieur|engineer|developer)\b.*\b(intelligence artificielle|\bia\b|\bai\b)", "AI Engineer / Développeur IA", IA),
 
     # Spécialisations
     (r"\b(site reliability|sre)\b", "Site Reliability Engineer (SRE)", SPEC),
     (r"\b(platform engineer|ingenieur plateforme)\b", "Platform Engineer", SPEC),
     (r"\b(devsecops|appsec|securite applicative|application security|pentester|pentest|securite)\b", "Ingénieur sécurité applicative / DevSecOps", SPEC),
-    (r"\b(devops|dev ops)\b", "DevOps Engineer", SPEC),
-    (r"\b(cloud engineer|ingenieur cloud|cloud architect|architecte cloud|cloud native|aws engineer|azure engineer|gcp engineer|developpeur cloud)\b", "Cloud Engineer", SPEC),
-    (r"\b(qa|test automation|automatisation des tests|testeur|test engineer|quality assurance|ingenieur test|automaticien)\b", "QA / Test Automation Engineer", SPEC),
+    (r"\b(devops|dev ops|netdevops)\b", "DevOps Engineer", SPEC),
+    (r"\b(cloud engineer|ingenieur cloud|cloud architect|architecte cloud|cloud native|aws engineer|azure engineer|gcp engineer|developpeur cloud|expert cloud|cloud expert|consultant cloud)\b", "Cloud Engineer", SPEC),
+    (r"\b(qa|sdet|test automation|automatisation des tests|testeur|test engineer|quality assurance|ingenieur test|automaticien|engineer in test)\b", "QA / Test Automation Engineer", SPEC),
     (r"\b(accessibilite|rgaa|wcag)\b", "Développeur spécialisé accessibilité", SPEC),
     (r"\b(green it|eco-?conception|ecoconception|numerique responsable)\b", "Développeur Green IT / éco-conception", SPEC),
 
@@ -74,7 +76,7 @@ RULES = [
     (r"\b(api)\b(?!.*full)", "Développeur API / intégration", EVOL),
 
     # Métiers adjacents (hors web)
-    (r"\b(embarque|embedded|c\+\+|firmware|automaticien|plc|sap|abap|cobol|mainframe|as400|powerbuilder|windev|salesforce|servicenow|erp|dynamics|business central|sharepoint|talend|bi\b|power bi)\b", "Développeur logiciel hors web (embarqué, ERP, BI...)", ADJ),
+    (r"\b(embarque|embedded|c\+\+|firmware|automaticien|plc|sap|abap|cobol|mainframe|as400|powerbuilder|windev|salesforce|servicenow|erp|dynamics|business central|sharepoint|talend|bi\b|power bi|finops|robotique|perception|simulation|calcul scientifique)\b", "Développeur logiciel hors web (embarqué, ERP, BI...)", ADJ),
 
     # Cœur de marché
     (r"\b(full ?stack|fullstack|full-stack)\b", "Développeur full stack", COEUR),
@@ -89,9 +91,9 @@ RULES = [
     (r"\b(react|reactjs|angular|angularjs|vue|vuejs|vue\.js|node|nodejs|node\.js|javascript|typescript|\bjs\b|nextjs|next\.js|nuxt|svelte|nest|nestjs)\b", "Développeur JavaScript / TypeScript", COEUR),
     (r"\b(ruby|rails)\b", "Développeur Ruby on Rails", COEUR),
     (r"\b(go|golang|rust|scala|elixir|kotlin)\b", "Développeur logiciel (autre langage web/back)", COEUR),
-    (r"\b(concepteur developpeur|concepteur|developpeur d'applications|developpeur applications|developpeur applicatif|application developer|developpeur logiciel|software developer|developpeur informatique)\b", "Concepteur développeur d'applications / logiciel", COEUR),
+    (r"\b(concepteur developpeur|concepteur|developpeur d'applications|developpeur applications|developpeur applicatif|application developer|developpeur logiciel|software developer|developpeur informatique|developpement informatique|developpement logiciel|developpement d'applications)\b", "Concepteur développeur d'applications / logiciel", COEUR),
     (r"\b(software engineer|ingenieur logiciel|ingenieur developpement|ingenieur d'etudes|ingenieur etudes|ingenieur en developpement|ingenieur r&d|ingenieur developpeur|ingenieur software|ingenieur informatique|ingenieur e en developpement|ingenieur e developpement|ingenieur en informatique)\b", "Software Engineer / Ingénieur logiciel", EVOL),
-    (r"\b(web)\b", "Développeur web (intitulé générique)", COEUR),
+    (r"\b(web|developpement web)\b", "Développeur web (intitulé générique)", COEUR),
     (r"\b(developpeur|developpeuse|developer|dev|programmeur|codeur)\b", "Développeur (intitulé générique)", COEUR),
 ]
 
@@ -415,7 +417,7 @@ SKILLS = {
     "UX_UI": [("UX/UI", r"\bux\b|\bui\b|figma|design system")],
     "DATA": [("Data", r"\bdata\b|big data|etl|datalake|data ?warehouse")],
     "ARCHITECTURE": [("Architecture", r"architecture|architect|ddd|hexagonal|clean architecture|design patterns|solid")],
-    "IA_GENERATIVE": [("IA générative / LLM", r"ia generative|generative ai|genai|gen ai|\bllm\b|large language|gpt|mistral|openai|anthropic|claude(?! code)|gemini"), ("RAG", r"\brag\b"), ("Agents IA", r"agents? ia|ai agents?|agentic|multi-agent|langchain|langgraph|llamaindex"), ("MCP", r"\bmcp\b|model context protocol"), ("Prompt engineering", r"prompt"), ("IA (mention générale)", r"intelligence artificielle|\bia\b|\bai\b|machine learning")],
+    "IA_GENERATIVE": [("IA générative / LLM", r"ia generative|generative ai|genai|gen ai|\bllm\b|large language|gpt|mistral|openai|anthropic|claude(?! code)|gemini"), ("RAG", r"\brag\b"), ("Agents IA", r"agents? ia|ai agents?|agentic|multi-agent|langchain|langgraph|llamaindex"), ("MCP", r"\bmcp\b|model context protocol"), ("Prompt engineering", r"prompt"), ("IA (mention générale)", r"intelligence artificielle|artificial intelligence|\bia\b|\bai\b(?=[ -](engineer|developer|software|integration|agent|tool|assist|native|first|driven|powered|based|product|platform|team|lab|ops|ml))|machine learning|\bgenai\b")],
     "OUTILS_DE_CODAGE_IA": [("GitHub Copilot", r"copilot"), ("Cursor", r"\bcursor\b"), ("Claude Code", r"claude code"), ("ChatGPT", r"chatgpt"), ("Codex", r"\bcodex\b"), ("Développement assisté par IA", r"ai-assisted|assiste par (l')?ia|vibe coding|ai coding")],
     "LOW_CODE_NO_CODE": [("Low-code / No-code", r"low[- ]?code|no[- ]?code|power platform|power apps|n8n|make\.com|zapier|bubble")],
     "GESTION_DE_PROJET": [("Agile/Scrum", r"\bagile\b|\bscrum\b|kanban|safe\b"), ("Jira", r"\bjira\b")],

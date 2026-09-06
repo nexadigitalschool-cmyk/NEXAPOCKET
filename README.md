@@ -2,6 +2,10 @@
 
 Étude réalisée le 6 septembre 2026 pour aider NEXA à décider de l'avenir de sa filière Développement Web (Bachelor à Mastère).
 
+Échantillon : 1 687 lignes d'offres collectées sur 16 plateformes, 1 431 offres uniques après dédoublonnage (1 421 dans le périmètre), 683 séries de stocks d'offres datés (2024-2026), plus de 300 sources documentaires (Apec, France Travail BMO, Dares, Insee, Numeum, Indeed Hiring Lab, jobboards, cabinets).
+
+Conclusion : la filière doit être TRANSFORMÉE (full stack industrialisé, IA intégrée comme compétence transversale) et RENFORCÉE EN MASTÈRE (architecture, cloud/DevOps, IA applicative, sécurité applicative).
+
 ## Livrables
 
 | Fichier | Contenu |
@@ -12,7 +16,7 @@
 
 ## Données et reproductibilité
 
-- `collecte/` : données brutes collectées (JSON Lines) — offres individuelles, comptes d'offres datés (stocks), études, salaires, compétences, IA, données régionales, journaux de requêtes, plateformes sans données, règles de collecte.
+- `collecte/` : données brutes collectées (JSON Lines) — `offres/` et `etudes/` (agents de la session principale), `A_*`, `B_*`, `C_*` (trois sessions de collecte complémentaires : offres, volumes, compétences, IA, régions), journaux de requêtes, plateformes sans données, règles de collecte.
 - `scripts/` : pipeline Python (`consolide.py` → `build_excel.py`, `build_docx.py`, `build_md.py`) ; `normalize.py` contient la taxonomie, les règles de normalisation (métier, région, contrat, séniorité, salaire) et le dictionnaire de compétences ; `analysis.py` les agrégats.
 
 ```bash

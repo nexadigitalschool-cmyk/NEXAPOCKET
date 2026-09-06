@@ -184,7 +184,7 @@ def metier_row(m, rs, all_u, series, fam):
 
 
 SYNTH_HEADERS = ["FAMILLE_METIER", "METIER_NORMALISE", "INTITULES_ASSOCIES", "VOLUME_BRUT", "OFFRES_UNIQUES", "PART_DU_MARCHE (% échantillon)", "EVOLUTION_2025", "EVOLUTION_2024",
-                 "CDI", "CDD", "ALTERNANCE", "STAGE", "FREELANCE", "MISSIONS_COURTES", "DEBUTANT", "JUNIOR", "INTERMEDIAIRE", "SENIOR", "LEAD_ARCHITECTE", "EXPERIENCE_MEDIANE", "SALAIRE_MEDIAN (offres, annuel brut)", "TELETRAVAIL (% offres renseignées)",
+                 "CDI", "CDD", "ALTERNANCE", "STAGE", "FREELANCE", "MISSIONS_COURTES", "DEBUTANT", "JUNIOR", "INTERMEDIAIRE", "SENIOR", "LEAD_ARCHITECTE", "EXPERIENCE_MEDIANE", "SALAIRE_MEDIAN (offres, annuel brut)", "TELETRAVAIL (% offres mentionnant un télétravail total/partiel)",
                  "COMPETENCES_DOMINANTES", "COMPETENCES_IA", "TENSION", "NOMBRE_SOURCES", "CONFIANCE", "CONTRAT_NON_RENSEIGNE", "SENIORITE_NON_RENSEIGNEE", "DETAIL_EVOLUTION"]
 
 
@@ -231,7 +231,7 @@ def build_synthese(wb, rows, U, series, vols):
          " / ".join(f"{k} {pct(sen[k], known_s)} %" for k in SENIORITES), "OBSERVE"),
         ("Part des offres accessibles sans expérience (DEBUTANT, y compris stage/alternance) sur séniorité renseignée", f"{pct(sen['DEBUTANT'], known_s)} %", "OBSERVE"),
         ("Salaire médian annuel brut affiché (offres renseignées)", f"{median_or_nc(sal)} € (n={len(sal)} ; Q1 {q_or_nc(sal, 0)} ; Q3 {q_or_nc(sal, 2)})", "OBSERVE"),
-        ("Part des offres en télétravail total ou partiel (offres renseignées)", f"{tel_s} % (n={tel_k})", "OBSERVE"),
+        ("Part des offres dont l'extrait mentionne un télétravail total ou partiel (les extraits ne signalent pas l'absence de télétravail)", f"{tel_s} % ({tel_y} offres)", "OBSERVE"),
         ("Part des offres avec mention explicite d'IA (outil, LLM, RAG, IA générative, agents)", f"{ia_s} % ({ia_n} offres)", "OBSERVE"),
         ("Part des offres citant un outil de codage IA (Copilot, Cursor, Claude Code, ChatGPT...)", f"{pct(sum(1 for r in U if r['OUTIL_CODAGE_IA_CITE'] != 'Non'), len(U))} % ({sum(1 for r in U if r['OUTIL_CODAGE_IA_CITE'] != 'Non')} offres)", "OBSERVE"),
         ("Nombre de sources (jobboards) couvertes", sources_count(U), "OBSERVE"),
@@ -363,10 +363,14 @@ def actifs_by_region(ext):
     return res
 
 
+POP_2021 = {"Île-de-France": 12.0, "Auvergne-Rhône-Alpes": 8.1, "Nouvelle-Aquitaine": 6.0, "Occitanie": 6.0, "Hauts-de-France": 6.0}  # millions d'habitants au 1er janvier 2021, INSEE (Tableaux de l'économie française), relevé via collecte C
+POP_URL = "https://www.insee.fr/fr/statistiques/3303305?sommaire=3353488"
+
+
 def build_regions(wb, rows, U, series):
     ws = wb.create_sheet("REGIONS_METIERS")
     title(ws, 1, "RÉGIONS × MÉTIERS — échantillon d'offres uniques (collecte " + DATE_COLLECTE + ") et données externes régionales")
-    note(ws, 2, "Une ligne par combinaison région × métier normalisé. PART_NATIONALE = part de l'échantillon national. OFFRES_POUR_100_000_ACTIFS = NC sauf si une population active INSEE régionale a été collectée (voir bloc DONNEES_EXTERNES). EVOLUTION = ESTIMATION à partir des stocks Indeed datés de la région/ville quand deux années sont disponibles.")
+    note(ws, 2, "Une ligne par combinaison région × métier normalisé. PART_NATIONALE = part de l'échantillon national. OFFRES_POUR_100_000_ACTIFS = NC (population active régionale INSEE non lisible dans les extraits) ; à défaut, ESTIMATION pour 100 000 habitants (population INSEE 2021) pour les cinq régions dont la population a été relevée. Les ratios portent sur l'échantillon, pas sur le marché total. EVOLUTION = ESTIMATION à partir des stocks Indeed datés de la région/ville quand deux années sont disponibles.")
     ext = load_regional_external()
     actifs = actifs_by_region(ext)
     by = defaultdict(list)
@@ -385,9 +389,11 @@ def build_regions(wb, rows, U, series):
         senior_share = 100.0 * (sen["SENIOR"] + sen["LEAD_OU_ARCHITECTE"]) / known_sen if known_sen else None
         tension, just = tension_level(n, evol=(e25 if e25 != NC else None), senior_share=senior_share, famille=fam)
         brut = sum(1 for r in rows if r["REGION_NORMALISEE"] == reg and r["METIER_NORMALISE"] == m)
-        per100k = NC
+        per100k = "NC (population active régionale INSEE non extraite)"
         if reg in actifs:
             per100k = f"ESTIMATION {round(100000.0 * n / actifs[reg][0], 2)} (échantillon, INSEE {actifs[reg][0]})"
+        elif reg in POP_2021:
+            per100k = f"NC actifs ; ESTIMATION {round(100000.0 * n / (POP_2021[reg] * 1e6), 2)} offre(s) de l'échantillon pour 100 000 habitants (INSEE 2021 : {POP_2021[reg]} M hab.)"
         data.append([reg, FAMILLE_LABEL[fam], m, brut, n, pct(n, len(U)), per100k, contrats["CDI"], contrats["CDD"], contrats["ALTERNANCE"], contrats["STAGE"], contrats["FREELANCE"],
                      sen["DEBUTANT"] + sen["JUNIOR"], sen["INTERMEDIAIRE"], sen["SENIOR"] + sen["LEAD_OU_ARCHITECTE"],
                      (f"{median_or_nc(sal)} € (n={len(sal)})" if sal else NC), (f"{tel_s} % (n={tel_k})" if tel_k else NC),
@@ -399,15 +405,17 @@ def build_regions(wb, rows, U, series):
     r0 = end + 3
     title(ws, r0, "MATRICE RÉGIONS × MÉTIERS (offres uniques, carte thermique)", SUB_FONT)
     mets = [m for m, _ in Counter(r["METIER_NORMALISE"] for r in U).most_common(14)]
-    hdr = ["REGION", "TOTAL"] + mets + ["Part alternance+stage (%)", "Part junior/débutant (%, renseignées)", "Offres IA (mention explicite)", "Part télétravail (%, renseignées)"]
+    hdr = ["REGION", "TOTAL"] + mets + ["Part alternance+stage (%)", "Part junior/débutant (%, renseignées)", "Offres IA (mention explicite)", "Part télétravail mentionné (%)"]
     regs = [r for r, _ in reg_tot.most_common()]
     mat = []
+    ks_by_reg = {}
     for reg in regs:
         rs = [r for r in U if r["REGION_NORMALISEE"] == reg]
         cnt = Counter(r["METIER_NORMALISE"] for r in rs)
         contrats, _ = contract_counts(rs)
         sen, _ = seniority_counts(rs)
         ks = sum(sen.values())
+        ks_by_reg[reg] = ks
         tel_y, tel_k, tel_s = teletravail_share(rs)
         mat.append([reg, len(rs)] + [cnt.get(m, 0) for m in mets] + [pct(contrats["ALTERNANCE"] + contrats["STAGE"], len(rs)), (pct(sen["DEBUTANT"] + sen["JUNIOR"], ks) if ks else NC), ia_share(rs)[0], (tel_s if tel_k else NC)])
     end2 = write_table(ws, r0 + 1, hdr, mat, "T_MATRICE_REGIONS")
@@ -418,14 +426,14 @@ def build_regions(wb, rows, U, series):
     # ---- classements ----
     r1 = end2 + 3
     title(ws, r1, "CLASSEMENTS (échantillon collecté — à lire avec les repères BMO/Apec ci-dessous)", SUB_FONT)
-    lead = sorted(mat, key=lambda x: -x[1])[:5]
-    jun = sorted([x for x in mat if x[1] >= 8], key=lambda x: -(x[-2 - 2] if x[-4] != NC else -1))[:5]
-    alt = sorted([x for x in mat if x[1] >= 8], key=lambda x: -x[-4])[:5]
-    ia = sorted(mat, key=lambda x: -x[-2])[:5]
+    matr = [x for x in mat if x[0] in REGIONS]  # régions administratives uniquement (hors NC et télétravail)
+    lead = sorted(matr, key=lambda x: -x[1])[:5]
+    alt = sorted([x for x in matr if x[1] >= 15], key=lambda x: -x[-4])[:5]
+    ia = sorted(matr, key=lambda x: -x[-2])[:5]
     lines = [
         ("Régions leaders (volume d'offres uniques dans l'échantillon)", " ; ".join(f"{x[0]} ({x[1]})" for x in lead)),
-        ("Régions les plus favorables aux juniors (part débutant+junior sur séniorité renseignée, ≥ 8 offres)", " ; ".join(f"{x[0]} ({x[-3]} %)" for x in sorted([x for x in mat if x[1] >= 8 and x[-3] != NC], key=lambda x: -x[-3])[:5])),
-        ("Régions les plus favorables à l'alternance (part alternance+stage, ≥ 8 offres)", " ; ".join(f"{x[0]} ({x[-4]} %)" for x in alt)),
+        ("Régions les plus favorables aux juniors (part débutant+junior sur séniorité renseignée, ≥ 10 offres renseignées)", " ; ".join(f"{x[0]} ({x[-3]} %, n={ks_by_reg[x[0]]})" for x in sorted([x for x in matr if ks_by_reg.get(x[0], 0) >= 10 and x[-3] != NC], key=lambda x: -x[-3])[:5])),
+        ("Régions les plus favorables à l'alternance (part alternance+stage dans les offres uniques, ≥ 15 offres)", " ; ".join(f"{x[0]} ({x[-4]} %)" for x in alt)),
         ("Régions les plus porteuses pour les métiers liés à l'IA (offres avec mention IA explicite)", " ; ".join(f"{x[0]} ({x[-2]})" for x in ia)),
         ("Régions leaders selon BMO 2026 (tous métiers, projets de recrutement)", "Île-de-France 388 806 ; Auvergne-Rhône-Alpes 255 400 ; Nouvelle-Aquitaine 248 800 ; PACA 209 630 ; Occitanie 200 470 (France Travail, BMO 2026)"),
         ("Régions leaders selon Apec 2026 (recrutements de cadres prévus hors IDF)", "Auvergne-Rhône-Alpes ~35 300 (+3 %) ; Occitanie 19 500 (+6 %) ; PACA-Corse 18 800 (+4 %) ; Hauts-de-France 17 340 (+2 %) ; Pays de la Loire 15 400 (+5 %) (Apec, prévisions 2026)"),
@@ -513,7 +521,7 @@ def build_villes(wb, rows, U, series):
     # ---- synthèse comparative ----
     r0 = end + 3
     title(ws, r0, "SYNTHÈSE COMPARATIVE DES VILLES NEXA (échantillon + stocks Indeed datés)", SUB_FONT)
-    hdr = ["VILLE", "OFFRES_UNIQUES", "PART_ECHANTILLON (%)", "METIER_N1", "METIER_N2", "METIER_N3", "CDI (%)", "ALTERNANCE+STAGE (%)", "FREELANCE (%)", "DEBUTANT+JUNIOR (% renseignées)", "SENIOR+LEAD (% renseignées)", "SALAIRE_MEDIAN", "TELETRAVAIL (% renseignées)", "MENTION_IA (%)", "STOCK INDEED 'Développeur web' (dernier compte)", "STOCK INDEED 'Développeur' (dernier compte)", "SOURCES"]
+    hdr = ["VILLE", "OFFRES_UNIQUES", "PART_ECHANTILLON (%)", "METIER_N1", "METIER_N2", "METIER_N3", "CDI (%)", "ALTERNANCE+STAGE (%)", "FREELANCE (%)", "DEBUTANT+JUNIOR (% renseignées)", "SENIOR+LEAD (% renseignées)", "SALAIRE_MEDIAN", "TELETRAVAIL mentionné (%)", "MENTION_IA (%)", "STOCK INDEED 'Développeur web' (dernier compte)", "STOCK INDEED 'Développeur' (dernier compte)", "SOURCES"]
     comp = []
     for z in NEXA_CITIES:
         rz = [r for r in U if r["ZONE_NEXA"] == z]

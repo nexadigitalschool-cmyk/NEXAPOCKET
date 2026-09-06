@@ -1,0 +1,202 @@
+# Journal des requêtes WebSearch — collecte C — 2026-09-06 (budget 200)
+Q001 | V1 | "Développeur Full Stack" "emplois" "2026" site:fr.indeed.com
+Q002 | V1 | "Developpeur Web" "emplois" Indeed "2025" site:fr.indeed.com
+Q003 | V1 | "Emploi Développeur" "Offres" Hellowork "2026"
+Q004 | V1 | "Développeur Front End" emplois Indeed "septembre 2026" OR "août 2026"
+Q005 | V1 | "Développeur Back End" "emplois" Indeed "2026"
+Q006 | V1 | "Développeur JavaScript" OR "Développeur React" "emplois" Indeed "2026"
+Q007 | V1 | "Développeur Full Stack" OR "Developpeur Web" "emplois" Indeed "2024"  (aucun compte daté 2024 retourné)
+Q008 | V1 | "Développeur Angular" OR "Développeur Vue" OR "Développeur Node" "emplois" Indeed 2026
+Q009 | V1 | "Développeur PHP" OR "Développeur Symfony" OR "Développeur Laravel" "emplois" Indeed 2026
+Q010 | V1 | "Développeur Java" OR "Développeur Spring" OR "Développeur .NET" "emplois" Indeed 2026 (aucun résultat .NET)
+Q011 | V1 | "Emploi Développeur" "Offres" Hellowork "2025" (aucun compte daté 2025 Hellowork ; pages Jobijoba juillet 2025 sans compte)
+Q012 | V1 | "Développeur Python" OR "Développeur Django" OR "Développeur WordPress" "emplois" Indeed 2026 (aucun résultat WordPress)
+Q013 | V1 | Indeed "emplois" développeur "décembre 2024" OR "novembre 2024" OR "octobre 2024" OR "septembre 2024" (résultats hors sujet)
+Q014 | V1 | Indeed "offres d'emploi" développeur "2024" site:fr.indeed.com "Développeur"
+Q015 | V1 | "Développeur .NET" OR "Developpeur Dotnet" OR "Développeur C#" emplois Indeed 2026 site:fr.indeed.com
+Q016 | V1 | "Développeur WordPress" OR "Développeur Shopify" OR "Développeur Prestashop" emplois Indeed site:fr.indeed.com
+Q017 | V1 | "Software Engineer" OR "Ingénieur Logiciel" OR "Ingénieur Développement Logiciel" emplois Indeed 2026 site:fr.indeed.com
+Q018 | V1 | "Développeur Junior" OR "Développeur Débutant" OR "Développeur Senior" emplois Indeed 2026 site:fr.indeed.com (aucun compte Senior)
+Q019 | V1 | "Développeur Mobile" OR "Développeur iOS" OR "Développeur Android" OR "Développeur Flutter" emplois Indeed 2026 site:fr.indeed.com
+Q020 | V1 | "DevOps" OR "Cloud Engineer" OR "SRE" OR "Ingénieur DevOps" emplois Indeed 2026 site:fr.indeed.com
+Q021 | V1 | "AI Engineer" OR "Ingénieur IA" OR "Développeur IA" OR "LLM Engineer" OR "Machine Learning Engineer" emplois Indeed 2026 site:fr.indeed.com
+Q022 | V1 | "Lead Developer" OR "Tech Lead" OR "Architecte Logiciel" OR "QA Automation" emplois Indeed 2026 site:fr.indeed.com
+Q023 | V1 | "Alternance Développeur" OR "Stage Développeur" OR "Développeur Freelance" OR "Télétravail Développeur" emplois Indeed 2026 site:fr.indeed.com
+Q024 | V1 | Hellowork "Emploi Développeur" "Offres" 2026 fullstack OR "full stack" OR react OR angular OR symfony OR ".net" OR devops
+Q025 | V1 | francetravail.fr offres "développeur" "offres d'emploi" nombre candidat.francetravail.fr/offres/recherche développeur (pages sans compte dans le titre)
+Q026 | V1 | apec.fr "offres" "développeur" "Offres d'emploi" apec développeur web full stack 2026 (pages sans compte)
+Q027 | V1 | welcometothejungle.com "offres d'emploi" développeur "Développeur" jobs France 2026 (pages sans compte)
+Q028 | V1 | linkedin.com/jobs "offres d'emploi Développeur" France "offres" 2026 (comptes non datés)
+Q029 | V1 | free-work.com "offres" "Développeur" "missions freelance" "emplois" France 2026 (comptes dans extraits, non datés)
+Q030 | V1 | Indeed "emplois" "Développeur" "mars 2025" OR ... "décembre 2025" site:fr.indeed.com
+Q031 | V1 | "Développeur Full Stack" OR "Développeur Front End" OR "Développeur Back End" "emplois" "2025" site:fr.indeed.com
+Q032 | V1 | "Développeur Java" OR "Développeur PHP" OR "Développeur Python" OR "Développeur React" OR "Développeur Angular" "emplois" "2025" site:fr.indeed.com
+Q033 | V1 | Hellowork "Offres" 2026 "Emploi Développeur" react OR angular OR ".net" OR devops OR mobile OR "lead" OR junior OR "back end"
+Q034 | V1 | Indeed "Développeur Web" OR "Développeur Full Stack" emplois "Lyon (69)" OR "Lille (59)" OR "Bordeaux (33)" OR "Nantes (44)" 2026 site:fr.indeed.com (pas de page ville retournée)
+Q035 | V1 | Indeed "Développeur" emplois "Marseille (13)" OR "Aix-en-Provence (13)" OR "Toulouse (31)" OR "Paris (75)" 2026 site:fr.indeed.com
+Q036 | V1 | "Intégrateur Web" OR "Développeur Vue Js" OR "Développeur Node Js" OR "Développeur TypeScript" OR "Développeur Senior" emplois Indeed site:fr.indeed.com
+Q037 | V1 | Indeed "Développeur" "Lyon (69)" emplois "2026" site:fr.indeed.com
+Q038 | V1 | Indeed "Développeur" "Lille (59)" OR "Bordeaux (33)" emplois "2026" site:fr.indeed.com (aucune page Lille avec compte)
+Q039 | V1 | Indeed "Développeur" "Nantes (44)" OR "Toulouse (31)" OR "Aix-en-Provence (13)" emplois "2026" site:fr.indeed.com
+Q040 | V1 | Indeed "offres d'emploi" "2024" "Développeur Web" OR "Développeur Full Stack" OR "Développeur Java" OR "Développeur PHP" site:fr.indeed.com
+Q041 | V1 | Hellowork "Emploi Développeur" Lyon OR Lille OR Bordeaux OR Nantes OR Marseille "Offres" 2026 (aucune page ville)
+Q042 | V1 | Indeed "offres d'emploi" "2024" "DevOps" OR "Software Engineer" OR "Ingénieur Logiciel" OR "Data Scientist" OR "Tech Lead" site:fr.indeed.com
+Q043 | V1 | site:fr.indeed.com "Développeur Web" OR "Developpeur Web" emplois "janvier 2025" OR "février 2025" OR "mars 2025" OR "avril 2025" OR "mai 2025"
+Q044 | V1 | site:fr.indeed.com "Développeur Full Stack" OR "Developpeur Full Stack" OR "Développeur Fullstack" "offres d'emploi" OR "emplois" 2024 OR 2025
+Q045 | V1 | site:hellowork.com "Emploi Développeur" "Lyon (69000)" OR "Lille (59000)" OR "Bordeaux (33000)" OR "Nantes (44000)" OR "Marseille (13000)" Offres
+Q046 | V1 | site:fr.indeed.com "Développeur Freelance" OR "Developpeur Freelance" OR "Développeur Télétravail" OR "Developpeur Teletravail" emplois
+Q047 | V1 | site:fr.indeed.com "Développeur Vue" OR "Developpeur Vue Js" OR "Développeur Vuejs" OR "Développeur Nuxt" OR "Développeur Next" emplois
+Q048 | V1 | site:fr.indeed.com "Développeur Java" OR "Développeur Front End" OR "Développeur Back End" OR "Développeur PHP" "offres d'emploi" 2024
+Q049 | V2 | compétences les plus demandées développeur 2026 France offres d'emploi langages frameworks classement
+Q050 | V2 | technologies les plus recherchées offres d'emploi développeurs France 2026 étude part des offres
+Q051 | V2 | React vs Angular vs Vue offres d'emploi France 2026 nombre d'offres comparatif
+Q052 | V2 | Free-Work baromètre 2026 compétences technologies les plus demandées missions freelance IT France
+Q053 | V2 | HelloWork étude 2025 OR 2026 métiers tech compétences les plus recherchées offres développeur
+Q054 | V2 | Indeed Hiring Lab France 2025 OR 2026 offres tech logiciel compétences tendances
+Q055 | V2 | Java Spring part des offres d'emploi développeurs France 2025 2026 étude langage le plus demandé
+Q056 | V2 | PHP Symfony marché de l'emploi 2026 France offres développeur Symfony demande étude
+Q057 | V2 | TypeScript demande offres d'emploi France 2025 2026 part des offres front-end
+Q058 | V2 | Docker Kubernetes AWS compétences offres d'emploi développeurs France 2026 part des offres cloud DevOps
+Q059 | V2 | tests automatisés offres d'emploi développeur France 2026 TDD Cypress Playwright Jest compétence demandée
+Q060 | V2 | sécurité applicative DevSecOps OWASP compétence offres d'emploi développeurs France 2026
+Q061 | V2 | soft skills développeurs les plus demandées offres d'emploi France 2025 2026 étude
+Q062 | V2 | anglais exigé offres d'emploi développeurs informatique France part des offres étude 2025 2026 (pas de part précise ; trouvé Apec 2025 -20 %)
+Q063 | V2 | Stack Overflow Developer Survey 2025 most popular technologies languages JavaScript Python TypeScript percentage
+Q064 | V2 | JetBrains State of Developer Ecosystem 2025 results languages TypeScript Python Rust Go percentage
+Q065 | V2 | State of JS 2025 results React Vue Angular Svelte usage percentage frameworks (retourne SO 2025 frameworks)
+Q066 | V2 | CoderPad CodinGame tech hiring survey 2025 OR 2026 langages les plus demandés recruteurs JavaScript Python Java
+Q067 | V2 | Apec étude 2026 développeurs offres cadres informatique 2025 baisse 20 % compétences recherchées ESN débutants
+Q068 | V2 | Numeum OR OPIIEC étude 2025 OR 2026 compétences numérique développeurs besoins recrutement métiers en tension
+Q069 | V2 | Malt baromètre freelance tech 2026 compétences les plus recherchées développeurs IA TJM France
+Q070 | V2 | SQL PostgreSQL MongoDB bases de données compétence offres d'emploi développeur France 2026 Indeed emplois
+Q071 | V2 | Azure GCP cloud compétences offres d'emploi France 2026 Indeed "emplois" Azure OR GCP développeur
+Q072 | V2 | CI/CD GitLab Jenkins Agile Scrum compétences offres d'emploi développeur France 2026 Indeed emplois
+Q073 | V2 | Le Monde Informatique "demande en développeurs" 2025 Apec érode offres langages compétences les plus citées
+Q074 | V2 | Apec "compétences" les plus recherchées offres cadres informatique 2025 langages Java JavaScript Python part des offres développeur
+Q075 | V2 | site:fr.indeed.com "Node Js" OR "Nodejs" OR "Python" OR "C#" emplois 2026 "plus de"
+Q076 | V2/V4 | France Travail fiche ROME M1805 développeur informatique compétences savoir-faire tendances recrutement 2025 2026
+Q077 | V2 | Welcome to the Jungle OR Talent.com OR Glassdoor étude 2026 compétences tech les plus demandées France développeurs classement offres
+Q078 | V1/V3 | "Développeur IA" OR "Développeur Intelligence Artificielle" emplois Indeed 2026 site:fr.indeed.com "plus de"
+Q079 | V2 | free-work.com "Salaires IT par technologie" 2026 France Java Python React Angular .NET salaires par techno
+Q080 | V2 | survey.stackoverflow.co 2025 TypeScript percentage "TypeScript" used professional developers Python Java C# percentage
+Q081 | V2/V4 | Apec "métiers cadres porteurs" 2025 OR 2026 informatique développeur données IA cloud offres part
+Q082 | V2 | WeLoveDevs statistiques 2025 OR 2026 offres développeurs France technologies les plus demandées salaires
+Q083 | V2 | Global Knowledge "baromètre emploi informatique" 2025 OR 2026 compétences les plus demandées offres France
+Q084 | V2 | Hays OR "Robert Half" OR Michael Page guide salaires 2026 France développeurs compétences les plus recherchées tech
+Q085 | V3 | hiringlab.org/fr intelligence artificielle offres d'emploi France part des offres mentionnant l'IA 2025 OR 2026 développement logiciel
+Q086 | V3 | Indeed Hiring Lab "AI" job postings July 2026 software development postings share mentioning AI GenAI
+Q087 | V3 | Stack Overflow Developer Survey 2025 AI tools usage percentage developers use AI trust accuracy
+Q088 | V3 | JetBrains State of Developer Ecosystem 2025 AI coding assistants adoption percentage developers regularly use AI
+Q089 | V3 | GitHub Octoverse 2025 France developers growth Copilot TypeScript most used language AI (pas de donnée France)
+Q090 | V3 | Stanford "Canaries in the Coal Mine" 2025 Brynjolfsson young software developers employment decline 22-25 AI exposed
+Q091 | V3 | Anthropic Economic Index 2025 OR 2026 software development share of Claude usage coding automation augmentation percentage France
+Q092 | V3 | Dares OR "France Stratégie" OR "Conseil d'analyse économique" IA générative emploi développeurs informatique exposition métiers étude 2025 2026
+Q093 | V3 | OPIIEC "IA générative" métiers du numérique étude impact développeur compétences 2025 OR 2026
+Q094 | V3 | Numeum OR Syntec IA générative impact emploi développeurs juniors ESN recrutement 2026 déclaration
+Q095 | V3 | Capgemini OR "Sopra Steria" OR Atos OR CGI OR "Accenture France" juniors IA générative recrutement développeurs 2026 baisse embauches jeunes diplômés
+Q096 | V3 | "développeur augmenté" IA fiche métier Onisep OR "France Travail" OR Apec OR école 2026 compétences IA développeur (pas de fiche 'développeur augmenté' trouvée)
+Q097 | V3 | Apec "Les cadres et l'IA" 2026 informaticiens usage IA générative résultats chiffres développeurs
+Q098 | V3 | LinkedIn "Jobs on the Rise" 2026 France "AI engineer" OR "ingénieur IA" métiers en croissance France
+Q099 | V3 | site:fr.indeed.com "Copilot" OR "Cursor" OR "LLM" OR "RAG" OR "IA générative" développeur emplois "plus de"
+Q100 | V3 | offres d'emploi "AI engineer" OR "LLM engineer" France croissance 2025 2026 nombre d'offres étude HelloWork OR Free-Work OR Apec
+Q101 | V3 | Stack Overflow 2025 survey AI agents "vibe coding" percentage developers agents usage
+Q102 | V3 | enquête développeurs France 2025 OR 2026 utilisation Copilot Cursor ChatGPT part des développeurs français WeLoveDevs OR Malt OR "Welcome to the Jungle" OR CodinGame
+Q103 | V3 | blogdumoderateur "comment les développeurs codent avec l'IA" 2026 chiffres part des développeurs outils IA France
+Q104 | V3 | welovedevs "développeur en 2025" étude IA utilisation part des développeurs français Copilot ChatGPT productivité
+Q105 | V3 | DORA 2025 report AI adoption developers percentage productivity OR METR study 2025 AI slows experienced developers 19%
+Q106 | V3 | Indeed Hiring Lab GenAI skills tech job postings share Europe France 2025 "generative AI" mentions software developers
+Q107 | V3 | LinkedIn Economic Graph 2025 OR 2026 France compétences IA "AI literacy" offres skills "AI talent" France croissance
+Q108 | V3 | France Travail OR Onisep 2026 "développeur" métier transformé par l'IA générative article compétences évolution du métier
+Q109 | V3 | Indeed Hiring Lab "How Employers Are Talking About AI in Job Postings" October 2025 software development share AI mentions
+Q110 | V3 | Indeed Hiring Lab "AI at Work Report 2025" GenAI skills software development occupations exposure percentage
+Q111 | V3 | Apec mai 2026 "pratiques de recrutement" cadres IA marché moins tendu jeunes diplômés débutants informatique chiffres
+Q112 | V3 | Accenture OR CGI OR Atos OR Capgemini France 2026 IA générative "jeunes diplômés" OR juniors embauches dirigeant déclaration interview (pas de déclaration nominative de dirigeant ESN trouvée)
+Q113 | V3 | Microsoft "Work Trend Index" 2025 France IA générative salariés utilisation chiffres OR "IA générative" entreprises françaises adoption 2026 Bpifrance OR INSEE
+Q114 | V3 | écoles développement web France 2026 insertion juniors IA Epitech OR "Le Wagon" OR OpenClassrooms OR "Wild Code School" taux d'insertion baisse marché junior
+Q115 | V4 | BMO 2026 "ingénieurs et cadres d'étude, R&D en informatique" projets de recrutement France Travail part difficile
+Q116 | V4 | BMO 2026 Île-de-France "ingénieurs et cadres d'étude" informatique projets de recrutement difficultés France Travail
+Q117 | V4 | BMO 2026 Auvergne-Rhône-Alpes ingénieurs informatique projets de recrutement Lyon métiers les plus recherchés
+Q118 | V4 | BMO 2026 Hauts-de-France ingénieurs informatique projets de recrutement Lille métiers les plus recherchés
+Q119 | V4 | BMO 2026 Nouvelle-Aquitaine ingénieurs informatique projets de recrutement Bordeaux métiers les plus recherchés
+Q120 | V4 | BMO 2026 Pays de la Loire ingénieurs informatique projets de recrutement Nantes métiers les plus recherchés (pas de chiffre métier)
+Q121 | V4 | BMO 2026 Provence-Alpes-Côte d'Azur ingénieurs informatique projets de recrutement Marseille Aix-en-Provence France Travail
+Q122 | V4 | BMO 2026 Occitanie ingénieurs informatique projets de recrutement Toulouse France Travail part difficile
+Q123 | V4 | BMO 2026 Bretagne OR "Grand Est" OR Normandie OR "Bourgogne-Franche-Comté" OR "Centre-Val de Loire" ingénieurs informatique projets de recrutement (pas de chiffre métier)
+Q124 | V4 | BMO "techniciens d'étude et de développement en informatique" 2026 OR 2025 projets de recrutement part difficile région (pas de chiffre pour cette FAP)
+Q125 | V4 | statistiques.francetravail.org bmo 2026 bassin Paris OR Lyon OR Marseille OR Toulouse "ingénieurs et cadres d'étude" informatique projets
+Q126 | V4 | BMO 2025 "ingénieurs et cadres d'étude, R&D en informatique" projets de recrutement 2025 France part difficile régions
+Q127 | V4 | Apec "Prévisions de recrutements de cadres 2026" Île-de-France informatique recrutements cadres région chiffres
+Q128 | V4 | Apec prévisions 2026 recrutements cadres Auvergne-Rhône-Alpes OR "Hauts-de-France" OR "Nouvelle-Aquitaine" informatique région chiffres (pas de chiffre régional dans extraits)
+Q129 | V4 | Apec prévisions 2026 recrutements cadres "Pays de la Loire" OR "Provence-Alpes-Côte d'Azur" OR Occitanie OR Bretagne informatique région chiffres (PDF PACA-Corse identifié, pas de chiffre)
+Q130 | V4 | Dares tensions 2024 OR 2025 "ingénieurs de l'informatique" métiers en tension par région indicateur de tension
+Q131 | V4 | INSEE population active par région 2024 OR 2025 emploi total par région tableau (pages INSEE identifiées, pas de chiffre régional dans extraits)
+Q132 | V4 | Numeum OR INSEE effectifs numérique par région emploi secteur numérique NAF 62 région 2024 2025
+Q133 | V4 | INSEE "Insee Analyses" numérique emploi région ... emplois du numérique part 2024 2025
+Q134 | V4 | télétravail part des offres d'emploi tech développeurs France 2025 2026 étude HelloWork OR Apec OR Indeed OR Free-Work pourcentage offres télétravail
+Q135 | V4 | Lyon écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Lyon Saint-Étienne chiffres startups ESN
+Q136 | V4 | Lille écosystème tech 2026 emploi numérique effectifs recruteurs EuraTechnologies French Tech Lille chiffres startups ESN
+Q137 | V4 | Bordeaux écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Bordeaux chiffres startups ESN
+Q138 | V4 | Nantes écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Nantes ADN Ouest chiffres startups ESN
+Q139 | V4 | Marseille Aix-en-Provence écosystème tech 2026 emploi numérique effectifs recruteurs French Tech Aix-Marseille thecamp chiffres startups ESN (pas de chiffre emploi)
+Q140 | V4 | Paris Île-de-France écosystème tech 2026 emploi numérique effectifs recruteurs ESN startups Station F chiffres emplois numériques Île-de-France
+Q141 | V4 | Toulouse écosystème tech 2026 emploi numérique effectifs French Tech Toulouse chiffres startups ESN développeurs
+Q142 | V4 | HelloWork baromètre 2026 offres d'emploi par région Île-de-France Auvergne-Rhône-Alpes part des offres informatique région
+Q143 | V4 | Apec offres d'emploi cadres informatique par région 2025 part ...
+Q144 | V4 | INSEE emploi total par région 2024 chiffres ... estimations d'emploi régional
+Q145 | V4 | "Insee Analyses" OR "Insee Flash" 2024 OR 2025 emplois du numérique HDF OR PDL OR NAQ OR PACA OR Occitanie nombre d'emplois numériques région
+Q146 | V4 | BMO 2026 bassin d'emploi Lyon OR Marseille OR Bordeaux OR Nantes OR Toulouse PDF France Travail "ingénieurs" informatique projets top métiers (aucun PDF bassin NEXA)
+Q147 | V4 | France Travail "Éclairages et synthèses" 2026 "métiers du numérique" offres d'emploi développeurs région répartition
+Q148 | V4 | Apec "Data cadre" OR "baromètre" offres cadres informatique région 2025 OR 2026 Auvergne-Rhône-Alpes Lyon nombre d'offres informatique
+Q149 | V4 | Dares "métiers en tension" 2025 liste régionale arrêté 21 mai 2025 "ingénieurs" informatique régions concernées
+Q150 | V4 | Numeum panorama régional 2025 OR 2026 "emploi numérique" région ... (pas de données régionales)
+Q151 | V4 | Apec "Prévisions 2026 de recrutements de cadres" HDF OR NAQ OR PDL OR Occitanie PDF corporate.apec.fr "Nos regions"
+Q152 | V4 | "BMO 2026" Île-de-France numérique "techniciens" informatique projets OR "Paris" bassin projets de recrutement informatique 2026
+Q153 | V4 | Numeum délégation régionale chiffres clés numérique emplois entreprises 2025 (résultat : Via Compétences ARA)
+Q154 | V4 | INSEE "population active" région 2024 OR 2025 ... millions actifs tableau régions (données anciennes/projections)
+Q155 | V4 | Data Emploi France Travail M1805 région chiffres-clés offres diffusées demandeurs d'emploi développeur informatique 2025 (pages identifiées, sans chiffre)
+Q156 | V4 | Grande École du Numérique OR "Talents du numérique" tendances emploi métiers du numérique 2025 OR 2026 par région offres développeur part régionale
+Q157 | V4 | Apec "Prévisions 2026 de recrutements de cadres en Pays de la Loire" OR "en Hauts-de-France" OR "en Nouvelle-Aquitaine" OR "en Auvergne-Rhône-Alpes" recrutements attendus informatique services
+Q158 | V4 | BMO 2026 Bretagne OR "Grand Est" OR Normandie projets de recrutement total région France Travail communiqué 2026 part difficile
+Q159 | V4 | BMO 2026 "Bourgogne-Franche-Comté" OR Corse OR "Centre-Val de Loire" OR "Pays de la Loire" projets de recrutement total région (pas de nouveau chiffre)
+Q160 | V4 | INSEE "Activité, emploi et chômage en 2024" population active par région tableau ... (IDF seulement)
+Q161 | V4 | Lille Hauts-de-France ESN recruteurs 2026 développeurs ... emplois numériques Hauts-de-France chiffres
+Q162 | V4 | Lyon ESN recruteurs 2026 développeurs ... emplois numériques offres développeur Lyon chiffres
+Q163 | V4/V1 | site:fr.indeed.com "Esn" OR "Développeur" "Bordeaux (33)" OR "Nantes (44)" OR "Marseille (13)" OR "Aix-en-Provence (13)" emplois "plus de" 2026
+Q164 | V4 | Région Sud PACA emploi numérique chiffres 2025 2026 ... (données 2014 seulement)
+Q165 | V4 | Nouvelle-Aquitaine OR Occitanie OR "Pays de la Loire" filière numérique chiffres clés emplois salariés entreprises 2025 observatoire régional
+Q166 | V4 | BMO 2026 Pays de la Loire projets de recrutement total 2026 France Travail communiqué part difficile Loire-Atlantique Nantes
+Q167 | V1 | site:hellowork.com "Emploi" développeur OR informatique "Offres" "2025" -2026 "Hellowork" plus de
+Q168 | V1 | site:fr.indeed.com "Développeur" OR "Developpeur" "offres d'emploi" "2024" Lyon OR Lille OR Bordeaux OR Nantes OR Marseille OR Toulouse "plus de"
+Q169 | V3 | hellowork.com "barometre-hellowork-offres-ia" offres mentionnant l'IA part des offres informatique 2025 2026 chiffres baromètre HelloWork IA
+Q170 | V3 | Apec offres d'emploi cadres mentionnant "intelligence artificielle" 2025 hausse 89 % étude Apec IA offres développeur part (89 % non retrouvé sur source Apec)
+Q171 | V3 | Free-Work blog 2026 IA développeur junior "premier emploi" marché juniors IA générative France article
+Q172 | V1 | site:fr.indeed.com "DevOps" OR "Data Engineer" OR "Tech Lead" OR "Développeur Mobile" OR "QA" "offres d'emploi" OR "emplois" "2025" "plus de"
+Q173 | V2 | site:fr.indeed.com "Docker" OR "Kubernetes" OR "Terraform" OR "AWS" OR "Next Js" OR "GraphQL" emplois 2026 "plus de"
+Q174 | V1 | site:hellowork.com "Emploi" "Développeur" react OR python ... Lyon OR Lille OR Bordeaux OR Nantes OR Marseille (offres unitaires, pas de compte)
+Q175 | V1 | site:fr.indeed.com "Développeur" OR "Developpeur" "emplois" "janvier 2025" ... "juin 2025" "plus de"
+Q176 | V4 | INSEE "Activité, emploi et chômage en 2025" population active régions 2025 actifs par région tableau (pas de tableau ; chômage régional)
+Q177 | V4 | Dares "tensions sur le marché du travail en 2024" ingénieurs de l'informatique indicateur de tension valeur
+Q178 | V4 | Apec "métiers cadres porteurs" 2026 région ... développeur rang offres région (pas de classement régional)
+Q179 | V1/V3 | HelloWork baromètre alternance 2026 offres alternance informatique développeur ralentissement 2025 chiffres
+Q180 | V3 | Apec jeunes diplômés 2026 informatique taux d'emploi insertion baromètre "jeunes diplômés" ingénieurs informatique IA baisse embauches chiffres
+Q181 | V4 | site:francetravail.org bmo 2026 bassin PDF Lyon OR Lille OR Bordeaux OR Nantes OR Marseille OR "Aix-en-Provence" OR Toulouse "Bassin d'emploi" 2026 BASSINS
+Q182 | V4/V2 | INSEE "Recrutements dans les métiers du numérique" Insee Références 2025 chiffres part des embauches CDI développeurs
+Q183 | V4 | Apec "Panorama régional des offres d'emploi publiées sur apec.fr" 2025 OR 2026 part des offres par région informatique
+Q184 | V4 | Aix-Marseille-Provence métropole numérique chiffres 2025 OR 2026 emplois entreprises numériques
+Q185 | V4 | Malt baromètre 2026 TJM développeur par ville Lyon Lille Bordeaux Nantes Marseille Paris
+Q186 | V1/V4 | France Travail "offres d'emploi diffusées" 1er trimestre 2026 informatique développeur évolution offres par métier
+Q187 | V4 | "BMO_2026_bassin" Marseille OR Aix OR "Aix-en-Provence" OR Aubagne site:francetravail.org peorg-paca Bassins (liste des bassins 13, pas de PDF Marseille/Aix)
+Q188 | V4 | "bmo/2026/BASSINS" LILLE site:francetravail.org peorg-hdf (PDF Lille 2026 non indexé ; 2023 seulement)
+Q189 | V4 | France Travail Auvergne-Rhône-Alpes BMO 2026 bassin Lyon PDF ... métiers les plus recherchés Lyon
+Q190 | V4 | France Travail Nouvelle-Aquitaine BMO 2026 bassin Bordeaux PDF ... Bordeaux informatique
+Q191 | V4 | France Travail Pays de la Loire BMO 2026 bassin Nantes PDF ... Nantes informatique
+Q192 | V1 | site:fr.indeed.com "Développeur Java" OR "Développeur PHP" OR "Développeur Symfony" OR "Développeur Angular" OR "Développeur Python" "emplois" "2025" "plus de" -2026
+Q193 | V1/V3 | Indeed Hiring Lab France offres "développement logiciel" évolution 2025 2026 par rapport à 2020 tendance secteur tech logiciel France
+Q194 | V4/V1 | Apec "Baromètre Apec" 1er trimestre 2026 offres d'emploi cadres informatique évolution intentions de recrutement
+Q195 | V1 | free-work.com tech-it jobs "developpeur-fullstack" OR "front-end" ... nombre Free-Work 2026 (pas de compte)
+Q196 | V1 | welcometothejungle.com développeur "offres" nombre ... site:welcometothejungle.com (pas de compte)
+Q197 | V4 | observatoire-emploi-ara.fr BMO 2026 bassin Lyon "ingénieurs et cadres d'étude" informatique projets (pas de chiffre bassin)
+Q198 | V4 | Observatoire emploi Nouvelle-Aquitaine BMO 2026 fiche bassin Bordeaux ingénieurs informatique (pas de chiffre bassin)
+Q199 | V4 | Observatoire régional emploi Pays de la Loire synthèse BMO 2026 21 avril 2026 métiers ingénieurs informatique Nantes (pas de chiffre bassin)
+Q200 | V4 | Dares fiche tensions "M - Informatique" 2024 régions ingénieurs de l'informatique indicateur par région (pas de valeur régionale)
+# FIN — 200 requêtes WebSearch utilisées (budget épuisé le 2026-09-06)
