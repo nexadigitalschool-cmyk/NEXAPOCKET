@@ -1,0 +1,19 @@
+site:fr.indeed.com/viewjob développeur web Lyon	8
+site:fr.indeed.com/viewjob développeur web Marseille	8
+site:candidat.francetravail.fr/offres/recherche/detail développeur full stack Lyon	5
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Marseille	7
+site:hellowork.com/fr-fr/emplois développeur full stack Lyon	5 (+4 volumes)
+site:hellowork.com/fr-fr/emplois développeur web Marseille	5
+site:fr.indeed.com "Développeur" "Lyon (69)" "plus de" emplois	0 (19 volumes)
+site:fr.indeed.com "Développeur" "Marseille (13)" "plus de" emplois	0 (16 volumes)
+site:welcometothejungle.com/fr/companies développeur full stack Lyon	9
+site:welcometothejungle.com/fr/companies développeur Marseille	9
+site:apec.fr detail-offre développeur full stack Lyon	2
+site:apec.fr detail-offre développeur Marseille Aix-en-Provence	2
+site:fr.linkedin.com/jobs/view développeur full stack Lyon	BLOQUEE (budget WebSearch de session épuisé 200/200)
+site:fr.linkedin.com/jobs/view développeur web Marseille	BLOQUEE (budget WebSearch de session épuisé 200/200)
+site:free-work.com développeur full stack Lyon	BLOQUEE (budget WebSearch de session épuisé 200/200)
+site:free-work.com développeur Marseille Aix-en-Provence	BLOQUEE (budget WebSearch de session épuisé 200/200)
+site:hellowork.com "Lyon (69000)" "Plus de" Offres développeur web	BLOQUEE (budget WebSearch de session épuisé 200/200)
+site:hellowork.com "Marseille (13000)" "Plus de" Offres développeur	BLOQUEE (budget WebSearch de session épuisé 200/200)
+# ARRET FORCE : le quota WebSearch de la session (CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION=200, partagé entre agents) a été atteint après 12 requêtes réussies pour cet agent. Non testés faute de budget : LinkedIn, Free-Work, Jooble, Talent.com, Meteojob, Monster, JobTeaser, LesJeudis, ChooseYourBoss, requêtes par technologie (React, Angular, Vue, PHP/Symfony, Laravel, Java/Spring, Python/Django, WordPress, Shopify, PrestaShop, Magento, TypeScript), par contrat (CDD, freelance, stage), par ville (Villeurbanne, Vénissieux, Bron, Vaulx-en-Velin, Saint-Priest, Écully, Limonest, Dardilly, Aubagne, Vitrolles) et comptes datés 2024/2025.

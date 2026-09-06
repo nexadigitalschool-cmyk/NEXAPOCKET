@@ -1,0 +1,19 @@
+001 | site:fr.indeed.com/viewjob développeur web Lille | 8 offres
+002 | site:fr.indeed.com/viewjob développeur web Nantes | 7 offres
+003 | site:fr.indeed.com/viewjob développeur web Bordeaux | 9 offres
+004 | site:candidat.francetravail.fr/offres/recherche/detail développeur web Lille | 6 offres
+005 | site:candidat.francetravail.fr/offres/recherche/detail développeur web Nantes | 7 offres
+006 | site:candidat.francetravail.fr/offres/recherche/detail développeur web Bordeaux | 8 offres
+007 | site:apec.fr detail-offre développeur web Lille | 5 offres
+008 | site:apec.fr detail-offre développeur full stack Nantes | 0 offre (pages de liste uniquement)
+009 | site:apec.fr detail-offre développeur Bordeaux | 3 offres (C++, AS400 exclus)
+010 | site:welcometothejungle.com/fr/companies développeur Lille | 10 offres
+011 | site:welcometothejungle.com/fr/companies développeur Nantes | 8 offres
+012 | site:welcometothejungle.com/fr/companies développeur Bordeaux | 9 offres (embarqué C exclu)
+013 | site:hellowork.com/fr-fr/emplois développeur web Lille | NON EXECUTEE (quota WebSearch session épuisé 200/200)
+014 | site:hellowork.com/fr-fr/emplois développeur Nantes | NON EXECUTEE (quota épuisé)
+015 | site:hellowork.com/fr-fr/emplois développeur Bordeaux | NON EXECUTEE (quota épuisé)
+016 | site:fr.linkedin.com/jobs/view développeur full stack Lille | NON EXECUTEE (quota épuisé)
+017 | site:fr.linkedin.com/jobs/view développeur full stack Nantes | NON EXECUTEE (quota épuisé)
+018 | site:fr.linkedin.com/jobs/view développeur full stack Bordeaux | NON EXECUTEE (quota épuisé)
+019 | site:hellowork.com/fr-fr/emplois développeur web Lille (nouvel essai) | NON EXECUTEE (quota épuisé) - arrêt de la collecte

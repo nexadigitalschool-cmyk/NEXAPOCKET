@@ -1,0 +1,34 @@
+[2026-09-06] LOT 1
+Q01: enquête BMO 2026 France Travail projets de recrutement résultats -> OK (francetravail.org, myrhline, helloworkplace, banquedesterritoires)
+Q02: BMO 2026 "ingénieurs et cadres d'étude, R&D en informatique" projets de recrutement -> partiel (petitesaffiches 06, pas de chiffre national métier)
+Q03: BMO 2025 France Travail informatique développeurs difficultés de recrutement -> OK (afpa: 84 227 projets numérique 49,5% difficiles ; helloworkplace)
+Q04: France Travail offres d'emploi informatique développeur 2026 baisse statistiques -> OK (carrieres.dev -80% Indeed, lemondeinformatique rebond 2026)
+Q05: BMO 2024 France Travail "techniciens d'étude et de développement en informatique" -> partiel (labo.societenumerique 79 297 projets info & télécoms 2024)
+LOT 2
+Q06: Apec prévisions de recrutements de cadres 2026 informatique 305 800 -> OK (apec, channelnews, newstank : 305 800 +4 %, IT 60 100 +5 %, informaticiens 61 160 +4 %)
+Q07: Apec bilan recrutements cadres 2025 294 500 -3 % informatique -> OK (corporate.apec.fr : 294 500, -3 %, -11 % sur 2 ans, services à forte VA -5 %)
+Q08: Apec baromètre offres d'emploi cadres 2026 trimestre -> OK URLs baromètres T1 et T2 2026 (chiffres non dans extraits)
+Q09: Apec offres développeurs -60 % par rapport à 2022 -> OK (programmez.com, lemondeinformatique : -20 % 2025, 12 690 offres, -60 % vs 2022, 21 % débutants, 29 % IDF)
+Q10: BMO 2026 numérique projets de recrutement -> partiel (IDF numérique 15 492 projets 52,5 % difficiles ; 84 227 = chiffre BMO 2025 repris)
+LOT 3
+Q11: Apec jeunes diplômés 2026 insertion taux d'emploi informatique baromètre -> OK (70 % promo 2024 en emploi à 12 mois, -2 pts ; STS 76 % ; recul marqué informatique ; débutants -16 % 2025 après -19 % 2024 ; 84 % jugent recherche difficile)
+Q12: Apec salaires informatique 2026 développeur -> OK (LMI : SI & cyber médiane 55 k€, DSI 69 k€ ; Galileo RH/licornesociety : dev 34-53 k€ moy 43 k€)
+Q13: Dares tensions 2025 "ingénieurs de l'informatique" -> OK (Dares tensions 2024 publiée 04/02/2026 : informatique quitte tension très forte ; indicateur 1,1 en 2023 ; 67 % difficiles ; offres info -28 %)
+Q14: Numeum bilan 2025 perspectives 2026 -> OK (72,2 Md€ +2 % 2025 ; 74,3 Md€ +4,3 % 2026 ; -7 500 emplois 2024 ; 666 000 salariés)
+Q15: Apec Auvergne-Rhône-Alpes 2026 -> OK (34 100 cadres 2025 -4 % ; 35 260 prévus 2026 +3 % ; services forte VA 45 %)
+Q16: Numeum jeunes diplômés ESN 33 % -> OK (S1 2026 : 33 % ESN réduisent recrutement JD ; -1,8 % effectifs 2023-2025 ; 59 % formation > recrutement ; 40 % moins de juniors)
+LOT 4
+Q17: Dares "tensions sur le marché du travail en 2024" février 2026 -> OK (Dares Résultats n°5 fév. 2026 ; 6 métiers sur 10 en tension forte/très forte vs 7/10 ; baisse marquée informatique/télécoms)
+Q18: Insee emploi salarié "programmation, conseil et autres activités informatiques" 2025 2026 -> OK (Insee Conjoncture IDF n°60 T1 2026 : heures rémunérées -2,2 % ; BDM : emploi <30 ans informatique -3 % 2023-2025)
+Q19: Numeum baromètre premier semestre 2026 -> OK (croissance 2026 revue à +3 % ; ESN +1,4 % 34,8 Md€ ; 35 % ESN marge en baisse ; productivité IA 15 % -> 22,3 % ; IA 12,3 % CA éditeurs, 9,8 % ESN)
+Q20: OPIIEC étude métiers du numérique IA -> partiel (étude juin 2025 IA compétences ; pas de chiffres)
+Q21: Indeed Hiring Lab France software development 2026 -> OK (FRED IHLIDXFRTPSOFTDEVE données jusqu'au 26/06/2026 ; article 08/07/2026 AI and job postings ; part software dev en hausse dans la plupart des pays sauf Allemagne)
+Q22: Apec Île-de-France 2026 -> OK (143 160 cadres +5 % ; dev informatique 5 % des offres cadres Paris début 2026 ; gestion projets IT 3 % ; big data 2 %)
+LOT 5 — NON EXECUTE : quota WebSearch de la session épuisé (200/200, partagé avec la session parente). Message outil : "this session has used its web search budget".
+Q23: Indeed Hiring Lab "from destruction to creation" AI job postings July 2026 software developers France share -> NON EXECUTE (quota)
+Q24: Indeed Hiring Lab France offres d'emploi mentionnant l'IA part GenAI 2026 -> NON EXECUTE (quota)
+Q25: HelloWork baromètre emploi tech 2026 offres développeurs salaires étude -> NON EXECUTE (quota)
+Q26: Free-Work baromètre freelance tech 2026 TJM développeur missions -> NON EXECUTE (quota)
+Q27: Malt baromètre freelances tech 2026 développeurs IA -> NON EXECUTE (quota)
+Q28: Stack Overflow Developer Survey 2026 AI tools usage results -> NON EXECUTE (quota)
+BILAN : 22 requêtes exécutées sur les 90 visées ; 46 entrées documentées ; arrêt forcé par le quota. Pour reprendre : relever CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION et relancer les sources listées dans etudes_sans_donnees.jsonl.

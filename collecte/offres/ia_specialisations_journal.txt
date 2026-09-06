@@ -1,0 +1,19 @@
+site:fr.indeed.com/viewjob "AI Engineer" Paris | 9 offres
+site:fr.indeed.com/viewjob "développeur IA" LLM RAG | 2 offres + 5 volumes
+site:welcometothejungle.com/fr/companies "AI Engineer" LLM Paris | 8 offres
+site:hellowork.com/fr-fr/emplois "ingénieur IA générative" | 2 offres
+site:fr.indeed.com/viewjob "DevOps Engineer" Lyon | 8 offres
+site:apec.fr detail-offre "développeur full stack" "IA générative" | 1 offre (site carrière iliad) ; pages Apec en erreur
+site:fr.indeed.com/viewjob "développeur full stack" "GitHub Copilot" | 3 offres + 5 volumes
+site:fr.indeed.com/viewjob développeur web "Cursor" OR "Claude Code" IA | 2 offres + 4 volumes
+site:welcometothejungle.com/fr/companies "développeur full stack" "IA générative" OR "GitHub Copilot" | 2 offres
+site:fr.indeed.com/viewjob "SRE" OR "Site Reliability Engineer" Nantes OR Bordeaux OR Toulouse | 9 offres
+site:fr.indeed.com/viewjob "QA Automation" OR "Test Automation Engineer" France | 2 offres
+site:hellowork.com/fr-fr/emplois "AI Engineer" OR "ingénieur IA" LLM Lyon OR Nantes OR Bordeaux | 4 offres
+site:fr.indeed.com/viewjob "Platform Engineer" France | NON EXECUTEE : quota WebSearch de la session épuisé (200/200)
+site:fr.indeed.com/viewjob "Cloud Engineer" Nantes OR Bordeaux OR Toulouse OR Lille | NON EXECUTEE : quota WebSearch épuisé
+site:fr.indeed.com/viewjob "DevSecOps" OR "AppSec" OR "sécurité applicative" ingénieur | NON EXECUTEE : quota WebSearch épuisé
+site:fr.indeed.com/viewjob "Tech Lead" développeur web Paris OR Lyon | NON EXECUTEE : quota WebSearch épuisé
+site:free-work.com "AI Engineer" OR "LLM" OR "IA générative" freelance mission | NON EXECUTEE : quota WebSearch épuisé
+site:fr.linkedin.com/jobs/view "AI Engineer" LLM France | NON EXECUTEE : quota WebSearch épuisé
+ARRET DE LA COLLECTE 2026-09-06 : 12 requêtes exécutées sur les 100+ prévues ; le budget WebSearch de la session (200 appels, partagé) était déjà consommé par les autres agents.
