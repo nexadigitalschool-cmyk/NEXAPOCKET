@@ -143,3 +143,15 @@ Q141 | V4 | Toulouse écosystème tech 2026 emploi numérique effectifs French T
 Q142 | V4 | HelloWork baromètre 2026 offres d'emploi par région Île-de-France Auvergne-Rhône-Alpes part des offres informatique région
 Q143 | V4 | Apec offres d'emploi cadres informatique par région 2025 part ...
 Q144 | V4 | INSEE emploi total par région 2024 chiffres ... estimations d'emploi régional
+Q145 | V4 | "Insee Analyses" OR "Insee Flash" 2024 OR 2025 emplois du numérique HDF OR PDL OR NAQ OR PACA OR Occitanie nombre d'emplois numériques région
+Q146 | V4 | BMO 2026 bassin d'emploi Lyon OR Marseille OR Bordeaux OR Nantes OR Toulouse PDF France Travail "ingénieurs" informatique projets top métiers (aucun PDF bassin NEXA)
+Q147 | V4 | France Travail "Éclairages et synthèses" 2026 "métiers du numérique" offres d'emploi développeurs région répartition
+Q148 | V4 | Apec "Data cadre" OR "baromètre" offres cadres informatique région 2025 OR 2026 Auvergne-Rhône-Alpes Lyon nombre d'offres informatique
+Q149 | V4 | Dares "métiers en tension" 2025 liste régionale arrêté 21 mai 2025 "ingénieurs" informatique régions concernées
+Q150 | V4 | Numeum panorama régional 2025 OR 2026 "emploi numérique" région ... (pas de données régionales)
+Q151 | V4 | Apec "Prévisions 2026 de recrutements de cadres" HDF OR NAQ OR PDL OR Occitanie PDF corporate.apec.fr "Nos regions"
+Q152 | V4 | "BMO 2026" Île-de-France numérique "techniciens" informatique projets OR "Paris" bassin projets de recrutement informatique 2026
+Q153 | V4 | Numeum délégation régionale chiffres clés numérique emplois entreprises 2025 (résultat : Via Compétences ARA)
+Q154 | V4 | INSEE "population active" région 2024 OR 2025 ... millions actifs tableau régions (données anciennes/projections)
+Q155 | V4 | Data Emploi France Travail M1805 région chiffres-clés offres diffusées demandeurs d'emploi développeur informatique 2025 (pages identifiées, sans chiffre)
+Q156 | V4 | Grande École du Numérique OR "Talents du numérique" tendances emploi métiers du numérique 2025 OR 2026 par région offres développeur part régionale
