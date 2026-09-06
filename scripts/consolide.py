@@ -14,7 +14,7 @@ from normalize import (NC, classify_title, techs_in_title, normalize_region, nex
                        clean_city, COEUR, EVOL, SPEC, IA, ADJ, EXCLU)
 
 SCRATCH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(SCRATCH, "build")
+OUT = os.path.dirname(os.path.abspath(__file__))
 
 OFFER_FILES = sorted(set(glob.glob(os.path.join(OFFRES_DIR, "*_offres.jsonl")) + glob.glob(os.path.join(COLLECTE_DIR, "*_offres.jsonl"))))
 VOLUME_FILES = sorted(set(glob.glob(os.path.join(OFFRES_DIR, "*volumes.jsonl")) + glob.glob(os.path.join(COLLECTE_DIR, "*_volumes.jsonl"))))
