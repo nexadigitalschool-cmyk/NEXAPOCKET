@@ -297,6 +297,9 @@ def normalize_contract(v, title=""):
 # ---------------------------------------------------------------------------
 def parse_years(s):
     s = norm(s)
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:a|-|–|to|/|et)\s*(\d+(?:[.,]\d+)?)\s*(?:\+|ans|an\b|years|year|y\b)", s)
+    if m:
+        return [float(m.group(1).replace(",", ".")), float(m.group(2).replace(",", "."))]
     nums = [float(x.replace(",", ".")) for x in re.findall(r"(\d+(?:[.,]\d+)?)\s*(?:\+|ans|an\b|years|year|y\b)", s)]
     if not nums:
         nums = [float(x) for x in re.findall(r"\b(\d{1,2})\b", s)]
@@ -311,7 +314,7 @@ def normalize_seniority(exp, title, contract):
     if re.search(r"\b(tech ?lead|lead dev|lead developpeur|lead developer|lead technique|architecte|architect|head of|engineering manager|staff|principal|cto)\b", t):
         return "LEAD_OU_ARCHITECTE", "titre (responsabilité technique)"
     if e and not e.startswith("nc"):
-        if re.search(r"debutant accepte|sans experience|aucune experience|0 an|premiere experience|jeune diplome|young graduate|entry level|entry-level|0 a 1|0-1", e):
+        if re.search(r"debutant accepte|sans experience|aucune experience|\b0 ans?\b|premiere experience|jeune diplome|young graduate|entry level|entry-level|\b0 a 1\b|\b0-1\b|\b0 a 2\b|\b0-2\b", e):
             return "DEBUTANT", "expérience demandée"
         nums = parse_years(e)
         if nums:
@@ -375,6 +378,8 @@ def parse_salary(vmin, vmax, contract):
         return None, None, NC, NC
     txt = " | ".join(parts)
     tn = norm(txt)
+    if "smic" in tn or "%" in tn and "smic" in tn:
+        return None, None, "PCT_SMIC", txt
     unit = "ANNUEL"
     if re.search(r"tjm|/ ?jour|/j\b|par jour|€ ?/ ?day|/day|jour", tn):
         unit = "TJM"

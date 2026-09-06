@@ -265,6 +265,13 @@ def main():
     bullet(doc, "Numeum : 33 % des ESN ont réduit leurs recrutements de jeunes diplômés au 1er semestre 2026 ; 40 % recrutent moins de profils juniors (alternants et reconvertis inclus) ; 59 % privilégient la formation à l'embauche ; l'emploi des moins de 30 ans dans l'informatique a reculé de 3 % entre 2023 et 2025.", "Numeum S1 2026 ; Blog du Modérateur", "https://www.blogdumoderateur.com/emploi-numerique-loin-job-apocalypse-promet/")
     bullet(doc, "Presse et cabinets : « profils 5 à 10 ans d'expérience très recherchés » (Le Monde Informatique) ; pénurie structurelle de développeurs seniors (8 ans et plus) signalée par les baromètres freelance ; Indeed compte plus de 100 offres « Développeur Web Junior » actives en France (3 sept. 2026) contre plus de 3 000 « Développeur Web » : environ 3 % des offres portent le mot junior dans leur intitulé.", "Le Monde Informatique ; pages Indeed", "https://www.lemondeinformatique.fr/actualites/lire-l-emploi-it-devrait-rebondir-en-france-en-2026-98522.html")
     bullet(doc, "Freelance : TJM médian développeur 525 €/jour (TJMètre), full stack 413 € en direct et 433 € via intermédiaire (Free-Work, juin 2026) ; IA 750-1 500 €, cybersécurité 700-1 200 €, architecture cloud 650-1 100 € ; Île-de-France environ 613 €/j, régions 15 à 30 % en dessous. Le freelance reste un marché de profils confirmés.", "Free-Work / TJMètre / Extra Dev 2026", "https://extradev.fr/blog/tjm-developpeur-freelance-vrais-tarifs-2026-techno-seniorite")
+    cross = []
+    for s_lvl in SENIORITES:
+        rs_s = [r for r in U if r["SENIORITE"] == s_lvl]
+        cc, _ = contract_counts(rs_s)
+        cross.append([s_lvl, len(rs_s), cc["CDI"], cc["CDD"], cc["ALTERNANCE"], cc["STAGE"], cc["FREELANCE"], sum(1 for r in rs_s if r["TYPE_CONTRAT_NORMALISE"] == NC)])
+    p(doc, "Croisement séniorité × contrat (offres uniques de l'échantillon, séniorité déterminée par l'expérience demandée ou par le contrat stage/alternance) — Excel, OFFRES_DETAILLEES :", italic=True)
+    table(doc, ["Séniorité", "Offres", "CDI", "CDD", "Alternance", "Stage", "Freelance", "Contrat NC"], cross, widths=[3.2, 1.6, 1.4, 1.4, 1.8, 1.4, 1.8, 1.8])
     p(doc, "Réponses aux questions 4, 5 et 6 : les entreprises recrutent encore des juniors, mais surtout en alternance et en stage (dans l'échantillon, l'alternance et le stage représentent {} % des contrats renseignés et la quasi-totalité des offres débutant) ; le CDI direct pour débutant est rare et concentré dans les ESN et les PME ; la demande en CDI se concentre sur les profils intermédiaires et seniors (3 ans et plus) ; le freelance et les missions courtes concernent les profils confirmés. Confiance FORTE sur la tendance (Apec, Numeum convergents), MOYENNE sur les proportions (échantillon).".format(alt_share), bold=True)
 
     # ---- 7. salaires ----
@@ -273,6 +280,24 @@ def main():
     lo, hi = sal_rows_u[0], sal_rows_u[-1]
     mens = [r for r in U if r.get("SALAIRE_UNITE") == "MENSUEL" and r.get("SALAIRE_MIN_NUM")]
     p(doc, f"Salaires affichés dans les offres collectées (SALAIRE_AFFICHE_DANS_OFFRE) : {len(sal)} offres uniques avec une fourchette annuelle ; médiane {median_or_nc(sal)} € brut/an, quartile bas {q_or_nc(sal, 0)} €, quartile haut {q_or_nc(sal, 2)} € ; fourchettes observées de {round(lo['SALAIRE_MIN_NUM'])} € ({lo['INTITULE_BRUT'][:50]}, {lo['VILLE_NORMALISEE']}) à {round(hi['SALAIRE_MAX_NUM'])} € ({hi['INTITULE_BRUT'][:50]}, {hi['VILLE_NORMALISEE']}) ; {len(mens)} offres (alternances) affichent un salaire mensuel de {round(min(r['SALAIRE_MIN_NUM'] for r in mens)) if mens else NC} à {round(max(r['SALAIRE_MAX_NUM'] for r in mens)) if mens else NC} €/mois. Effectif faible : à lire comme des ordres de grandeur. Excel, OFFRES_DETAILLEES (SALAIRE_MIN_NUM, SALAIRE_MAX_NUM).")
+    def sal_stats(rs_):
+        v = annual_salaries(rs_)
+        return [len(v), (f"{median_or_nc(v)} €" if v else NC), (f"{q_or_nc(v, 0)} €" if len(v) >= 4 else NC), (f"{q_or_nc(v, 2)} €" if len(v) >= 4 else NC), (f"{round(min(v))} – {round(max(v))} €" if v else NC)]
+    srows = [[s_lvl] + sal_stats([r for r in U if r["SENIORITE"] == s_lvl]) for s_lvl in SENIORITES]
+    srows.append(["Séniorité non renseignée"] + sal_stats([r for r in U if r["SENIORITE"] == NC]))
+    p(doc, "Salaires annuels bruts affichés dans les offres, par séniorité (SALAIRE_AFFICHE_DANS_OFFRE ; médiane de la fourchette de chaque offre) :", italic=True)
+    table(doc, ["Séniorité", "Offres renseignées", "Médiane", "Quartile bas", "Quartile haut", "Fourchette observée"], srows, widths=[3.5, 2, 2, 2, 2, 3.5])
+    zrows = [[z] + sal_stats(zones[z]) for z in NEXA_CITIES] + [["Hors villes NEXA"] + sal_stats([r for r in U if r["ZONE_NEXA"] == "Hors villes NEXA"])]
+    p(doc, "Salaires annuels bruts affichés, par zone NEXA (échantillon) :", italic=True)
+    table(doc, ["Zone", "Offres renseignées", "Médiane", "Quartile bas", "Quartile haut", "Fourchette observée"], zrows, widths=[3.5, 2, 2, 2, 2, 3.5])
+    mrows = []
+    for m_, n_ in met.most_common(14):
+        st_ = sal_stats([r for r in U if r["METIER_NORMALISE"] == m_])
+        if st_[0] >= 3:
+            mrows.append([m_] + st_)
+    if mrows:
+        p(doc, "Salaires annuels bruts affichés, par métier normalisé (au moins 3 offres renseignées) :", italic=True)
+        table(doc, ["Métier", "Offres renseignées", "Médiane", "Quartile bas", "Quartile haut", "Fourchette observée"], mrows, widths=[4.5, 2, 2, 2, 2, 3.5])
     sal_rows = []
     for s_ in salaires:
         sal_rows.append([s_.get("METIER"), s_.get("SENIORITE"), s_.get("ZONE"), s_.get("MEDIANE") or NC, s_.get("FOURCHETTE") or NC, s_.get("TYPE"), f"{s_.get('SOURCE')} ({s_.get('DATE')})"])
