@@ -118,3 +118,9 @@ Hellowork "Emploi Ingénieur IA" OR "Emploi Intelligence artificielle" OR "Emplo
 Hellowork "Emploi Développeur full stack" OR "Emploi Full stack developer" "Plus de" Offres | offres retenues: 0
 Hellowork "Emploi Développeur front end" OR "Emploi Développeur back end" OR "Emploi Développeur PHP" OR "Emploi Développeur React" "Plus de" Offres | offres retenues: 0
 Hellowork "Emploi Cybersécurité" OR "Emploi DevSecOps" OR "Emploi Ingénieur cloud" OR "Emploi Cloud" "Plus de" Offres | offres retenues: 3
+Hellowork "Emploi Développeur web" "Plus de" Offres Nice OR Toulon OR Nancy OR Metz OR Reims OR Rouen | offres retenues: 0
+Indeed "Developpeur Web" emplois "plus de" Montpellier OR Rennes OR Strasbourg OR Grenoble OR Nice OR Nancy | offres retenues: 0
+Indeed "Développeur Web" emplois 2025 "plus de" "Pays de la Loire" OR "Nouvelle-Aquitaine" OR "Grand Est" OR Normandie OR "Bourgogne-Franche-Comté" | offres retenues: 0
+site:fr.linkedin.com/jobs/view "GenAI" OR "IA générative" développeur France | offres retenues: 9
+site:fr.indeed.com/viewjob "prompt engineer" OR "prompt engineering" développeur | offres retenues: 3
+site:hellowork.com/fr-fr/emplois "n8n" OR "no-code" OR "low-code" développeur automatisation | offres retenues: 7
