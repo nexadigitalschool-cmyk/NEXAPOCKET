@@ -148,3 +148,9 @@ Hellowork "Emploi Développeur web" "Offres" 2025 Occitanie OR "Île-de-France" 
 Indeed "AI Engineer" OR "Ingénieur IA" OR "Machine Learning Engineer" emplois "plus de" 2025 OR 2024 | offres retenues: 0
 Indeed "DevOps" OR "Cloud Engineer" OR "DevSecOps" OR "Testeur QA" emplois "plus de" 2025 OR 2024 | offres retenues: 0
 site:fr.linkedin.com/jobs "offres d'emploi" "Développeur Web" OR "Développeur Full Stack" Île-de-France OR Occitanie OR Bretagne OR "Auvergne-Rhône-Alpes" | offres retenues: 0
+site:fr.indeed.com/viewjob développeur React OR Angular OR Vue "full remote" OR "100% télétravail" | offres retenues: 4
+site:welcometothejungle.com/fr/companies "Télétravail total" développeur Symfony OR Laravel OR PHP OR fullstack | offres retenues: 7
+site:fr.linkedin.com/jobs/view "télétravail" OR "remote" développeur front-end OR back-end France | offres retenues: 5
+site:welcometothejungle.com/fr/companies "LLM" OR "agents IA" OR "agentic" développeur OR engineer CDI | offres retenues: 6
+site:fr.linkedin.com/jobs/view "RAG" OR "LangChain" OR "agents IA" développeur France | offres retenues: 0
+site:fr.indeed.com/viewjob "LLM" OR "Mistral" OR "OpenAI" "développeur full stack" OR "full stack" | offres retenues: 2
