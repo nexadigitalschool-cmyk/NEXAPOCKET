@@ -155,3 +155,15 @@ Q153 | V4 | Numeum délégation régionale chiffres clés numérique emplois ent
 Q154 | V4 | INSEE "population active" région 2024 OR 2025 ... millions actifs tableau régions (données anciennes/projections)
 Q155 | V4 | Data Emploi France Travail M1805 région chiffres-clés offres diffusées demandeurs d'emploi développeur informatique 2025 (pages identifiées, sans chiffre)
 Q156 | V4 | Grande École du Numérique OR "Talents du numérique" tendances emploi métiers du numérique 2025 OR 2026 par région offres développeur part régionale
+Q157 | V4 | Apec "Prévisions 2026 de recrutements de cadres en Pays de la Loire" OR "en Hauts-de-France" OR "en Nouvelle-Aquitaine" OR "en Auvergne-Rhône-Alpes" recrutements attendus informatique services
+Q158 | V4 | BMO 2026 Bretagne OR "Grand Est" OR Normandie projets de recrutement total région France Travail communiqué 2026 part difficile
+Q159 | V4 | BMO 2026 "Bourgogne-Franche-Comté" OR Corse OR "Centre-Val de Loire" OR "Pays de la Loire" projets de recrutement total région (pas de nouveau chiffre)
+Q160 | V4 | INSEE "Activité, emploi et chômage en 2024" population active par région tableau ... (IDF seulement)
+Q161 | V4 | Lille Hauts-de-France ESN recruteurs 2026 développeurs ... emplois numériques Hauts-de-France chiffres
+Q162 | V4 | Lyon ESN recruteurs 2026 développeurs ... emplois numériques offres développeur Lyon chiffres
+Q163 | V4/V1 | site:fr.indeed.com "Esn" OR "Développeur" "Bordeaux (33)" OR "Nantes (44)" OR "Marseille (13)" OR "Aix-en-Provence (13)" emplois "plus de" 2026
+Q164 | V4 | Région Sud PACA emploi numérique chiffres 2025 2026 ... (données 2014 seulement)
+Q165 | V4 | Nouvelle-Aquitaine OR Occitanie OR "Pays de la Loire" filière numérique chiffres clés emplois salariés entreprises 2025 observatoire régional
+Q166 | V4 | BMO 2026 Pays de la Loire projets de recrutement total 2026 France Travail communiqué part difficile Loire-Atlantique Nantes
+Q167 | V1 | site:hellowork.com "Emploi" développeur OR informatique "Offres" "2025" -2026 "Hellowork" plus de
+Q168 | V1 | site:fr.indeed.com "Développeur" OR "Developpeur" "offres d'emploi" "2024" Lyon OR Lille OR Bordeaux OR Nantes OR Marseille OR Toulouse "plus de"
