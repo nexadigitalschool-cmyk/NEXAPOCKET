@@ -120,3 +120,12 @@ Q119	insee comparateur de territoires "Île-de-France" "Actifs de 15 à 64 ans" 
 Q120	Numeum ingénieurs du numérique tendances 2025 jeunes diplômés recrutements part juniors chiffres enquête IESF 2025	=> 2 études
 Q121	Indeed Hiring Lab France décembre 2025 "marché de l'emploi en 2026" tech informatique offres chiffres indice	=> 2 études
 Q122	Direction générale du Trésor juin 2026 "intelligence artificielle" emploi note chiffres exposition métiers France pourcentage	=> 2 études
+Q123	DRIEETS Île-de-France chiffres clés 2022 "population active" francilienne "millions" actifs emploi PDF	=> 1 étude (URL, valeur absente)
+Q124	Conférence des grandes écoles enquête insertion 2026 ingénieurs informatique taux d'emploi net salaire brut chiffres	=> 1 étude
+Q125	Apec baromètre 2026 insertion jeunes diplômés promotion 2025 informatique taux d'emploi	=> 1 étude (complément)
+Q126	OPCO Atlas apprentissage numérique 2025 nombre de contrats développeurs baisse 2026 chiffres alternance branche numérique	=> 1 étude
+Q127	Malt "Freelancing in Europe" 2026 OR "Tech Trends" 2026 rapport freelances tech France chiffres	=> 2 études
+Q128	Insee conjoncture deuxième trimestre 2026 emploi salarié "information et communication" région Auvergne-Rhône-Alpes OR Occitanie OR "Nouvelle-Aquitaine" évolution	=> 2 études
+Q129	Apec "métiers cadres porteurs" 2026 Auvergne-Rhône-Alpes OR Occitanie OR "Nouvelle-Aquitaine" développeur offres région nombre	=> 1 étude
+Q130	Insee estimations d'emploi régionales 2025 emploi total par région "milliers" Île-de-France Auvergne-Rhône-Alpes tableau publication 2026	=> 1 étude
+TOTAL : 130 requêtes WebSearch lancées par l'agent ; l'outil a enchaîné ~25 recherches internes supplémentaires (signalées ligne par ligne), soit ~155 appels effectifs.
