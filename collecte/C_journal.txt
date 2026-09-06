@@ -113,3 +113,21 @@ Q111 | V3 | Apec mai 2026 "pratiques de recrutement" cadres IA marché moins ten
 Q112 | V3 | Accenture OR CGI OR Atos OR Capgemini France 2026 IA générative "jeunes diplômés" OR juniors embauches dirigeant déclaration interview (pas de déclaration nominative de dirigeant ESN trouvée)
 Q113 | V3 | Microsoft "Work Trend Index" 2025 France IA générative salariés utilisation chiffres OR "IA générative" entreprises françaises adoption 2026 Bpifrance OR INSEE
 Q114 | V3 | écoles développement web France 2026 insertion juniors IA Epitech OR "Le Wagon" OR OpenClassrooms OR "Wild Code School" taux d'insertion baisse marché junior
+Q115 | V4 | BMO 2026 "ingénieurs et cadres d'étude, R&D en informatique" projets de recrutement France Travail part difficile
+Q116 | V4 | BMO 2026 Île-de-France "ingénieurs et cadres d'étude" informatique projets de recrutement difficultés France Travail
+Q117 | V4 | BMO 2026 Auvergne-Rhône-Alpes ingénieurs informatique projets de recrutement Lyon métiers les plus recherchés
+Q118 | V4 | BMO 2026 Hauts-de-France ingénieurs informatique projets de recrutement Lille métiers les plus recherchés
+Q119 | V4 | BMO 2026 Nouvelle-Aquitaine ingénieurs informatique projets de recrutement Bordeaux métiers les plus recherchés
+Q120 | V4 | BMO 2026 Pays de la Loire ingénieurs informatique projets de recrutement Nantes métiers les plus recherchés (pas de chiffre métier)
+Q121 | V4 | BMO 2026 Provence-Alpes-Côte d'Azur ingénieurs informatique projets de recrutement Marseille Aix-en-Provence France Travail
+Q122 | V4 | BMO 2026 Occitanie ingénieurs informatique projets de recrutement Toulouse France Travail part difficile
+Q123 | V4 | BMO 2026 Bretagne OR "Grand Est" OR Normandie OR "Bourgogne-Franche-Comté" OR "Centre-Val de Loire" ingénieurs informatique projets de recrutement (pas de chiffre métier)
+Q124 | V4 | BMO "techniciens d'étude et de développement en informatique" 2026 OR 2025 projets de recrutement part difficile région (pas de chiffre pour cette FAP)
+Q125 | V4 | statistiques.francetravail.org bmo 2026 bassin Paris OR Lyon OR Marseille OR Toulouse "ingénieurs et cadres d'étude" informatique projets
+Q126 | V4 | BMO 2025 "ingénieurs et cadres d'étude, R&D en informatique" projets de recrutement 2025 France part difficile régions
+Q127 | V4 | Apec "Prévisions de recrutements de cadres 2026" Île-de-France informatique recrutements cadres région chiffres
+Q128 | V4 | Apec prévisions 2026 recrutements cadres Auvergne-Rhône-Alpes OR "Hauts-de-France" OR "Nouvelle-Aquitaine" informatique région chiffres (pas de chiffre régional dans extraits)
+Q129 | V4 | Apec prévisions 2026 recrutements cadres "Pays de la Loire" OR "Provence-Alpes-Côte d'Azur" OR Occitanie OR Bretagne informatique région chiffres (PDF PACA-Corse identifié, pas de chiffre)
+Q130 | V4 | Dares tensions 2024 OR 2025 "ingénieurs de l'informatique" métiers en tension par région indicateur de tension
+Q131 | V4 | INSEE population active par région 2024 OR 2025 emploi total par région tableau (pages INSEE identifiées, pas de chiffre régional dans extraits)
+Q132 | V4 | Numeum OR INSEE effectifs numérique par région emploi secteur numérique NAF 62 région 2024 2025
