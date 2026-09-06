@@ -76,3 +76,33 @@ site:lesjeudis.com développeur full stack OR "développeur web" | offres retenu
 site:chooseyourboss.com développeur full stack OR front-end OR back-end | offres retenues: 0
 site:meteojob.com développeur web OR "full stack" offre | offres retenues: 2
 site:jobteaser.com développeur web stage OR alternance | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Montpellier | offres retenues: 9
+site:fr.indeed.com/viewjob développeur web Rennes | offres retenues: 5
+site:fr.indeed.com/viewjob développeur web Strasbourg | offres retenues: 3
+site:fr.indeed.com/viewjob développeur web Grenoble | offres retenues: 6
+site:fr.indeed.com/viewjob développeur web Toulouse CDI | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Nancy OR Metz | offres retenues: 4
+site:fr.indeed.com/viewjob développeur web Dijon OR Besançon | offres retenues: 8
+site:fr.indeed.com/viewjob développeur web Tours OR Orléans | offres retenues: 2
+site:fr.indeed.com/viewjob développeur web Clermont-Ferrand OR "Saint-Étienne" | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Rouen OR "Le Havre" | offres retenues: 4
+site:fr.indeed.com/viewjob développeur web Reims OR Amiens | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Angers OR "Le Mans" OR Brest | offres retenues: 4
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Toulouse OR Montpellier | offres retenues: 5
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Rennes OR Brest OR Strasbourg | offres retenues: 7
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Grenoble OR Clermont-Ferrand OR Annecy | offres retenues: 7
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Rouen OR Caen OR Amiens OR Reims | offres retenues: 3
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Nice OR Toulon OR Dijon OR Besançon | offres retenues: 7
+site:candidat.francetravail.fr/offres/recherche/detail développeur web télétravail "100%" | offres retenues: 5
+site:welcometothejungle.com/fr/companies développeur Node.js OR Vue.js Paris CDI | offres retenues: 7
+site:welcometothejungle.com/fr/companies développeur Python Django OR Ruby Paris CDI | offres retenues: 8
+site:fr.indeed.com/viewjob "software engineer" OR "architecte logiciel" Paris CDI | offres retenues: 8
+site:fr.indeed.com/viewjob alternance OR stage "développeur web" Paris | offres retenues: 9
+site:fr.linkedin.com/jobs/view développeur full stack Paris CDI | offres retenues: 10
+site:fr.linkedin.com/jobs/view "full remote" développeur France | offres retenues: 9
+site:welcometothejungle.com/fr/companies "DevOps" CDI Toulouse OR Nantes OR Lille OR Rennes OR Bordeaux | offres retenues: 10
+site:fr.indeed.com/viewjob ingénieur cloud AWS OR Azure OR GCP CDI | offres retenues: 9
+site:fr.indeed.com/viewjob QA automatisation Cypress OR Playwright OR Selenium | offres retenues: 1
+site:welcometothejungle.com/fr/companies "AppSec" OR "sécurité applicative" OR "DevSecOps" CDI | offres retenues: 8
+site:hellowork.com/fr-fr/emplois accessibilité RGAA développeur OR intégrateur | offres retenues: 6
+site:welcometothejungle.com/fr/companies "Generative AI" OR "GenAI" engineer CDI France | offres retenues: 5
