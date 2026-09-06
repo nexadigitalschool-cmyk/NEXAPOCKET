@@ -1,0 +1,78 @@
+site:fr.indeed.com/viewjob développeur full stack Paris CDI | offres retenues: 10
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Paris | offres retenues: 7
+site:welcometothejungle.com/fr/companies développeur front-end React Paris | offres retenues: 9
+site:hellowork.com/fr-fr/emplois développeur web Toulouse | offres retenues: 7
+site:fr.indeed.com/viewjob "AI Engineer" France | offres retenues: 8
+site:hellowork.com/fr-fr/emplois DevOps engineer CDI France | offres retenues: 10
+site:hellowork.com/fr-fr/emplois développeur web Montpellier | offres retenues: 8
+site:hellowork.com/fr-fr/emplois développeur web Rennes | offres retenues: 8
+site:hellowork.com/fr-fr/emplois développeur web Strasbourg | offres retenues: 7
+site:welcometothejungle.com/fr/companies "LLM Engineer" OR "Generative AI Engineer" France | offres retenues: 4
+site:fr.indeed.com/viewjob "full remote" développeur web France | offres retenues: 4
+site:hellowork.com/fr-fr/emplois "QA automation" OR "testeur automaticien" CDI | offres retenues: 9
+site:hellowork.com/fr-fr/emplois développeur web Nancy | offres retenues: 4
+site:hellowork.com/fr-fr/emplois développeur web Grenoble | offres retenues: 8
+site:fr.indeed.com/viewjob développeur web Nice Sophia Antipolis | offres retenues: 4
+site:welcometothejungle.com/fr/companies "AI Engineer" CDI France | offres retenues: 10
+site:apec.fr detail-offre développeur web Paris | offres retenues: 1
+site:hellowork.com/fr-fr/emplois "Cloud Engineer" OR "Platform Engineer" CDI | offres retenues: 8
+site:hellowork.com/fr-fr/emplois développeur web Clermont-Ferrand | offres retenues: 8
+site:hellowork.com/fr-fr/emplois développeur web Rouen | offres retenues: 7
+site:hellowork.com/fr-fr/emplois développeur web Tours OR Orléans | offres retenues: 5
+site:fr.indeed.com/viewjob "développeur IA" OR "développeur intelligence artificielle" | offres retenues: 9
+site:fr.indeed.com/viewjob développeur Symfony Paris | offres retenues: 7
+site:hellowork.com/fr-fr/emplois "DevSecOps" OR "AppSec" ingénieur CDI | offres retenues: 8
+site:hellowork.com/fr-fr/emplois développeur web Brest OR Angers | offres retenues: 4
+site:hellowork.com/fr-fr/emplois développeur web Dijon OR Besançon | offres retenues: 5
+site:hellowork.com/fr-fr/emplois développeur web Reims OR Amiens | offres retenues: 7
+site:welcometothejungle.com/fr/companies "full remote" développeur full stack | offres retenues: 7
+site:fr.indeed.com/viewjob développeur "RAG" OR "LangChain" OR "agents IA" | offres retenues: 7
+site:fr.indeed.com/viewjob développeur "accessibilité" RGAA | offres retenues: 2
+site:hellowork.com/fr-fr/emplois développeur web Caen OR "Le Havre" | offres retenues: 2
+site:hellowork.com/fr-fr/emplois développeur web Poitiers OR Limoges | offres retenues: 3
+site:hellowork.com/fr-fr/emplois développeur web Pau OR "La Rochelle" | offres retenues: 6
+site:hellowork.com/fr-fr/emplois développeur web Annecy OR "Saint-Étienne" | offres retenues: 3
+site:hellowork.com/fr-fr/emplois développeur web Toulon OR Metz | offres retenues: 5
+site:candidat.francetravail.fr/offres/recherche/detail développeur web Réunion OR Martinique OR Guadeloupe | offres retenues: 3
+site:fr.indeed.com/viewjob développeur web Corse OR Ajaccio OR Bastia | offres retenues: 0
+site:fr.indeed.com/viewjob développeur web Amiens OR Caen OR Lille | offres retenues: 4
+site:fr.indeed.com/viewjob développeur web "La Rochelle" OR Limoges OR Poitiers | offres retenues: 3
+site:fr.indeed.com/viewjob "tech lead" OR "lead développeur" Paris CDI | offres retenues: 8
+site:hellowork.com/fr-fr/emplois "Développeur web" "Île-de-France" offres | offres retenues: 1
+site:hellowork.com/fr-fr/emplois "AI Engineer" OR "Ingénieur IA" CDI | offres retenues: 7
+site:fr.indeed.com/viewjob "100% télétravail" OR "télétravail complet" développeur | offres retenues: 3
+site:free-work.com développeur full stack "full remote" | offres retenues: 3
+site:welcometothejungle.com/fr/companies "Site Reliability Engineer" OR "SRE" CDI | offres retenues: 9
+site:hellowork.com/fr-fr/emplois "Green IT" OR "numérique responsable" développeur OR ingénieur | offres retenues: 6
+Hellowork "Emploi Développeur web" "Plus de" Offres Nouvelle-Aquitaine OR Occitanie OR Bretagne OR "Pays de la Loire" | offres retenues: 0
+Indeed "AI Engineer" France "emplois" plus de | offres retenues: 0
+Hellowork "Emploi Développeur web" Offres "Grand Est" OR "Hauts-de-France" OR Normandie OR "Centre-Val de Loire" | offres retenues: 0
+Hellowork "Emploi Développeur web" Offres "Auvergne-Rhône-Alpes" OR "Provence-Alpes-Côte d'Azur" OR "Bourgogne-Franche-Comté" OR "Île-de-France" | offres retenues: 0
+Indeed "Développeur Web" emplois "plus de" Île-de-France OR Occitanie OR Bretagne OR Normandie | offres retenues: 0
+site:fr.indeed.com/viewjob développeur "GitHub Copilot" OR "Cursor" OR "Claude Code" OR "vibe coding" | offres retenues: 0
+site:welcometothejungle.com/fr/companies "prompt engineer" OR "automation developer" OR "développeur no-code" OR "développeur low-code" | offres retenues: 2
+site:hellowork.com/fr-fr/emplois développeur web Martinique OR Guadeloupe OR Réunion OR Corse | offres retenues: 2
+Indeed "Développeur Web" emplois "plus de" "Auvergne-Rhône-Alpes" OR "Provence-Alpes-Côte d'Azur" OR "Grand Est" OR "Hauts-de-France" | offres retenues: 0
+Indeed "Développeur Web" emplois "plus de" "Nouvelle-Aquitaine" OR "Pays de la Loire" OR "Centre-Val de Loire" OR "Bourgogne-Franche-Comté" OR Normandie | offres retenues: 0
+Indeed "DevOps" OR "Cloud Engineer" OR "Site Reliability" France emplois "plus de" | offres retenues: 0
+Indeed "Développeur Full Stack" OR "Développeur Front End" OR "Développeur Back End" France emplois "plus de" | offres retenues: 0
+site:fr.linkedin.com/jobs/view "AI Engineer" OR "LLM Engineer" France | offres retenues: 9
+site:hellowork.com/fr-fr/emplois "LLM" OR "IA générative" développeur | offres retenues: 10
+site:fr.indeed.com/viewjob développeur Java Spring Paris CDI | offres retenues: 9
+site:fr.indeed.com/viewjob développeur WordPress OR Shopify OR PrestaShop Paris | offres retenues: 6
+site:fr.indeed.com/viewjob développeur mobile "React Native" OR Flutter Paris | offres retenues: 7
+site:welcometothejungle.com/fr/companies développeur ".NET" OR Angular Paris CDI | offres retenues: 8
+site:candidat.francetravail.fr/offres/recherche/detail développeur web "Le Mans" OR Orléans OR Angers | offres retenues: 8
+site:fr.indeed.com/viewjob développeur web Martinique OR Guadeloupe OR "Fort-de-France" OR "Pointe-à-Pitre" | offres retenues: 0
+Indeed "Développeur Web" emplois "plus de" "Grand Est" OR "Hauts-de-France" OR Normandie OR "Nouvelle-Aquitaine" OR "Pays de la Loire" | offres retenues: 0
+Indeed "Développeur Web" France emplois "plus de" 2025 OR 2024 | offres retenues: 0
+Indeed "AI Engineer" OR "Ingénieur IA" emplois "plus de" Lyon OR Toulouse OR Nantes OR Bordeaux OR Lille | offres retenues: 0
+Indeed "Testeur" OR "QA" OR "DevSecOps" OR "Cybersécurité" emplois "plus de" France | offres retenues: 0
+francetravail.fr "développeur web" offres d'emploi résultats région nombre | offres retenues: 0
+"Welcome to the Jungle" "développeur" "offres d'emploi" France jobs nombre "full stack" | offres retenues: 0
+site:fr.jooble.org développeur web offres d'emploi France | offres retenues: 0
+site:fr.talent.com développeur web emploi | offres retenues: 0
+site:lesjeudis.com développeur full stack OR "développeur web" | offres retenues: 3
+site:chooseyourboss.com développeur full stack OR front-end OR back-end | offres retenues: 0
+site:meteojob.com développeur web OR "full stack" offre | offres retenues: 2
+site:jobteaser.com développeur web stage OR alternance | offres retenues: 0
