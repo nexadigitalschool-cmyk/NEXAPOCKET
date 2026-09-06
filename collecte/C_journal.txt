@@ -95,3 +95,21 @@ Q093 | V3 | OPIIEC "IA générative" métiers du numérique étude impact dével
 Q094 | V3 | Numeum OR Syntec IA générative impact emploi développeurs juniors ESN recrutement 2026 déclaration
 Q095 | V3 | Capgemini OR "Sopra Steria" OR Atos OR CGI OR "Accenture France" juniors IA générative recrutement développeurs 2026 baisse embauches jeunes diplômés
 Q096 | V3 | "développeur augmenté" IA fiche métier Onisep OR "France Travail" OR Apec OR école 2026 compétences IA développeur (pas de fiche 'développeur augmenté' trouvée)
+Q097 | V3 | Apec "Les cadres et l'IA" 2026 informaticiens usage IA générative résultats chiffres développeurs
+Q098 | V3 | LinkedIn "Jobs on the Rise" 2026 France "AI engineer" OR "ingénieur IA" métiers en croissance France
+Q099 | V3 | site:fr.indeed.com "Copilot" OR "Cursor" OR "LLM" OR "RAG" OR "IA générative" développeur emplois "plus de"
+Q100 | V3 | offres d'emploi "AI engineer" OR "LLM engineer" France croissance 2025 2026 nombre d'offres étude HelloWork OR Free-Work OR Apec
+Q101 | V3 | Stack Overflow 2025 survey AI agents "vibe coding" percentage developers agents usage
+Q102 | V3 | enquête développeurs France 2025 OR 2026 utilisation Copilot Cursor ChatGPT part des développeurs français WeLoveDevs OR Malt OR "Welcome to the Jungle" OR CodinGame
+Q103 | V3 | blogdumoderateur "comment les développeurs codent avec l'IA" 2026 chiffres part des développeurs outils IA France
+Q104 | V3 | welovedevs "développeur en 2025" étude IA utilisation part des développeurs français Copilot ChatGPT productivité
+Q105 | V3 | DORA 2025 report AI adoption developers percentage productivity OR METR study 2025 AI slows experienced developers 19%
+Q106 | V3 | Indeed Hiring Lab GenAI skills tech job postings share Europe France 2025 "generative AI" mentions software developers
+Q107 | V3 | LinkedIn Economic Graph 2025 OR 2026 France compétences IA "AI literacy" offres skills "AI talent" France croissance
+Q108 | V3 | France Travail OR Onisep 2026 "développeur" métier transformé par l'IA générative article compétences évolution du métier
+Q109 | V3 | Indeed Hiring Lab "How Employers Are Talking About AI in Job Postings" October 2025 software development share AI mentions
+Q110 | V3 | Indeed Hiring Lab "AI at Work Report 2025" GenAI skills software development occupations exposure percentage
+Q111 | V3 | Apec mai 2026 "pratiques de recrutement" cadres IA marché moins tendu jeunes diplômés débutants informatique chiffres
+Q112 | V3 | Accenture OR CGI OR Atos OR Capgemini France 2026 IA générative "jeunes diplômés" OR juniors embauches dirigeant déclaration interview (pas de déclaration nominative de dirigeant ESN trouvée)
+Q113 | V3 | Microsoft "Work Trend Index" 2025 France IA générative salariés utilisation chiffres OR "IA générative" entreprises françaises adoption 2026 Bpifrance OR INSEE
+Q114 | V3 | écoles développement web France 2026 insertion juniors IA Epitech OR "Le Wagon" OR OpenClassrooms OR "Wild Code School" taux d'insertion baisse marché junior
