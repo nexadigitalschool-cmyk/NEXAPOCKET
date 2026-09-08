@@ -34,7 +34,7 @@ Aucun accès HTTP direct aux sites (proxy) ni à l'API France Travail : toutes l
 
 Étude réalisée le 8 septembre 2026 pour aider NEXA à décider de l'avenir de sa filière Cybersécurité (Bachelor à Mastère).
 
-Échantillon : 348 lignes d'offres collectées sur 10 plateformes, 345 offres uniques après dédoublonnage (342 dans le périmètre cyber), 144 relevés de stocks d'offres datés (novembre 2025 – septembre 2026), 33 sources documentaires (ANSSI, OPIIEC, Apec, France Travail BMO, Dares, Numeum, Wavestone, ISC2, ENISA, Banque de France, baromètres).
+Échantillon : 348 lignes d'offres collectées sur 10 plateformes, 345 offres uniques après dédoublonnage (342 dans le périmètre cyber), 223 relevés de stocks d'offres datés (mai 2024 – septembre 2026, 138 requêtes distinctes, 15 zones), 35 sources documentaires (ANSSI, OPIIEC, Apec, France Travail BMO, Dares, Numeum, Wavestone, ISC2, ENISA, Banque de France, baromètres).
 
 Conclusion : **ADOPTER_MODELE_HYBRIDE_SPECIALISE** — filière conservée mais restructurée : Bachelor Cybersecurity Engineering fortement technicisé visant l'alternance, puis Mastère limité à trois spécialisations (Cloud Security & DevSecOps ; SecOps, Detection & Automation ; Cyber GRC, Risques & IAM), avec dépriorisation du pentest, du DFIR et de l'AI Security comme parcours autonomes.
 
@@ -44,7 +44,7 @@ Conclusion : **ADOPTER_MODELE_HYBRIDE_SPECIALISE** — filière conservée mais 
 |---|---|
 | `NEXA_Marche_Emploi_Cybersecurite_France_2026.xlsx` | 5 onglets : SYNTHESE_METIERS (+ stocks datés, sources, 8 graphiques), REGIONS_METIERS (+ matrice régions × familles), VILLES_NEXA (+ synthèse comparative des campus), COMPETENCES_TECH_CERTIFS_IA, OFFRES_DETAILLEES (+ journal des plateformes sans données) |
 | `NEXA_Synthese_Marche_Emploi_Cybersecurite_2026.docx` | 18 sections : conclusion en une phrase, marché national, tension vs accessibilité junior, métiers, régions, villes NEXA, contrats et alternance, compétences et certifications, analyse des 10 domaines, IA, Bachelor/Mastère, campus, hypothèses H1-H30, 4 scénarios, matrice d'arbitrage, recommandation, réponses aux 50 questions, sources cliquables, encadré de décision |
-| `NEXA_Perimetre_Metiers_Cybersecurite_et_Plateformes_Sans_Donnees.md` | Journal séparé : taxonomie complète (18 familles, 25 fiches métiers avec variantes FR/EN, compétences, outils, certifications, requêtes) et 11 plateformes ou voies d'accès sans données exploitables |
+| `NEXA_Perimetre_Metiers_Cybersecurite_et_Plateformes_Sans_Donnees.md` | Journal séparé : taxonomie complète (18 familles, 25 fiches métiers avec variantes FR/EN, compétences, outils, certifications, requêtes) et 12 plateformes ou voies d'accès sans données exploitables, dont la navigation par navigateur réel |
 
 ## Données et reproductibilité
 

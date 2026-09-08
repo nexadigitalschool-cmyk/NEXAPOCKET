@@ -2,7 +2,7 @@
 
 **Étude :** Observatoire du marché de l'emploi de la cybersécurité en France — décision sur l'avenir de la filière Cybersécurité de NEXA (Bachelor → Mastère).  
 **Date de collecte :** 8 septembre 2026.  
-**Échantillon :** 348 lignes d'offres collectées, 345 offres uniques après dédoublonnage, dont 342 dans le périmètre cybersécurité ; 144 relevés de stocks d'offres datés (2025-2026) ; 33 sources documentaires ; 11 plateformes ou voies d'accès sans données exploitables.  
+**Échantillon :** 348 lignes d'offres collectées, 345 offres uniques après dédoublonnage, dont 342 dans le périmètre cybersécurité ; 223 relevés de stocks d'offres datés (2025-2026) ; 35 sources documentaires ; 12 plateformes ou voies d'accès sans données exploitables.  
 **Fichier compagnon :** `NEXA_Marche_Emploi_Cybersecurite_France_2026.xlsx` (onglet OFFRES_DETAILLEES pour le détail ligne à ligne).
 
 > Ce fichier constitue le **journal séparé de la collecte**. Il n'est pas destiné à être lu par la Direction Générale : la synthèse décisionnelle se trouve dans `NEXA_Synthese_Marche_Emploi_Cybersecurite_2026.docx`.
@@ -96,7 +96,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS (GRC, audit et conformité distingués : voir la ligne AUDIT_COMPLIANCE)
 - **JUSTIFICATION :** Famille la plus ouverte aux profils en formation dans notre corpus (11 alternances GRC sur 62). Attention : GRC n'est pas assimilable à de la cybersécurité opérationnelle — la distinction est maintenue dans la taxonomie.
 - **OFFRES_UNIQUES_COLLECTEES :** 37
-- **STOCK_OBSERVE :** national — ≥ 200 « Cybersécurité GRC » (extrait : 242) au 03/09/2026 ; ≥ 200 « GRC Cybersécurité » (13/05/2026) ; Paris/IdF — ≥ 100 (extrait : 112) au 03/09/2026 ; ≥ 75 IdF (extrait : 92) au 11/08/2026
+- **STOCK_OBSERVE :** national — ≥ 200 « Cybersécurité GRC » (extrait : 242) au 03/09/2026 ; ≥ 300 « ISO 27001 » à Paris (21/10/2025). Local : ≈ 14 à Lyon (03/01/2026) ; Paris/IdF — ≥ 100 (extrait : 112) au 03/09/2026 ; ≥ 75 IdF (extrait : 92) au 11/08/2026
 - **REQUETES_UTILISEES (17) :**
   - `site:candidat.francetravail.fr/offres/recherche/detail alternance cybersécurité SOC réseaux`
   - `site:candidat.francetravail.fr/offres/recherche/detail consultant GRC OR audit OR conformité sécurité 2026`
@@ -129,7 +129,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS
 - **JUSTIFICATION :** Métier central du périmètre, présent dans toutes les sources et chez tous les types d'employeurs (MSSP, ESN, banques, secteur public, industrie). Sous-niveaux SOC_LEVEL_1/2/3 distingués lorsque l'intitulé le précise ; en pratique nos offres CDI sont quasi exclusivement N2/N3.
 - **OFFRES_UNIQUES_COLLECTEES :** 28
-- **STOCK_OBSERVE :** national — ≥ 300 (Indeed, 28/05/2026, « Analyste Soc ») ; Paris/IdF — ≥ 50 (Indeed, 29/06/2026, Paris 75) ; ≥ 50 SOC Analyst IdF (11/08/2026)
+- **STOCK_OBSERVE :** national — ≥ 300 (28/05/2026, « Analyste Soc ») ; ≥ 400 « Cyber Security SOC Analyste » (14/08/2026) ; ≈ 329 « Analyste Cybersécurité » (20/03/2026) ; ≈ 231 « Analyste Cyber Security » (23/05/2026) ; Paris/IdF — ≥ 50 (Indeed, 29/06/2026, Paris 75) ; ≥ 50 SOC Analyst IdF (11/08/2026)
 - **REQUETES_UTILISEES (10) :**
   - `site:candidat.francetravail.fr/offres/recherche/detail analyste SOC OR pentest OR IAM OR RSSI`
   - `site:fr.indeed.com/viewjob "Microsoft Sentinel" OR Splunk OR QRadar analyste sécurité`
@@ -252,7 +252,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS
 - **JUSTIFICATION :** Distingué d'AppSec : le DevSecOps outille et sécurise la chaîne de livraison, l'AppSec sécurise le produit et le code. Stock le plus élevé de toutes les spécialités cyber observées (≥ 817 au 04/09/2026).
 - **OFFRES_UNIQUES_COLLECTEES :** 16
-- **STOCK_OBSERVE :** national — ≥ 800 « DevSecOps » (extrait : 817) au 04/09/2026 ; ≥ 700 au 15/04/2026 ; Paris/IdF — ≥ 300 (extrait : 330) au 15/04/2026 ; ≥ 200 « DevSecOps Engineer » (extrait : 248) au 28/08/2026
+- **STOCK_OBSERVE :** national — ≥ 800 « DevSecOps » (extrait : 817) au 04/09/2026 ; ≥ 700 au 15/04/2026. Local : ≈ 52 à Lyon (06/09/2026), ≈ 43 à Toulouse (03/03/2026) ; Paris/IdF — ≥ 300 (extrait : 330) au 15/04/2026 ; ≥ 200 « DevSecOps Engineer » (extrait : 248) au 28/08/2026
 - **REQUETES_UTILISEES (5) :**
   - `site:candidat.francetravail.fr/offres/recherche/detail sécurité informatique ingénieur cloud DevSecOps`
   - `site:fr.indeed.com/viewjob DevSecOps ingénieur`
@@ -332,7 +332,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS
 - **JUSTIFICATION :** Premier métier en volume selon l'Observatoire ANSSI (21 % des offres), confirmé par nos relevés (≈ 400 offres France sur deux sources). Mais métier de destination à 7-10 ans, jamais un débouché de sortie d'école : c'est le principal piège d'interprétation du marché cyber français.
 - **OFFRES_UNIQUES_COLLECTEES :** 13
-- **STOCK_OBSERVE :** national — ≥ 400 « Security Architect » (11/06/2026) ; ≥ 400 « Cybersecurity Architect » (extrait : 455) au 22/06/2026 ; 404 (Glassdoor, juillet 2026) ; Paris/IdF — ≥ 200 (extrait : 277) au 18/08/2026 ; 270 (Glassdoor, août 2026)
+- **STOCK_OBSERVE :** national — ≥ 400 « Security Architect » (11/06/2026) ; ≈ 455 « Cybersecurity Architect » (22/06/2026) ; 404 (Glassdoor, 07/2026). Ordre de grandeur indépendant : ≈ 400 recrutements d'architectes cyber en France en 2025 contre ≈ 350 en 2024 (Mercato de l'Emploi) ; Paris/IdF — ≥ 200 (extrait : 277) au 18/08/2026 ; 270 (Glassdoor, août 2026)
 - **REQUETES_UTILISEES (5) :**
   - `site:candidat.francetravail.fr/offres/recherche/detail architecte sécurité OR cloud OR IAM OR vulnérabilités`
   - `site:fr.indeed.com/viewjob "AI security" OR "sécurité IA" OR "LLM" ingénieur sécurité France`
@@ -355,7 +355,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS (sous-catégories PENTEST_WEB / PENTEST_INFRA / PENTEST_AD / RED_TEAM / SECURITY_RESEARCH distinguées lorsque l'intitulé le permet)
 - **JUSTIFICATION :** Inclus mais mesuré avec une attention particulière : c'est le métier dont l'écart entre attractivité étudiante et volume réel de recrutement est le plus grand (≈ 33 offres nationales « pentester » au 28/08/2026 contre ≥ 800 DevSecOps).
 - **OFFRES_UNIQUES_COLLECTEES :** 12
-- **STOCK_OBSERVE :** national — ≥ 25 « Pentester » (extrait : 33) au 28/08/2026 ; ≥ 100 « Pentest » (28/08/2026) ; 31 « penetration testing » (Glassdoor, mai 2026) ; Paris/IdF — page datée sans compte (11/08/2026)
+- **STOCK_OBSERVE :** national — ≥ 25 « Pentester » (extrait : 33) au 28/08/2026 ; 31 « penetration testing » (Glassdoor, 05/2026). Local : 4 à 6 à Lyon (20 et 22/07/2026). Ordre de grandeur indépendant : ≈ 150 recrutements de pentesters en France en 2025 contre ≈ 120 en 2024 (Mercato de l'Emploi) ; Paris/IdF — page datée sans compte (11/08/2026)
 - **REQUETES_UTILISEES (9) :**
   - `site:candidat.francetravail.fr/offres/recherche/detail alternance cybersécurité SOC réseaux`
   - `site:candidat.francetravail.fr/offres/recherche/detail cybersécurité Lyon OR Lille OR Nantes OR Bordeaux OR Marseille`
@@ -382,7 +382,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS
 - **JUSTIFICATION :** Famille à part entière, sous-estimée par les étudiants et fortement demandée (≥ 732 offres « IAM » au 31/03/2026). Seuils d'entrée parmi les plus bas des spécialités techniques (Deloitte : 2 ans ; Aix : 1 an ; une alternance IAM observée).
 - **OFFRES_UNIQUES_COLLECTEES :** 12
-- **STOCK_OBSERVE :** national — ≥ 700 « IAM » (extrait : 732) au 31/03/2026 ; ≥ 100 « Ingénieur Identity & Access Management » (31/07/2026) ; Paris/IdF — ≥ 300 « Identity Access Management » (extrait : 360) au 26/05/2026
+- **STOCK_OBSERVE :** national — ≥ 700 « IAM » (extrait : 732) au 31/03/2026 ; ≈ 405 « Identity Access Management » (18/07/2025) et 399 sur Glassdoor (09/2025). Local : ≈ 35 à Nantes (04/05/2026) ; Paris/IdF — ≥ 300 « Identity Access Management » (extrait : 360) au 26/05/2026
 - **REQUETES_UTILISEES (5) :**
   - `site:candidat.francetravail.fr/offres/recherche/detail analyste SOC OR pentest OR IAM OR RSSI`
   - `site:fr.indeed.com/viewjob "gestion des identités" OR "IAM" OR "PAM" ingénieur France offre emploi`
@@ -430,7 +430,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS
 - **JUSTIFICATION :** L'un des trois plus gros stocks observés. Compétence à la fois autonome (postes dédiés) et transverse (présente dans les offres d'architecture, DevSecOps, IAM et généralistes).
 - **OFFRES_UNIQUES_COLLECTEES :** 10
-- **STOCK_OBSERVE :** national — ≥ 400 « Cloud Security Engineer » (extrait : 438) au 25/05/2026 ; Paris/IdF — ≥ 200 « Cloud Security Engineer » (extrait : 273) au 26/05/2026 ; ≥ 700 « Cloud Security » Paris (extrait : 769) au 01/09/2026
+- **STOCK_OBSERVE :** national — ≥ 400 « Cloud Security Engineer » (extrait : 438) au 25/05/2026 ; ≥ 1 000 « Cloud Security » (extrait : 1 324) au 08/09/2026. Local : ≈ 69 « Cyber Sécurité Cloud » à Lyon (18/06/2026), ≥ 25 à Nantes (06/09/2024) ; Paris/IdF — ≥ 200 « Cloud Security Engineer » (extrait : 273) au 26/05/2026 ; ≥ 700 « Cloud Security » Paris (extrait : 769) au 01/09/2026
 - **REQUETES_UTILISEES (9) :**
   - `site:candidat.francetravail.fr/offres/recherche/detail alternance cybersécurité SOC réseaux`
   - `site:fr.indeed.com/viewjob "cloud security engineer" OR "ingénieur sécurité cloud" AWS Azure France`
@@ -551,7 +551,7 @@ Les règles de classification sont implémentées dans `scripts_cyber/normalize.
 - **INCLUS_OU_EXCLU :** INCLUS
 - **JUSTIFICATION :** Distingué de DevSecOps et de Product Security lorsque l'intitulé le permet. Exige une compréhension réelle du code : point de convergence avec la filière Développement Web.
 - **OFFRES_UNIQUES_COLLECTEES :** 6
-- **STOCK_OBSERVE :** national — ≥ 600 « Application Security Engineer » (10/08/2026) ; ≥ 900 « Security Engineer » (03/09/2026) ; Paris/IdF — ≥ 300 « Application Security Engineer » (extrait : 354) au 17/08/2026
+- **STOCK_OBSERVE :** national — ≥ 600 « Application Security Engineer » (10/08/2026) ; ≈ 1 142 « Sécurité applicative » (04/02/2026) ; ≥ 400 « Ingénieur Sécurité Applicative » (23/05/2026) ; Paris/IdF — ≥ 300 « Application Security Engineer » (extrait : 354) au 17/08/2026
 - **REQUETES_UTILISEES (3) :**
   - `site:fr.indeed.com/viewjob "application security" OR AppSec OR "sécurité applicative"`
   - `site:www.welcometothejungle.com/fr/companies "security engineer" OR "ingénieur sécurité" scale-up startup Paris CDI`
@@ -889,6 +889,19 @@ Cette partie recense **toutes les plateformes et voies d'accès testées pour le
 - **SOURCE_DE_REMPLACEMENT :** Reprises documentées des chiffres clés (23 000 offres, +49 %, 21 % architectes, 15 % consultants, 15 % ingénieurs, 47 % Bac+5) par plusieurs sources secondaires convergentes
 - **IMPACT_SUR_L_ANALYSE :** Modéré : la structure fine du corpus ANSSI n'a pas pu être reprise ; seuls les grands agrégats sont utilisés
 
+### Navigation par navigateur réel (Chromium / Playwright) — Indeed, HelloWork, France Travail
+
+- **URL :** https://fr.indeed.com/q-analyste-soc-emplois.html ; https://www.hellowork.com/fr-fr/emploi/recherche.html?k=cybersecurite&l=France ; https://candidat.francetravail.fr/offres/recherche?motsCles=cybersecurite
+- **DATE_DU_TEST :** 2026-09-08
+- **METIERS_TESTES :** Analyste SOC et cybersécurité (requêtes de test) ; objectif = compteurs par métier via les filtres des sites
+- **ZONES_TESTEES :** France, Île-de-France
+- **DONNEES_RECHERCHEES :** Nombre d'offres affiché par les moteurs de recherche internes des sites, en appliquant les filtres métier, contrat, expérience et localisation
+- **RESULTAT :** Échec sur les trois cibles, avec et sans le proxy de session : net::ERR_TUNNEL_CONNECTION_FAILED. Chromium (build 1194 préinstallé) démarre correctement, la page ne se charge jamais. En parallèle, une requête HTTP directe hors proxy sur fr.indeed.com renvoie « HTTP/2 403, x-deny-reason: host_not_allowed » : c'est la passerelle réseau qui refuse, pas le site. Le statut du proxy enregistre pour chaque hôte « gateway answered 403 to CONNECT (policy denial) ». Les moteurs de recherche généralistes (google.com, duckduckgo.com) sont eux aussi refusés ; seul github.com est joignable.
+- **DONNEES_MANQUANTES :** Compteurs en direct par filtre (contrat, expérience, date de publication, rayon géographique), qui auraient permis des relevés simultanés et donc de vraies séries comparables
+- **AUTRES_CHEMINS_TESTES :** Chromium via HTTPS_PROXY ; Chromium en connexion directe ; curl via proxy ; curl --noproxy avec User-Agent navigateur ; vérification DNS (la résolution fonctionne, l'interception est au niveau de la passerelle) ; consultation du statut du proxy agent
+- **SOURCE_DE_REMPLACEMENT :** Relevé systématique des compteurs figurant dans les TITRES des pages de résultats filtrées, telles qu'indexées par un moteur de recherche (« X emplois (date) »). 223 relevés obtenus sur 138 requêtes distinctes et 15 zones, dont des points de 2024 et 2025.
+- **IMPACT_SUR_L_ANALYSE :** La couverture ville × métier est bonne (voir §5.1 bis du document de synthèse). En revanche, faute de relevés simultanés maîtrisés, aucune série d'évolution n'est calculable : la vérification montre que deux formes d'URL d'une même requête donnent des comptes différant d'un facteur 4 à 16, et qu'aucune des 223 mesures ne constitue une série sur une URL strictement identique à deux dates. Les compteurs ne servent donc qu'à comparer des domaines entre eux à une date donnée.
+
 ### Plateformes ayant effectivement fourni des données
 
 | Plateforme | Offres individuelles retenues | Relevés de stocks datés |
@@ -896,9 +909,9 @@ Cette partie recense **toutes les plateformes et voies d'accès testées pour le
 | Apec | 2 | 0 |
 | France Travail | 48 | 0 |
 | Free-Work | 19 | 0 |
-| Glassdoor | 0 | 7 |
+| Glassdoor | 0 | 8 |
 | HelloWork | 56 | 0 |
-| Indeed | 152 | 137 |
+| Indeed | 152 | 215 |
 | Jooble | 1 | 0 |
 | LinkedIn | 8 | 0 |
 | Meteojob | 1 | 0 |

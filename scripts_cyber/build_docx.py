@@ -208,6 +208,28 @@ P("L'accès HTTP direct aux plateformes et aux rapports PDF a été bloqué pend
 B("Champs incomplets : le salaire n'est renseigné que dans 3 offres sur 342, les certifications dans 4. Ce sont des bornes basses liées à la troncature des extraits, pas des mesures du marché. Les fourchettes salariales citées proviennent donc de baromètres publiés, marqués ESTIMATION.")
 B("Objectif de volume non atteint : l'objectif indicatif de 500 à 1 000 offres uniques n'a pas pu être tenu. Nous avons préféré 342 offres réelles et traçables à un volume gonflé. Le détail des plateformes inaccessibles figure dans le fichier Markdown joint.")
 B("Aucune évolution annuelle n'est calculée à partir de nos propres relevés : les séries 2024 et 2025 comparables sont absentes. Les colonnes EVOLUTION du classeur portent « NC (séries insuffisantes) ». Les tendances pluriannuelles proviennent exclusivement de sources publiées.")
+H("2.2 bis Tentative d'accès direct par navigateur et instabilité des compteurs", 2)
+P("Une seconde tentative de collecte a été menée en pilotant un vrai navigateur (Chromium via Playwright), "
+  "avec et sans le proxy de session, sur Indeed, HelloWork et France Travail. Les trois cibles ont échoué de façon identique "
+  "(net::ERR_TUNNEL_CONNECTION_FAILED), et la passerelle réseau répond explicitement « x-deny-reason: host_not_allowed ». "
+  "Le blocage est une politique d'egress de la session : il ne dépend ni du site, ni de l'outil, ni de la méthode. "
+  "Aucune plateforme d'emploi n'est joignable, y compris les moteurs de recherche généralistes.", space=6)
+P("Cette seconde passe a en revanche permis de porter le nombre de compteurs relevés de 144 à 223, sur 138 requêtes distinctes "
+  "et 15 zones géographiques, et de récupérer des points datés de 2024 et 2025. Elle a surtout produit un résultat méthodologique "
+  "qui commande la lecture de toute la suite :", space=6)
+TAB(["Requête","Zone","Deux relevés sur la même requête","Écart"],
+ [["Identity Access Management","France","≈ 405 offres au 18/07/2025 ; « plus de 100 » au 21/07/2026","Facteur ≈ 4"],
+  ["Cybersecurity Architect","France","≈ 455 offres au 22/06/2026 ; « plus de 100 » au 13/08/2026","Facteur ≈ 4"],
+  ["Stage DevSecOps","France","« plus de 400 » au 30/05/2026 ; « plus de 25 » au 01/06/2026","Facteur ≈ 16 en deux jours"],
+  ["Identity Access Management","Paris (75)","≈ 360 offres au 26/05/2026 ; « plus de 50 » au 21/07/2026","Facteur ≈ 7"]],
+ [4.0,2.6,7.0,2.4], size=8.5)
+P("Ces écarts ne traduisent pas des mouvements de marché : ils proviennent de formes d'URL différentes pour un même mot-clé, "
+  "que le moteur d'indexation traite comme des pages distinctes. Vérification faite, aucune de nos 223 mesures ne constitue une série "
+  "sur une URL strictement identique à deux dates différentes.", bold=True, space=6)
+P("Conséquence, appliquée sans exception dans tout ce document : ces compteurs sont utilisables pour COMPARER des domaines entre eux "
+  "à une date donnée (un écart d'un facteur 25 entre pentest et DevSecOps reste un signal, un écart de 20 % n'en est pas un), "
+  "mais ils ne peuvent PAS servir à mesurer une évolution. Toutes les colonnes EVOLUTION du classeur restent à « NC (séries insuffisantes) », "
+  "et les tendances pluriannuelles citées proviennent exclusivement de sources publiées (ANSSI, Apec, Numeum, BMO).", space=8)
 P("Nous n'avons par ailleurs eu accès à aucune donnée interne NEXA (candidatures, taux de remplissage, placement, salaires de sortie, marge, coût des laboratoires, abandon). "
   "La recommandation porte donc exclusivement sur la pertinence au regard du marché de l'emploi. Une décision économique définitive exige ces indicateurs internes.", italic=True, space=8)
 H("2.3 Périmètre métiers", 2)
@@ -314,6 +336,24 @@ TAB(["Domaine","Stock national observé","Date du relevé","Lecture"],
  [4.4,4.4,3.2,6.4], size=8.5)
 SRC("Relevés horodatés Indeed et Glassdoor, onglet SYNTHESE_METIERS du classeur (tableau des stocks datés). "
     "Ces compteurs recouvrent partiellement des requêtes larges : ils ne sont ni additionnables ni assimilables à un nombre d'emplois.")
+H("5.1 bis Les volumes par ville NEXA et par domaine", 2)
+P("Compteurs locaux relevés domaine par domaine. Ils donnent une image beaucoup plus exploitable pour un arbitrage par campus "
+  "que le stock cyber global de la ville.", italic=True, space=6)
+TAB(["Ville","Cyber (tous domaines)","DevSecOps","Cloud Security","IAM","GRC","Pentest","Alternance cyber"],
+ [["Paris / Île-de-France","≈ 2 444 (31/08/2026)","≈ 330 (15/04/2026)","≈ 769 (01/09/2026)","≈ 360 (26/05/2026)","≈ 112 (03/09/2026)","≥ 75 « sécurité pentest » (10/05/2026)","≈ 359 (28/05/2026)"],
+  ["Lyon","≈ 335 (16/06/2026)","≈ 52 (06/09/2026)","≈ 69 (18/06/2026)","NC","≈ 14 (03/01/2026)","4 à 6 (07/2026)","≈ 32 (05/06/2026)"],
+  ["Lille","≥ 100 (23/07/2026)","NC","NC (≥ 400 cloud non cyber)","NC","NC","NC","6 (20/08/2026)"],
+  ["Bordeaux","≥ 200 (29/05/2026)","NC","NC","NC","NC","NC","6 (06/08/2026) ; 12 stages"],
+  ["Nantes","≥ 100 (04/09/2026)","NC","≥ 25 (06/09/2024)","≈ 35 (04/05/2026)","NC","NC","10 (30/06/2026)"],
+  ["Marseille - Aix","NC en propre","NC","NC","NC","NC","NC","10 (07/09/2026) ; 16 stages Aix"],
+  ["Toulouse (hors campus)","≥ 500 (08/09/2026)","≈ 43 (03/03/2026)","NC","NC","NC","page datée sans compte","NC"]],
+ [2.6,2.8,2.0,2.4,1.8,1.9,2.4,2.4], size=8)
+P("Deux enseignements pour l'arbitrage par campus. D'abord, le DevSecOps est le seul domaine spécialisé qui affiche un volume local "
+  "mesurable hors Paris (≈ 52 à Lyon, ≈ 43 à Toulouse) : c'est la spécialisation la plus « déployable » en région. "
+  "Ensuite, le pentest s'effondre à l'échelle locale — 4 à 6 offres à Lyon, deuxième bassin français — ce qui rend un parcours "
+  "offensif hors Paris difficilement défendable.", bold=True, space=6)
+P("Les cases « NC » signifient qu'aucun compteur daté n'a pu être relevé pour ce couple ville × domaine, et non qu'il n'y a pas d'offres. "
+  "C'est une limite de collecte, pas une mesure.", italic=True, size=9, space=8)
 H("5.2 Métiers qui progressent", 2)
 B("DevSecOps : seul domaine pour lequel nous disposons de deux relevés comparables sur la même requête — ≥ 700 le 15 avril 2026, ≥ 800 le 4 septembre 2026. Progression cohérente avec l'intégration croissante de la sécurité au cycle de développement.")
 B("Cloud Security : stock élevé et stable de janvier (≥ 600 en Île-de-France) à septembre 2026 (≥ 769 à Paris), sur des requêtes différentes mais convergentes.")
@@ -478,6 +518,7 @@ DOMS = [
   ["Le décalage le plus important de l'étude : ≈ 33 offres « pentester » en France au 28 août 2026 (Indeed) et 31 offres « penetration testing » en mai 2026 (Glassdoor), contre ≥ 817 DevSecOps, ≥ 732 IAM et ≥ 600 AppSec.",
    "Barrière d'entrée très haute : Synacktiv exige 3 ans minimum d'expérience offensive et la maîtrise complète de la chaîne (reconnaissance, intrusion externe, latéralisation, Active Directory, cloud, CI/CD), en français et en anglais courants. Deloitte exige une expérience de pentest démontrée.",
    "Aucune alternance pentest « pure » n'a été trouvée. Les seules entrées observées sont des stages de recherche (Thales THALIUM sur la recherche de vulnérabilités, Framatome) et des alternances mixtes (Schneider Electric : DevSecOps + tests d'intrusion + automatisation).",
+   "Ordre de grandeur indépendant, convergent : un cabinet de recrutement estime le marché à environ 150 recrutements de pentesters en France en 2025 (contre environ 120 en 2024), et environ 400 recrutements d'architectes cyber (contre environ 350). Même en tenant cette estimation pour approximative, elle situe le pentest à quelques centaines de recrutements par an au niveau national — à comparer aux effectifs qu'une seule promotion d'école cyber met sur le marché.",
    "Le Journal du Net, citant le fondateur de CSB.School, classe explicitement le red teamer, le hacker éthique, le bug bounty et la cryptographie parmi les voies qui « mènent rarement à des postes ».",
    "Conclusion : maintenir la sécurité offensive comme MODULE obligatoire (elle est indispensable pour comprendre la défense et pour l'AppSec) mais ne PAS en faire un parcours de Mastère, et ne plus la mettre en avant en communication comme un débouché."]),
  ("9.4 Gestion des vulnérabilités", "Analyste / Manager Vulnérabilités (VOC)",
@@ -611,16 +652,16 @@ CAMP = [
  ("Paris / Île-de-France", f"{v_c.get('Paris / Île-de-France',0)} offres de l'échantillon ; ≥ 2 444 offres cyber en Île-de-France (31/08/2026) ; ≥ 359 alternances (28/05/2026)",
   "Banque et assurance, secteur public et défense, luxe, conseil, ESN et MSSP, éditeurs et scale-ups, Campus Cyber",
   "Les trois spécialisations de Mastère sont soutenables. Prioriser Cloud Security & DevSecOps (tissu éditeurs et scale-ups) et Cyber GRC & IAM (banque, assurance, secteur public soumis à DORA et NIS2). C'est le seul campus où une option Offensive Security encadrée serait défendable, en module et non en parcours."),
- ("Lyon métropole", f"{v_c.get('Lyon métropole',0)} offres ; ≥ 400 offres cyber (10/05/2026) ; {alt_v.get('Lyon métropole',0)} alternances dans l'échantillon",
+ ("Lyon métropole", f"{v_c.get('Lyon métropole',0)} offres de l'échantillon ; ≈ 335 offres cyber (16/06/2026) ; ≈ 32 alternances cyber (05/06/2026) ; par domaine : DevSecOps ≈ 52, cloud ≈ 69, GRC ≈ 14, pentest 4 à 6",
   "Énergie et nucléaire (EDF, Framatome), industrie, santé, ESN, télécoms",
   "Différenciation par l'industriel : SecOps + sécurité OT/ICS + GRC industrielle (LPM, NIS2, IEC 62443). Les alternances observées (EDF, Groupe SEB, Framatome, GRC Lyon) confirment ce positionnement. Second axe : Cloud Security."),
- ("Lille métropole", f"{v_c.get('Lille métropole',0)} offres ; ≥ 100 offres cyber (23/07/2026) ; {alt_v.get('Lille métropole',0)} alternances dans l'échantillon",
+ ("Lille métropole", f"{v_c.get('Lille métropole',0)} offres de l'échantillon ; ≥ 100 offres cyber (23/07/2026) ; seulement 6 alternances cyber relevées localement (20/08/2026)",
   "Retail et distribution, ESN, un acteur cyber structurant (Advens), industrie (Villeneuve-d'Ascq)",
   "Prioriser SecOps, Detection & Automation : la présence d'Advens, qui ouvre une alternance « SOC Detection Engineer » dès 2026, est un point d'ancrage rare. Second axe : GRC. Volume local modeste : prévoir un sourcing d'alternance sur la région élargie et le distanciel."),
  ("Bordeaux métropole", f"{v_c.get('Bordeaux métropole',0)} offres ; ≥ 200 offres cyber (29/05/2026) ; seulement 6 alternances et 12 stages relevés localement (août 2026)",
   "Défense et aéronautique (Thales), éditeurs, ESN, santé",
   "Prioriser Cloud Security & DevSecOps/AppSec (postes AppSec Manager, SecOps Engineer et pentester observés localement) et GRC/homologation (alternance Thales sur l'homologation). ALERTE : le volume d'alternance observé localement est le plus faible de tous les campus — à sécuriser avant toute montée en effectifs."),
- ("Nantes métropole", f"{v_c.get('Nantes métropole',0)} offres ; ≥ 100 offres cyber (04/09/2026) ; 10 alternances relevées (30/06/2026)",
+ ("Nantes métropole", f"{v_c.get('Nantes métropole',0)} offres de l'échantillon ; ≥ 100 offres cyber (04/09/2026) ; 10 alternances (30/06/2026) ; IAM ≈ 35 (04/05/2026) — le meilleur signal IAM hors Paris",
   "Secteur public et protection sociale (Urssaf), transport (SNCF), ESN (CGI, Niji, Devoteam Revolve), énergie (EDF DIGIT)",
   "Prioriser Cyber GRC & IAM : Nantes concentre des postes IAM structurants (architecte système IAM chez EDF DIGIT, consultant IAM CGI à Rennes) et des fonctions d'audit et de GRC (Urssaf, consultant GRC confirmé). Second axe : Cloud Security (Devoteam Revolve, certifié AWS Security Competency, recrute un Cloud Security Architect DevSecOps à Nantes)."),
  ("Marseille - Aix-en-Provence", f"{v_c.get('Marseille - Aix-en-Provence',0)} offres ; pas de stock local propre ; 10 alternances Marseille (07/09/2026), 16 stages Aix (02/06/2026)",

@@ -8,7 +8,7 @@ Chaque appréciation est justifiée et tracée (OBSERVE / ESTIMATION)."""
 # ils servent d'INDICATEURS RELATIFS entre métiers, jamais de nombre d'emplois disponibles.
 REF = {
 "Analyste SOC": dict(
-  STOCK_NATIONAL="≥ 300 (Indeed, 28/05/2026, « Analyste Soc »)",
+  STOCK_NATIONAL="≥ 300 (28/05/2026, « Analyste Soc ») ; ≥ 400 « Cyber Security SOC Analyste » (14/08/2026) ; ≈ 329 « Analyste Cybersécurité » (20/03/2026) ; ≈ 231 « Analyste Cyber Security » (23/05/2026)",
   STOCK_PARIS="≥ 50 (Indeed, 29/06/2026, Paris 75) ; ≥ 50 SOC Analyst IdF (11/08/2026)",
   TENSION="EN_TENSION",
   TENSION_JUST="Stock national significatif et récurrent sur toute la période 2026 ; présence continue chez les MSSP/ESN (Sopra Steria, Atos, Capgemini, Advens, AlgoSecure, Itrust) et en interne (banque, public, industrie). Mais offres majoritairement N2/N3.",
@@ -53,7 +53,7 @@ REF = {
   AUTOMATISATION_JUST="La collecte, l'enrichissement d'IOC et la veille OSINT de premier niveau sont automatisables ; l'analyse de campagnes et l'attribution ne le sont pas.",
   QUALITE="MOYEN", SALAIRE="NC", ATTRACTIVITE_ETUDIANT="FORTE"),
 "Pentester / Consultant sécurité offensive": dict(
-  STOCK_NATIONAL="≥ 25 « Pentester » (extrait : 33) au 28/08/2026 ; ≥ 100 « Pentest » (28/08/2026) ; 31 « penetration testing » (Glassdoor, mai 2026)",
+  STOCK_NATIONAL="≥ 25 « Pentester » (extrait : 33) au 28/08/2026 ; 31 « penetration testing » (Glassdoor, 05/2026). Local : 4 à 6 à Lyon (20 et 22/07/2026). Ordre de grandeur indépendant : ≈ 150 recrutements de pentesters en France en 2025 contre ≈ 120 en 2024 (Mercato de l'Emploi)",
   STOCK_PARIS="page datée sans compte (11/08/2026)", TENSION="EQUILIBRE",
   TENSION_JUST="Écart majeur entre notoriété et volume : ~33 offres « pentester » au niveau national contre ≥ 300 « analyste SOC », ≥ 800 « DevSecOps » et ≥ 700 « IAM ». Le marché existe mais il est étroit et concentré sur quelques cabinets (Synacktiv, Deloitte, XMCO, AlgoSecure) et quelques équipes internes.",
   ACCESSIBILITE="TRES_DIFFICILE",
@@ -73,7 +73,7 @@ REF = {
   AUTOMATISATION_JUST="Le scan, la priorisation par score et la génération de recommandations standard sont massivement outillés ; la négociation de la remédiation avec les équipes IT/métier ne l'est pas.",
   QUALITE="FAVORABLE", SALAIRE="NC", ATTRACTIVITE_ETUDIANT="FAIBLE"),
 "Cloud Security Engineer / Architect": dict(
-  STOCK_NATIONAL="≥ 400 « Cloud Security Engineer » (extrait : 438) au 25/05/2026",
+  STOCK_NATIONAL="≥ 400 « Cloud Security Engineer » (extrait : 438) au 25/05/2026 ; ≥ 1 000 « Cloud Security » (extrait : 1 324) au 08/09/2026. Local : ≈ 69 « Cyber Sécurité Cloud » à Lyon (18/06/2026), ≥ 25 à Nantes (06/09/2024)",
   STOCK_PARIS="≥ 200 « Cloud Security Engineer » (extrait : 273) au 26/05/2026 ; ≥ 700 « Cloud Security » Paris (extrait : 769) au 01/09/2026",
   TENSION="TRES_EN_TENSION",
   TENSION_JUST="Un des stocks les plus élevés du périmètre, stable de janvier à septembre 2026 (≥ 600 « Ingénieur Sécurité Cloud » IdF au 06/01/2026, ≥ 769 « Cloud Security » Paris au 01/09/2026). Compétence transverse présente dans une large part des offres d'architecture, DevSecOps, IAM et généralistes.",
@@ -86,7 +86,7 @@ REF = {
   ATTRACTIVITE_ETUDIANT="MOYENNE",
   RESERVE="Un article du Journal du Net (CSB.School) affirme au contraire que le Cloud Security connaîtrait des difficultés du fait d'un retour vers l'on-premise. Cette affirmation isolée est CONTREDITE par nos relevés de stocks (400-769 offres selon la requête, stables sur 8 mois) et n'est étayée par aucune donnée dans la source."),
 "DevSecOps Engineer": dict(
-  STOCK_NATIONAL="≥ 800 « DevSecOps » (extrait : 817) au 04/09/2026 ; ≥ 700 au 15/04/2026",
+  STOCK_NATIONAL="≥ 800 « DevSecOps » (extrait : 817) au 04/09/2026 ; ≥ 700 au 15/04/2026. Local : ≈ 52 à Lyon (06/09/2026), ≈ 43 à Toulouse (03/03/2026)",
   STOCK_PARIS="≥ 300 (extrait : 330) au 15/04/2026 ; ≥ 200 « DevSecOps Engineer » (extrait : 248) au 28/08/2026",
   TENSION="TRES_EN_TENSION",
   TENSION_JUST="Le stock le plus élevé de toutes les spécialités cyber observées, en progression entre avril (≥ 700) et septembre 2026 (≥ 800). Présent dans tous les secteurs observés : banque, santé, industrie, éditeurs, ESN.",
@@ -98,7 +98,7 @@ REF = {
   ATTRACTIVITE_ETUDIANT="MOYENNE",
   RESERVE="Le Journal du Net cite les « ingénieurs DevSec spécialisés » parmi les postes rendus obsolètes par l'IA. Cette affirmation est CONTREDITE par le stock observé (≥ 817 au 04/09/2026, en hausse sur l'année)."),
 "AppSec / Product Security Engineer": dict(
-  STOCK_NATIONAL="≥ 600 « Application Security Engineer » (10/08/2026) ; ≥ 900 « Security Engineer » (03/09/2026)",
+  STOCK_NATIONAL="≥ 600 « Application Security Engineer » (10/08/2026) ; ≈ 1 142 « Sécurité applicative » (04/02/2026) ; ≥ 400 « Ingénieur Sécurité Applicative » (23/05/2026)",
   STOCK_PARIS="≥ 300 « Application Security Engineer » (extrait : 354) au 17/08/2026",
   TENSION="TRES_EN_TENSION",
   TENSION_JUST="Stock élevé, employeurs très diversifiés : grands groupes (Safran, banque), conseil (Accenture), éditeurs et scale-ups (GitGuardian, Akeneo, Tiime, Yousign, Scaleway, Mistral AI).",
@@ -108,7 +108,7 @@ REF = {
   AUTOMATISATION_JUST="Le scan de code est outillé et l'IA génère des correctifs ; l'arbitrage de risque applicatif et le threat modeling restent humains.",
   QUALITE="TRES_FAVORABLE", SALAIRE="NC dans nos offres", ATTRACTIVITE_ETUDIANT="MOYENNE"),
 "Consultant / Ingénieur IAM - PAM": dict(
-  STOCK_NATIONAL="≥ 700 « IAM » (extrait : 732) au 31/03/2026 ; ≥ 100 « Ingénieur Identity & Access Management » (31/07/2026)",
+  STOCK_NATIONAL="≥ 700 « IAM » (extrait : 732) au 31/03/2026 ; ≈ 405 « Identity Access Management » (18/07/2025) et 399 sur Glassdoor (09/2025). Local : ≈ 35 à Nantes (04/05/2026)",
   STOCK_PARIS="≥ 300 « Identity Access Management » (extrait : 360) au 26/05/2026",
   TENSION="TRES_EN_TENSION",
   TENSION_JUST="Stock élevé et durable ; l'IAM apparaît en outre comme compétence dans les offres d'architecture, de cloud et de réseau (Zero Trust, SASE, Entra ID). Recruteurs : ESN et cabinets (Sopra Steria, Capgemini, Deloitte, CGI, Eviden), éditeurs (Memority), grands comptes (EDF).",
@@ -118,7 +118,7 @@ REF = {
   AUTOMATISATION_JUST="Le provisioning est automatisé depuis longtemps ; la gouvernance des identités, les campagnes de revue et l'intégration applicative restent des projets humains.",
   QUALITE="TRES_FAVORABLE", SALAIRE="NC dans nos offres", ATTRACTIVITE_ETUDIANT="FAIBLE"),
 "Consultant GRC / Risque / Conformité": dict(
-  STOCK_NATIONAL="≥ 200 « Cybersécurité GRC » (extrait : 242) au 03/09/2026 ; ≥ 200 « GRC Cybersécurité » (13/05/2026)",
+  STOCK_NATIONAL="≥ 200 « Cybersécurité GRC » (extrait : 242) au 03/09/2026 ; ≥ 300 « ISO 27001 » à Paris (21/10/2025). Local : ≈ 14 à Lyon (03/01/2026)",
   STOCK_PARIS="≥ 100 (extrait : 112) au 03/09/2026 ; ≥ 75 IdF (extrait : 92) au 11/08/2026",
   TENSION="EN_TENSION",
   TENSION_JUST="Stock en progression et surtout forte cohérence avec le calendrier réglementaire : NIS2 (10 000 à 15 000 organisations supplémentaires concernées), DORA, Cyber Resilience Act à partir de juin 2026. Nos offres GRC citent massivement ISO 27001, EBIOS RM, NIS2, DORA, HDS, SOC 2.",
@@ -135,7 +135,7 @@ REF = {
   AUTOMATISATION="MOYENNE", AUTOMATISATION_JUST="Collecte de preuves et rédaction de rapports accélérées par l'IA.",
   QUALITE="FAVORABLE", SALAIRE="NC", ATTRACTIVITE_ETUDIANT="FAIBLE"),
 "Architecte sécurité / cybersécurité": dict(
-  STOCK_NATIONAL="≥ 400 « Security Architect » (11/06/2026) ; ≥ 400 « Cybersecurity Architect » (extrait : 455) au 22/06/2026 ; 404 (Glassdoor, juillet 2026)",
+  STOCK_NATIONAL="≥ 400 « Security Architect » (11/06/2026) ; ≈ 455 « Cybersecurity Architect » (22/06/2026) ; 404 (Glassdoor, 07/2026). Ordre de grandeur indépendant : ≈ 400 recrutements d'architectes cyber en France en 2025 contre ≈ 350 en 2024 (Mercato de l'Emploi)",
   STOCK_PARIS="≥ 200 (extrait : 277) au 18/08/2026 ; 270 (Glassdoor, août 2026)",
   TENSION="TRES_EN_TENSION",
   TENSION_JUST="Cohérent avec l'Observatoire ANSSI : les architectes représentent 21 % des offres analysées (premier métier du corpus, 23 000 offres). Deux sources indépendantes (Indeed et Glassdoor) donnent des ordres de grandeur voisins (≈ 400 France, ≈ 270-277 Paris).",
