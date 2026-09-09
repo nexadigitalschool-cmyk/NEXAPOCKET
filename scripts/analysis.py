@@ -164,6 +164,30 @@ def parse_date(s):
     return NC, NC, NC
 
 
+def norm_intitule(s):
+    t = norm(s).replace("-", " ").replace("_", " ")
+    t = re.sub(r"\b(emplois?|offres?|jobs?)\b", " ", t)
+    t = re.sub(r"[«»\"']", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def norm_zone(s):
+    t = norm(s)
+    t = re.sub(r"\s*\([^)]*\)", "", t)  # 'lyon (69)' -> 'lyon'
+    t = re.sub(r"\s*-\s*\d{5}$", "", t)
+    t = t.replace("ile de france", "ile-de-france").replace("région ", "").replace("region ", "")
+    if t in ("", "nc", "france entiere", "national", "toute la france", "france metropolitaine"):
+        t = "france" if t not in ("", "nc") else t
+    return t.strip()
+
+
+def norm_contrat(s):
+    t = norm(s)
+    if not t or t in ("nc", "tous", "tous contrats", "all", "toutes"):
+        return "nc"
+    return t
+
+
 def volume_series(vols):
     """Retourne dict (source, intitule_norm, zone_norm, contrat) -> liste (date, nombre, url, preuve)."""
     series = defaultdict(list)
@@ -172,7 +196,7 @@ def volume_series(vols):
         y, m, d = parse_date(v.get("DATE_DU_COMPTE"))
         if n is None or y == NC:
             continue
-        key = (v.get("SOURCE", NC), norm(v.get("INTITULE_RECHERCHE")), norm(v.get("ZONE")), norm(v.get("TYPE_CONTRAT")) or "nc")
+        key = (v.get("SOURCE", NC), norm_intitule(v.get("INTITULE_RECHERCHE")), norm_zone(v.get("ZONE")), norm_contrat(v.get("TYPE_CONTRAT")))
         series[key].append((f"{y}-{m}-{d}", n, v.get("URL"), v.get("PREUVE"), v.get("NOMBRE")))
     for k in series:
         series[k].sort()
@@ -228,3 +252,50 @@ def tension_level(n_offres, ia_flag=False, evol=None, senior_share=None, famille
     if score == -1:
         return "RALENTISSEMENT", " ; ".join(just)
     return "SATURE", " ; ".join(just)
+
+
+# ----------------------------------------------------------------------------
+# Études de la vague D (schéma complet TITRE / ORGANISME_OU_MEDIA / ... / THEME)
+# ----------------------------------------------------------------------------
+def load_d_etudes():
+    out = []
+    import glob as _glob
+    for fp in sorted(_glob.glob(os.path.join(COLLECTE_DIR, "[DE]*_etudes.jsonl"))):
+        for i, line in enumerate(open(fp, encoding="utf-8")):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                e = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if e.get("URL"):
+                e["_fichier"] = os.path.basename(fp)
+                out.append(e)
+    return out
+
+
+def actifs_from_d_etudes(etudes, regions):
+    """Population active (ou emploi) régionale INSEE issue des études D (THEME POPULATION_ACTIVE)."""
+    res = {}
+    for e in etudes:
+        if norm(e.get("THEME")) != "population_active" and "population active" not in norm(e.get("TITRE", "") + e.get("RESULTAT_UTILISE", "")):
+            continue
+        if "insee" not in norm(e.get("ORGANISME_OU_MEDIA", "") + e.get("TITRE", "") + e.get("URL", "")):
+            continue
+        txt = str(e.get("RESULTAT_UTILISE", "")) + " " + str(e.get("PERIMETRE", ""))
+        for reg in regions:
+            rn = norm(reg)
+            # motif : "<région> : 5 123 000 actifs" ou "<région> 5,1 millions"
+            for m in re.finditer(re.escape(rn) + r"[^0-9]{0,40}(\d[\d  .,]{2,}\s*(?:millions?|m)?)", norm(txt)):
+                raw = m.group(1).strip()
+                try:
+                    if "million" in raw or raw.endswith(" m"):
+                        val = float(re.sub(r"[^0-9,\.]", "", raw).replace(",", ".")) * 1e6
+                    else:
+                        val = float(re.sub(r"[^0-9]", "", raw))
+                except ValueError:
+                    continue
+                if 50000 <= val <= 8e6 and reg not in res:
+                    res[reg] = (int(val), e.get("URL"), e.get("TITRE"), e.get("DATE_PUBLICATION"))
+    return res

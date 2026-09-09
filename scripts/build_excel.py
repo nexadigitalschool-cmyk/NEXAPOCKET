@@ -74,33 +74,56 @@ REGION_SERIES["Centre-Val de Loire"] += [r"tours.*", r"orleans.*"]
 REGION_SERIES["Bourgogne-Franche-Comté"] += [r"dijon.*", r"besancon.*"]
 
 
-def evol_pct(series, intit_patterns, zone_patterns):
-    """Retourne (evol_2025, evol_2024, detail) à partir des stocks Indeed datés (buckets 'plus de N')."""
-    best = {"2026": None, "2025": None, "2024": None}
-    detail = []
+EVOL_SOURCES = ("Indeed", "HelloWork", "Apec", "France Travail")
+
+
+def evol_pct(series, intit_patterns, zone_patterns, sources=EVOL_SOURCES):
+    """Retourne (evol_2025, evol_2024, detail) à partir des stocks datés (buckets 'plus de N') : Indeed en priorité,
+    puis HelloWork / Apec / France Travail si Indeed n'offre pas deux années comparables pour le même intitulé × zone."""
+    for src_ in sources:
+        e25, e24, det = _evol_pct_src(series, intit_patterns, zone_patterns, src_)
+        if e25 != NC or e24 != NC:
+            return e25, e24, det
+    return NC, NC, ""
+
+
+def _evol_pct_src(series, intit_patterns, zone_patterns, source):
+    """Pour une source, apparie les comptes d'une MÊME page (même intitulé × même zone) : dernier compte de chaque année.
+    Quand plusieurs pages sont comparables, retient celle dont le compte 2026 est le plus élevé (page la plus représentative)."""
+    cands = {}
     for (src, intit, zone, contrat), pts in series.items():
-        if src != "Indeed" or contrat not in ("nc", "tous", ""):
+        if src != source or contrat not in ("nc", "tous", ""):
             continue
         if not any(re.fullmatch(p, intit) for p in intit_patterns):
             continue
         if not any(re.fullmatch(z, zone) for z in zone_patterns):
             continue
+        best = {}
         for date, n, url, preuve, nb in pts:
             y = date[:4]
-            if y in best and (best[y] is None or date > best[y][0]):
-                best[y] = (date, n, intit, zone)
+            if y in ("2024", "2025", "2026") and (y not in best or date > best[y][0]):
+                best[y] = (date, n)
+        if "2026" in best and ("2025" in best or "2024" in best):
+            cands[(intit, zone)] = best
     e25 = e24 = NC
-    if best["2026"] and best["2025"] and best["2025"][2] == best["2026"][2] and best["2025"][3] == best["2026"][3]:
-        e25 = round(100.0 * (best["2026"][1] - best["2025"][1]) / best["2025"][1])
-        detail.append(f"Indeed '{best['2026'][2]}' {best['2026'][3]} : {best['2025'][1]} ({best['2025'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
-    if best["2026"] and best["2024"] and best["2024"][2] == best["2026"][2] and best["2024"][3] == best["2026"][3]:
-        e24 = round(100.0 * (best["2026"][1] - best["2024"][1]) / best["2024"][1])
-        detail.append(f"Indeed '{best['2026'][2]}' {best['2026'][3]} : {best['2024'][1]} ({best['2024'][0]}) -> {best['2026'][1]} ({best['2026'][0]})")
+    detail = []
+    c25 = [(k, v) for k, v in cands.items() if "2025" in v]
+    if c25:
+        k, v = max(c25, key=lambda kv: (kv[1]["2026"][1], kv[1]["2026"][0]))
+        if v["2025"][1]:
+            e25 = round(100.0 * (v["2026"][1] - v["2025"][1]) / v["2025"][1])
+            detail.append(f"{source} '{k[0]}' {k[1]} : {v['2025'][1]} ({v['2025'][0]}) -> {v['2026'][1]} ({v['2026'][0]})")
+    c24 = [(k, v) for k, v in cands.items() if "2024" in v]
+    if c24:
+        k, v = max(c24, key=lambda kv: (kv[1]["2026"][1], kv[1]["2026"][0]))
+        if v["2024"][1]:
+            e24 = round(100.0 * (v["2026"][1] - v["2024"][1]) / v["2024"][1])
+            detail.append(f"{source} '{k[0]}' {k[1]} : {v['2024'][1]} ({v['2024'][0]}) -> {v['2026'][1]} ({v['2026'][0]})")
     return e25, e24, " ; ".join(detail)
 
 
 def fmt_evol(e):
-    return NC if e == NC else f"ESTIMATION {e:+d} % (stocks Indeed arrondis)"
+    return NC if e == NC else f"ESTIMATION {e:+d} % (stocks jobboard arrondis, voir DETAIL_EVOLUTION)"
 
 
 # ---------------------------------------------------------------------------
@@ -264,6 +287,15 @@ def build_synthese(wb, rows, U, series, vols):
     r2 = end2 + 2
     title(ws, r2, "MÉTHODE TENSION (ESTIMATION) : DONNEES_INSUFFISANTES si < 5 offres ; score = évolution du stock Indeed (≤ -40 % : -2 ; < -10 % : -1 ; > +15 % : +1) + part de seniors/leads ≥ 50 % (+1) + famille cloud/cyber/IA/data (+1, signalée en tension par Apec et BMO). Score ≥ 2 TRES_EN_TENSION, 1 EN_TENSION, 0 EQUILIBRE, -1 RALENTISSEMENT, ≤ -2 SATURE.", NOTE_FONT)
 
+    # ---- études et données de marché (vague D, schéma complet) ----
+    d_et = load_d_etudes()
+    r2b = r2 + 2
+    title(ws, r2b, "ÉTUDES ET DONNÉES DE MARCHÉ UTILISÉES (schéma complet : titre, organisme, auteur, date, périmètre, méthode, résultat, URL, page, fiabilité)", SUB_FONT)
+    et_rows = [[e.get("THEME"), e.get("TITRE"), e.get("ORGANISME_OU_MEDIA"), e.get("AUTEUR") or "non indiqué", e.get("DATE_PUBLICATION"), e.get("DATE_CONSULTATION"), e.get("PERIMETRE"), e.get("METHODE"), e.get("RESULTAT_UTILISE"), e.get("URL"), e.get("PAGE_DU_RAPPORT"), str(e.get("FIABILITE", "")).upper()] for e in d_et]
+    et_rows.sort(key=lambda x: (str(x[0]), str(x[2])))
+    r2c = write_table(ws, r2b + 1, ["THEME", "TITRE", "ORGANISME", "AUTEUR", "DATE_PUBLICATION", "DATE_CONSULTATION", "PERIMETRE", "METHODE", "RESULTAT_UTILISE", "URL", "PAGE_DU_RAPPORT", "NIVEAU_DE_FIABILITE"], et_rows, "T_ETUDES") if et_rows else r2b
+    r2 = r2c + 1
+
     # ---- graphiques ----
     # 1 offres par métier (top 15)
     top = sorted(data, key=lambda d: -d[4])[:15]
@@ -363,6 +395,25 @@ def actifs_by_region(ext):
     return res
 
 
+# Population active régionale (actifs 15-64 ans ou actifs au sens du recensement/BIT) relevée dans les extraits des études E5
+# (valeurs arrondies telles qu'affichées par la source ; millésimes différents => ESTIMATION). Format : région -> (actifs, millésime, source, URL, fiabilité)
+ACTIFS_REGION = {
+    "Île-de-France": (5913000, "2019 (Institut Paris Région, note rapide 501)", "Institut Paris Région / relais mesinfos.fr", "https://mesinfos.fr/ile-de-france/ile-de-france-les-chiffres-2025-cles-d-une-region-capitale-206073.html", "MOYENNE"),
+    "Auvergne-Rhône-Alpes": (3800000, "2018 (Insee Analyses ARA, actifs 14 ans et plus)", "Insee", "https://www.insee.fr/fr/statistiques/8377744", "MOYENNE"),
+    "Hauts-de-France": (2723729, "2022 (RP Insee, relayé par Centre Inffo)", "Insee via Centre Inffo", "https://www.centre-inffo.fr/site-regions-formation/donnees-regionales/interlocuteurs-regionaux/hauts-de-france", "MOYENNE"),
+    "Nouvelle-Aquitaine": (3600000, "2020 (Insee, L'essentiel sur la Nouvelle-Aquitaine)", "Insee", "https://www.insee.fr/fr/statistiques/4482442", "FORTE"),
+    "Occitanie": (2724793, "2022 (RP Insee, dossier complet région)", "Insee", "https://www.insee.fr/fr/statistiques/2011101?geo=REG-76", "FORTE"),
+    "Grand Est": (2600000, "2022 (Insee, L'essentiel sur le Grand Est)", "Insee", "https://www.insee.fr/fr/statistiques/4481430", "FORTE"),
+    "Bretagne": (1500000, "2022 (RP Insee, Emploi-Population active)", "Insee", "https://www.insee.fr/fr/statistiques/8581444?sommaire=8581612", "FORTE"),
+    "Normandie": (1500000, "2022 (Insee Analyses Normandie)", "Insee", "https://www.insee.fr/fr/statistiques/8195390", "FORTE"),
+    "Pays de la Loire": (1760000, "2018 (estimation, tableau de bord économique Pays de la Loire)", "Région Pays de la Loire (données Insee)", "https://www.paysdelaloire-eco.fr/ressources-analyses/population-active/evolution-de-la-population-active", "MOYENNE"),
+    "Centre-Val de Loire": (1161670, "2021 (Insee via ORIOM)", "ORIOM Centre-Val de Loire (données Insee)", "https://oriom.centre-valdeloire.fr/Population-active", "MOYENNE"),
+    "Bourgogne-Franche-Comté": (1270000, "2021 (Insee Analyses BFC)", "Insee", "https://www.insee.fr/fr/statistiques/8300350", "FORTE"),
+    "Guadeloupe": (143335, "2023 (Insee, bilan économique)", "Insee", "https://www.insee.fr/fr/statistiques/7935939?sommaire=7936489", "FORTE"),
+    "Martinique": (136600, "2022 (Insee, enquête emploi BIT)", "Insee", "https://www.insee.fr/fr/statistiques/7639505", "FORTE"),
+    "La Réunion": (361000, "2023 (Insee Analyses Réunion)", "Insee", "https://www.insee.fr/fr/statistiques/8658951", "FORTE"),
+}
+
 POP_2021 = {"Île-de-France": 12.0, "Auvergne-Rhône-Alpes": 8.1, "Nouvelle-Aquitaine": 6.0, "Occitanie": 6.0, "Hauts-de-France": 6.0}  # millions d'habitants au 1er janvier 2021, INSEE (Tableaux de l'économie française), relevé via collecte C
 POP_URL = "https://www.insee.fr/fr/statistiques/3303305?sommaire=3353488"
 
@@ -370,9 +421,18 @@ POP_URL = "https://www.insee.fr/fr/statistiques/3303305?sommaire=3353488"
 def build_regions(wb, rows, U, series):
     ws = wb.create_sheet("REGIONS_METIERS")
     title(ws, 1, "RÉGIONS × MÉTIERS — échantillon d'offres uniques (collecte " + DATE_COLLECTE + ") et données externes régionales")
-    note(ws, 2, "Une ligne par combinaison région × métier normalisé. PART_NATIONALE = part de l'échantillon national. OFFRES_POUR_100_000_ACTIFS = NC (population active régionale INSEE non lisible dans les extraits) ; à défaut, ESTIMATION pour 100 000 habitants (population INSEE 2021) pour les cinq régions dont la population a été relevée. Les ratios portent sur l'échantillon, pas sur le marché total. EVOLUTION = ESTIMATION à partir des stocks Indeed datés de la région/ville quand deux années sont disponibles.")
+    note(ws, 2, "Une ligne par combinaison région × métier normalisé. PART_NATIONALE = part de l'échantillon national. OFFRES_POUR_100_000_ACTIFS = ESTIMATION calculée sur l'échantillon rapporté à la population active régionale INSEE quand elle a été relevée (source citée dans la cellule) ; voir la table T_ACTIFS_REGIONS de cet onglet (valeurs, millésimes, URL) ; sinon NC. Les ratios portent sur l'échantillon, pas sur le marché total. EVOLUTION = ESTIMATION à partir des stocks Indeed datés de la région/ville quand deux années sont disponibles.")
     ext = load_regional_external()
     actifs = actifs_by_region(ext)
+    d_et = load_d_etudes()
+    for reg, val in actifs_from_d_etudes(d_et, REGIONS).items():
+        actifs.setdefault(reg, (val[0], val[1]))
+    for reg, (n_act, mill, org, url, fiab) in ACTIFS_REGION.items():
+        actifs.setdefault(reg, (n_act, url))
+    for e in d_et:
+        if norm(e.get("THEME")) in ("regions", "tension") or any(norm(r) in norm(e.get("PERIMETRE", "")) for r in REGIONS if r != "Corse"):
+            ext.append({"THEME": e.get("THEME"), "REGION_OU_VILLE": e.get("PERIMETRE"), "METIER": "", "INDICATEUR": e.get("TITRE"), "VALEUR": e.get("RESULTAT_UTILISE"),
+                        "DATE_OU_PERIODE": e.get("DATE_PUBLICATION"), "ORGANISME": e.get("ORGANISME_OU_MEDIA"), "SOURCE": e.get("METHODE"), "URL": e.get("URL"), "CITATION": e.get("RESULTAT_UTILISE"), "FIABILITE": e.get("FIABILITE")})
     by = defaultdict(list)
     for r in U:
         by[(r["REGION_NORMALISEE"], r["FAMILLE_METIER"], r["METIER_NORMALISE"])].append(r)
@@ -391,7 +451,8 @@ def build_regions(wb, rows, U, series):
         brut = sum(1 for r in rows if r["REGION_NORMALISEE"] == reg and r["METIER_NORMALISE"] == m)
         per100k = "NC (population active régionale INSEE non extraite)"
         if reg in actifs:
-            per100k = f"ESTIMATION {round(100000.0 * n / actifs[reg][0], 2)} (échantillon, INSEE {actifs[reg][0]})"
+            mill = ACTIFS_REGION[reg][1] if reg in ACTIFS_REGION else "millésime NC"
+            per100k = f"ESTIMATION {round(100000.0 * n / actifs[reg][0], 2)} offre(s) de l'échantillon pour 100 000 actifs ({actifs[reg][0]:,} actifs, {mill})".replace(",", " ")
         elif reg in POP_2021:
             per100k = f"NC actifs ; ESTIMATION {round(100000.0 * n / (POP_2021[reg] * 1e6), 2)} offre(s) de l'échantillon pour 100 000 habitants (INSEE 2021 : {POP_2021[reg]} M hab.)"
         data.append([reg, FAMILLE_LABEL[fam], m, brut, n, pct(n, len(U)), per100k, contrats["CDI"], contrats["CDD"], contrats["ALTERNANCE"], contrats["STAGE"], contrats["FREELANCE"],
@@ -441,6 +502,20 @@ def build_regions(wb, rows, U, series):
     for i, (k, v) in enumerate(lines):
         ws.cell(row=r1 + 1 + i, column=1, value=k).font = Font(bold=True)
         ws.cell(row=r1 + 1 + i, column=2, value=v)
+
+    # ---- population active par région (référence du ratio) ----
+    ra = r1 + len(lines) + 2
+    title(ws, ra, "POPULATION ACTIVE RÉGIONALE UTILISÉE POUR LE RATIO OFFRES_POUR_100_000_ACTIFS (valeurs relevées dans les extraits des études, millésimes hétérogènes : ESTIMATION)", SUB_FONT)
+    act_rows = []
+    for reg in REGIONS:
+        n_reg = reg_tot.get(reg, 0)
+        if reg in ACTIFS_REGION:
+            n_act, mill, org, url, fiab = ACTIFS_REGION[reg]
+            act_rows.append([reg, n_act, mill, org, url, fiab, n_reg, f"ESTIMATION {round(100000.0 * n_reg / n_act, 2)}"])
+        else:
+            act_rows.append([reg, NC, NC, NC, NC, NC, n_reg, "NC (population active non relevée dans les extraits)"])
+    ra_end = write_table(ws, ra + 1, ["REGION", "ACTIFS (valeur affichée par la source)", "MILLESIME_ET_DEFINITION", "ORGANISME", "URL", "FIABILITE", "OFFRES_UNIQUES_ECHANTILLON", "OFFRES_POUR_100_000_ACTIFS"], act_rows, "T_ACTIFS_REGIONS")
+    lines = lines + [None] * (ra_end - (r1 + len(lines)) - 1)
 
     # ---- données externes régionales ----
     r2 = r1 + len(lines) + 3
@@ -704,6 +779,9 @@ def build_competences(wb, rows, U, series):
                         ext.append([p.replace(".jsonl", ""), e.get("COMPETENCE") or e.get("THEME"), e.get("FAMILLE") or "", e.get("INDICATEUR") or e.get("RESULTAT"), e.get("VALEUR") or e.get("CHIFFRE"), e.get("PERIMETRE"), e.get("SOURCE"), e.get("DATE"), e.get("URL"), e.get("CITATION"), str(e.get("FIABILITE", "")).upper()])
                     except json.JSONDecodeError:
                         pass
+    for e in load_d_etudes():
+        if norm(e.get("THEME")) in ("competences", "ia_transformation", "international", "salaires"):
+            ext.append(["D_" + str(e.get("THEME")), e.get("TITRE"), "", e.get("METHODE"), e.get("RESULTAT_UTILISE"), e.get("PERIMETRE"), e.get("ORGANISME_OU_MEDIA"), e.get("DATE_PUBLICATION"), e.get("URL"), e.get("RESULTAT_UTILISE"), str(e.get("FIABILITE", "")).upper()])
     write_table(ws, r2 + 1, ["VOLET", "COMPETENCE_OU_THEME", "FAMILLE", "INDICATEUR / RESULTAT", "VALEUR", "PERIMETRE", "SOURCE", "DATE", "URL", "CITATION", "FIABILITE"], ext, "T_EXTERNES_COMPETENCES")
     return data
 
