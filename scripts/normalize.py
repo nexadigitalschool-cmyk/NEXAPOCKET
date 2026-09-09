@@ -48,7 +48,7 @@ RULES = [
     # Métiers émergents liés à l'IA (composante développement)
     (r"\b(prompt engineer)\b", "Prompt Engineer (avec composante développement)", IA),
     (r"\b(stage|stagiaire|alternance|alternant|alternante)\b.*\b(ia|ai|llm|intelligence artificielle|genai|generative)\b", "AI Engineer / Développeur IA", IA),
-    (r"\b(llmops|ai engineering)\b|\b(llm|large language|genai|gen ai|generative ai|ia generative|generative|generatif|generative)\b.*\b(engineer|ingenieur|developpeur|developer|dev)\b|\b(engineer|ingenieur|developpeur|developer)\b.*\b(llm|genai|gen ai|generative|ia generative|generatif)\b", "LLM / Generative AI Engineer", IA),
+    (r"\b(llmops|ai engineering|expert ia generative|expert genai)\b|\b(llm|large language|genai|gen ai|generative ai|ia generative|generative|generatif|generative)\b.*\b(engineer|ingenieur|developpeur|developer|dev)\b|\b(engineer|ingenieur|developpeur|developer)\b.*\b(llm|genai|gen ai|generative|ia generative|generatif)\b", "LLM / Generative AI Engineer", IA),
     (r"\brag\b", "Développeur RAG / applications LLM", IA),
     (r"\b(agent(s)? ia|agents? ai|agentic|ai agent|multi-agent|agent builder)\b", "Développeur d'agents IA", IA),
     (r"\b(ai integration|integration ia|ai automation|automation developer|developpeur automatisation|automatisation)\b", "AI Integration / Automation Developer", IA),

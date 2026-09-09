@@ -21,6 +21,7 @@ from build_excel import evol_pct, METIER_SERIES, ZONE_SERIES, REGION_SERIES, ACT
 OUTDIR = os.environ.get("NEXA_OUT", "/home/user/NEXAPOCKET")
 DATE = "2026-09-06"
 DATE_FR = "6 septembre 2026"
+DATE_ANALYSE_FR = "9 septembre 2026"
 
 
 # ---------------------------------------------------------------------------
@@ -158,7 +159,7 @@ def main():
     t = doc.add_paragraph(); t.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r = t.add_run("Synthèse pour la Direction Générale, la Direction Marketing et la Direction Pédagogique"); r.font.size = Pt(13)
     t = doc.add_paragraph(); t.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    t.add_run(f"Collecte et analyse arrêtées au {DATE_FR} — livrables associés : NEXA_Marche_Emploi_Developpement_Web_France_2026.xlsx (5 onglets) et NEXA_Perimetre_Metiers_et_Plateformes_Sans_Donnees.md (journal de collecte)").italic = True
+    t.add_run(f"Collecte des offres et des études arrêtée au {DATE_FR}, analyse finalisée le {DATE_ANALYSE_FR} — livrables associés : NEXA_Marche_Emploi_Developpement_Web_France_2026.xlsx (5 onglets) et NEXA_Perimetre_Metiers_et_Plateformes_Sans_Donnees.md (journal de collecte)").italic = True
 
     doc.add_heading("Conclusion en une phrase", 1)
     p(doc, "Le marché français du développement web n'est pas en train de disparaître, mais il s'est contracté d'environ 20 % en 2025 et de plus de moitié depuis le pic de 2022, il s'est recomposé autour du profil full stack industrialisé (tests, CI/CD, cloud, sécurité) et de l'intégration de l'IA, et il est devenu nettement plus sélectif envers les débutants : NEXA doit transformer sa filière Développement Web (scénario B) et la renforcer par une offre M1/M2 (scénario C), sans la maintenir en l'état ni l'abandonner.", bold=True)
